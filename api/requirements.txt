@@ -1,0 +1,12 @@
+flask
+flask_pymongo
+pandas
+tqdm==4.66.2
+beautifulsoup4==4.12.3
+pandas==2.0.3
+requests
+lxml
+nltk
+flask-cors
+yfinance
+prophet==1.1.5
