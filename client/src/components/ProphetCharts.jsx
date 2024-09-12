@@ -3,7 +3,6 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProphetPlot from "./ProphetPlot";
-import axios from "axios";
 
 function ProphetCharts() {
 

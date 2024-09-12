@@ -6,8 +6,11 @@ import ForecastTable from './ForecastTable';
 function ProphetPlot(startDate) {
 
   const [graphdata, setGraphData] = useState([]);
+  const [graphdata2, setGraphData2] = useState([]);
   const [lastdata, setLastData] = useState({});
   const [spin, setSpin] = useState(false);
+
+  const [isChecked, setIsChecked] = useState(false);
 
   useEffect(() => {
 
@@ -21,11 +24,9 @@ function ProphetPlot(startDate) {
           "date":startDate.startDate
         });
 
-        console.log(graphdata[-1]);
-
-       
-        console.log(response.data);
-        setGraphData(response.data)
+        console.log("prophet Data is ");
+        console.log(response.data)
+        setGraphData(response.data); 
         setLastData(response.data[response.data.length - 1]);
         setSpin(false)
 
@@ -37,6 +38,22 @@ function ProphetPlot(startDate) {
     fetchData();
     
   }, [startDate]);
+
+  const handleToggle = async (event) => {
+    const checked = event.target.checked;
+    setIsChecked(checked);
+
+    try {
+        const response = await axios.post('/api/real-data', {
+            isChecked: checked
+        });
+        console.log('Response from backend:', response.data);
+        setGraphData2(response.data); 
+        
+    } catch (error) {
+        console.error('Error sending request to backend:', error);
+    }
+};
 
   const plotData = [
     {
@@ -63,6 +80,14 @@ function ProphetPlot(startDate) {
       name: 'Upper Bound',
       line: {color: 'green',dash: 'dot'},
     },
+    ...(isChecked ? [{
+      x: graphdata2.map(data => data.date),
+      y: graphdata2.map(data => data.gld_price_lkr),
+      type: 'scatter',
+      mode: 'lines',
+      name: 'Actual Data',
+      line: {color: 'red', dash: 'dot'},
+    }] : [])
   ];
 
   return (
@@ -80,15 +105,32 @@ function ProphetPlot(startDate) {
             <p>Upper Bound - Rs <span style={{ fontSize: '20px', fontWeight: 'bold',color: '#224abe' }}>{parseFloat(lastdata.yhat_upper_manipulation_smooth).toFixed(2)}</span> </p>
             <p>Lower Bound - Rs  <span style={{ fontSize: '20px', fontWeight: 'bold',color: '#224abe' }}>{parseFloat(lastdata.yhat_lower_manipulation_smooth).toFixed(2)}</span></p>
 
+            <div className="form-check form-switch">
+            <input
+                className="form-check-input bg-warning"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckDefault"
+                checked={isChecked}
+                onChange={handleToggle}
+            />
+            <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
+                Actual Data
+            </label>
+        </div>
+
             <Plot
               data={plotData}
               layout={ {width: 1000, height: 600, title: 'Gold Price Forecast'} }
             />
+            {/* {graphdata2} */}
             <ForecastTable data={graphdata.slice(-40)} />
           </>
         )}
       </div>
+      
   )
+  
 }
 
 export default ProphetPlot;

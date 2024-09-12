@@ -14,7 +14,7 @@ function Dashboard() {
     });
 
     useEffect(() => {
-        // Fetch the gold price every minute
+        // Fetch the gold price every 5 minute
         const interval = setInterval(async () => {  // Declare the function as async
             try {
                 const response = await axios.get('/api/gold_price');
@@ -23,7 +23,7 @@ function Dashboard() {
             } catch (error) {
                 console.log("Error:", error);
             }
-        }, 1000);  // 60000 milliseconds = 1 minute
+        }, 300000);  // 60000 milliseconds = 1 minute
     
         // Clear the interval when the component unmounts
         return () => clearInterval(interval);
