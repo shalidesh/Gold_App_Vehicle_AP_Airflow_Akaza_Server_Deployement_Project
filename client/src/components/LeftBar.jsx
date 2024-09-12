@@ -73,7 +73,26 @@ function LeftBar() {
                 </li>
             </Link>
 
-            <hr className="sidebar-divider d-none d-md-block"/>
+            <li className="nav-item">
+                <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages_ai"
+                    aria-expanded="true" aria-controls="collapsePages_ai">
+                    <i className="fas fa-fw fa-chart-area"></i>
+                    <span>AI Validation</span>
+                </a>
+                <div id="collapsePages_ai" className="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div className="bg-white py-2 collapse-inner rounded">
+                        <h6 className="collapse-header">Validation Types:</h6>
+                        <Link to="/database">
+                            <a className="collapse-item" >Each Day Forecast</a>
+                        </Link>
+                        <Link to="/comaparison">
+                            <a className="collapse-item" >Day Comparision</a>
+
+                        </Link>
+                        
+                    </div>
+                </div>
+            </li>
 
             <div className="text-center d-none d-md-inline">
                 <button className="rounded-circle border-0" id="sidebarToggle"></button>

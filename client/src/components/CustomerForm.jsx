@@ -7,28 +7,20 @@ function CustomerForm() {
   const [reason, setReason] = useState("Reason 1");
 
   const indistry_list=[
-    "Medicine",
-    "It",
-    "Engineering"]
+                  "Medicine",
+                  "It",
+                  "Engineering"]
 
     const gender_list=[
-      "MALE",
-      "FEMALE"
-      ]
+                      "MALE",
+                      "FEMALE"
+                      ]
 
-      const reasons_list=[
-        "Reason 1",
-        "Reason 2"
-        ]
+    const reasons_list=[
+                  "Reason 1",
+                  "Reason 2"
+                  ]
   
-    // Tenor
-    // Status
-    // Customer Age
-    // Customer Industry
-    // Gender
-    // Average Karatage
-    // Pawning Reason
-
   return (
 
         <div style={{ marginTop: '50px', marginBottom: '100px', marginLeft: '200px', marginRight: '200px' }}>
