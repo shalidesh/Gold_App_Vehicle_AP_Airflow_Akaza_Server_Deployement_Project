@@ -1,0 +1,33 @@
+[2024-08-28T05:54:25.262+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Vehicle_Data_scrape_Pipeline.data_proprocessing manual__2024-08-28T05:54:22.765165+00:00 [queued]>
+[2024-08-28T05:54:25.269+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Vehicle_Data_scrape_Pipeline.data_proprocessing manual__2024-08-28T05:54:22.765165+00:00 [queued]>
+[2024-08-28T05:54:25.270+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-08-28T05:54:25.287+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): data_proprocessing> on 2024-08-28 05:54:22.765165+00:00
+[2024-08-28T05:54:25.291+0000] {standard_task_runner.py:60} INFO - Started process 1334 to run task
+[2024-08-28T05:54:25.293+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Vehicle_Data_scrape_Pipeline', 'data_proprocessing', 'manual__2024-08-28T05:54:22.765165+00:00', '--job-id', '268', '--raw', '--subdir', 'DAGS_FOLDER/vehicle_data_scraping_pipeline.py', '--cfg-path', '/tmp/tmp0pz457ln']
+[2024-08-28T05:54:25.295+0000] {standard_task_runner.py:88} INFO - Job 268: Subtask data_proprocessing
+[2024-08-28T05:54:25.331+0000] {task_command.py:423} INFO - Running <TaskInstance: Vehicle_Data_scrape_Pipeline.data_proprocessing manual__2024-08-28T05:54:22.765165+00:00 [running]> on host 111661fd314c
+[2024-08-28T05:54:25.489+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Vehicle_Data_scrape_Pipeline' AIRFLOW_CTX_TASK_ID='data_proprocessing' AIRFLOW_CTX_EXECUTION_DATE='2024-08-28T05:54:22.765165+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-28T05:54:22.765165+00:00'
+[2024-08-28T05:54:25.513+0000] {logging_mixin.py:188} INFO -    brand posted_date   model  ... fuel_type engine_capacity vehicle_price
+0  Micro      17 Aug   Panda  ...    Petrol            1000       3390000
+1  Micro      13 Aug  Voleex  ...    Petrol            1500       3850000
+2  Micro      02 Aug    BAIC  ...    Petrol            1500       5800000
+3  Micro      15 Aug   Kyron  ...    Diesel            3000       5600000
+4  Micro      14 Aug   Kyron  ...    Diesel            1998       8875000
+
+[5 rows x 8 columns]
+[2024-08-28T05:54:25.524+0000] {logging_mixin.py:188} INFO -    brand posted_date   model  ... fuel_type engine_capacity vehicle_price
+0  MICRO      17 AUG   PANDA  ...    PETROL            1000       3390000
+1  MICRO      13 AUG  VOLEEX  ...    PETROL            1500       3850000
+2  MICRO      02 AUG    BAIC  ...    PETROL            1500       5800000
+3  MICRO      15 AUG   KYRON  ...    DIESEL            3000       5600000
+4  MICRO      14 AUG   KYRON  ...    DIESEL            1998       8875000
+
+[5 rows x 8 columns]
+[2024-08-28T05:54:25.759+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-08-28T05:54:25.764+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Vehicle_Data_scrape_Pipeline, task_id=data_proprocessing, execution_date=20240828T055422, start_date=20240828T055425, end_date=20240828T055425
+[2024-08-28T05:54:25.768+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/context.py:207 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2024-08-28T05:54:25.776+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-08-28T05:54:25.777+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-08-28T05:54:27.601+0000] {email.py:281} INFO - Sent an alert email to ['deshanariyarathna@gmail.com']
+[2024-08-28T05:54:29.622+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-08-28T05:54:29.635+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,48 @@
+[2024-08-28T06:29:49.586+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Vehicle_Data_scrape_Pipeline.data_proprocessing manual__2024-08-28T06:29:37.126955+00:00 [queued]>
+[2024-08-28T06:29:49.611+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Vehicle_Data_scrape_Pipeline.data_proprocessing manual__2024-08-28T06:29:37.126955+00:00 [queued]>
+[2024-08-28T06:29:49.612+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 4
+[2024-08-28T06:29:49.647+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): data_proprocessing> on 2024-08-28 06:29:37.126955+00:00
+[2024-08-28T06:29:49.657+0000] {standard_task_runner.py:60} INFO - Started process 376 to run task
+[2024-08-28T06:29:49.663+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Vehicle_Data_scrape_Pipeline', 'data_proprocessing', 'manual__2024-08-28T06:29:37.126955+00:00', '--job-id', '273', '--raw', '--subdir', 'DAGS_FOLDER/vehicle_data_scraping_pipeline.py', '--cfg-path', '/tmp/tmppe3a7euf']
+[2024-08-28T06:29:49.668+0000] {standard_task_runner.py:88} INFO - Job 273: Subtask data_proprocessing
+[2024-08-28T06:29:49.776+0000] {task_command.py:423} INFO - Running <TaskInstance: Vehicle_Data_scrape_Pipeline.data_proprocessing manual__2024-08-28T06:29:37.126955+00:00 [running]> on host 06bac49911ec
+[2024-08-28T06:29:50.250+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Vehicle_Data_scrape_Pipeline' AIRFLOW_CTX_TASK_ID='data_proprocessing' AIRFLOW_CTX_EXECUTION_DATE='2024-08-28T06:29:37.126955+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-28T06:29:37.126955+00:00'
+[2024-08-28T06:29:50.356+0000] {logging_mixin.py:188} INFO -    brand posted_date   model  ... fuel_type engine_capacity vehicle_price
+0  Micro      17 Aug   Panda  ...    Petrol            1000       3390000
+1  Micro      13 Aug  Voleex  ...    Petrol            1500       3850000
+2  Micro      02 Aug    BAIC  ...    Petrol            1500       5800000
+3  Micro      15 Aug   Kyron  ...    Diesel            3000       5600000
+4  Micro      14 Aug   Kyron  ...    Diesel            1998       8875000
+
+[5 rows x 8 columns]
+[2024-08-28T06:29:50.409+0000] {logging_mixin.py:188} INFO -    brand posted_date   model  ... fuel_type engine_capacity vehicle_price
+0  MICRO      17 AUG   PANDA  ...    PETROL            1000       3390000
+1  MICRO      13 AUG  VOLEEX  ...    PETROL            1500       3850000
+2  MICRO      02 AUG    BAIC  ...    PETROL            1500       5800000
+3  MICRO      15 AUG   KYRON  ...    DIESEL            3000       5600000
+4  MICRO      14 AUG   KYRON  ...    DIESEL            1998       8875000
+
+[5 rows x 8 columns]
+[2024-08-28T06:29:51.435+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/vehicle/data_scraping_components/data_preprocces.py", line 61, in data_preprocces
+    upload_table_vehicle(data_table)
+  File "/opt/airflow/dags/components/utils/database_table_creation.py", line 37, in upload_table_vehicle
+    cur.execute(f"""
+psycopg2.errors.InsufficientPrivilege: could not open file "/var/lib/postgresql/vehicle/ikman_post_data_preprocced.csv" for writing: Permission denied
+HINT:  COPY TO instructs the PostgreSQL server process to write a file. You may want a client-side facility such as psql's \copy.
+
+[2024-08-28T06:29:51.492+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Vehicle_Data_scrape_Pipeline, task_id=data_proprocessing, execution_date=20240828T062937, start_date=20240828T062949, end_date=20240828T062951
+[2024-08-28T06:29:51.518+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 273 for task data_proprocessing (could not open file "/var/lib/postgresql/vehicle/ikman_post_data_preprocced.csv" for writing: Permission denied
+HINT:  COPY TO instructs the PostgreSQL server process to write a file. You may want a client-side facility such as psql's \copy.
+; 376)
+[2024-08-28T06:29:51.568+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-28T06:29:51.616+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

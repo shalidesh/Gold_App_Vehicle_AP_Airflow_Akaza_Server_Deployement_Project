@@ -1,0 +1,50 @@
+[2024-08-23T05:10:16.560+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Vehicle_Model_Training_Pipeline_1.model_training_micro manual__2024-08-23T05:09:40.201683+00:00 [queued]>
+[2024-08-23T05:10:16.568+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Vehicle_Model_Training_Pipeline_1.model_training_micro manual__2024-08-23T05:09:40.201683+00:00 [queued]>
+[2024-08-23T05:10:16.576+0000] {taskinstance.py:2193} INFO - Starting attempt 3 of 4
+[2024-08-23T05:10:16.591+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): model_training_micro> on 2024-08-23 05:09:40.201683+00:00
+[2024-08-23T05:10:16.609+0000] {standard_task_runner.py:60} INFO - Started process 5040 to run task
+[2024-08-23T05:10:16.611+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Vehicle_Model_Training_Pipeline_1', 'model_training_micro', 'manual__2024-08-23T05:09:40.201683+00:00', '--job-id', '160', '--raw', '--subdir', 'DAGS_FOLDER/vehicle_model_training_pipeline.py', '--cfg-path', '/tmp/tmpo_7m4l8c']
+[2024-08-23T05:10:16.621+0000] {standard_task_runner.py:88} INFO - Job 160: Subtask model_training_micro
+[2024-08-23T05:10:16.680+0000] {task_command.py:423} INFO - Running <TaskInstance: Vehicle_Model_Training_Pipeline_1.model_training_micro manual__2024-08-23T05:09:40.201683+00:00 [running]> on host bebe3cff9645
+[2024-08-23T05:10:16.734+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Vehicle_Model_Training_Pipeline_1' AIRFLOW_CTX_TASK_ID='model_training_micro' AIRFLOW_CTX_EXECUTION_DATE='2024-08-23T05:09:40.201683+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-23T05:09:40.201683+00:00'
+[2024-08-23T05:10:16.762+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/vehicle/model_training_components/model_training.py", line 70, in train_model
+    input_feature_test_arr=preprocessor.transform(input_feature_test_df)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/utils/_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 827, in transform
+    Xs = self._fit_transform(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 681, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/utils/parallel.py", line 65, in __call__
+    return super().__call__(iterable_with_config)
+  File "/home/airflow/.local/lib/python3.8/site-packages/joblib/parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+  File "/home/airflow/.local/lib/python3.8/site-packages/joblib/parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/utils/parallel.py", line 127, in __call__
+    return self.function(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/pipeline.py", line 940, in _transform_one
+    res = transformer.transform(X)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/pipeline.py", line 696, in transform
+    Xt = transform.transform(Xt)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/utils/_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 1027, in transform
+    X_int, X_mask = self._transform(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 200, in _transform
+    raise ValueError(msg)
+ValueError: Found unknown categories ['Kyron', 'Rexton', 'Emgrand', 'Trend', 'Lifan', 'Panda Cross', 'Panda', 'Other Model', 'Actyon', 'Voleex'] in column 0 during transform
+[2024-08-23T05:10:16.831+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Vehicle_Model_Training_Pipeline_1, task_id=model_training_micro, execution_date=20240823T050940, start_date=20240823T051016, end_date=20240823T051016
+[2024-08-23T05:10:16.848+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 160 for task model_training_micro (Found unknown categories ['Kyron', 'Rexton', 'Emgrand', 'Trend', 'Lifan', 'Panda Cross', 'Panda', 'Other Model', 'Actyon', 'Voleex'] in column 0 during transform; 5040)
+[2024-08-23T05:10:16.869+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-23T05:10:16.882+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

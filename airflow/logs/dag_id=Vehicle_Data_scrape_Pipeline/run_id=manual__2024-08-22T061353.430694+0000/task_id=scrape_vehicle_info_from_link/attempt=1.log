@@ -1,0 +1,34 @@
+[2024-08-22T06:24:58.395+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Vehicle_Data_scrape_Pipeline.scrape_vehicle_info_from_link manual__2024-08-22T06:13:53.430694+00:00 [queued]>
+[2024-08-22T06:24:58.403+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Vehicle_Data_scrape_Pipeline.scrape_vehicle_info_from_link manual__2024-08-22T06:13:53.430694+00:00 [queued]>
+[2024-08-22T06:24:58.405+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-08-22T06:24:58.417+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): scrape_vehicle_info_from_link> on 2024-08-22 06:13:53.430694+00:00
+[2024-08-22T06:24:58.422+0000] {standard_task_runner.py:60} INFO - Started process 1490 to run task
+[2024-08-22T06:24:58.425+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Vehicle_Data_scrape_Pipeline', 'scrape_vehicle_info_from_link', 'manual__2024-08-22T06:13:53.430694+00:00', '--job-id', '105', '--raw', '--subdir', 'DAGS_FOLDER/vehicle_data_scraping_pipeline.py', '--cfg-path', '/tmp/tmpa235szgl']
+[2024-08-22T06:24:58.427+0000] {standard_task_runner.py:88} INFO - Job 105: Subtask scrape_vehicle_info_from_link
+[2024-08-22T06:24:58.470+0000] {task_command.py:423} INFO - Running <TaskInstance: Vehicle_Data_scrape_Pipeline.scrape_vehicle_info_from_link manual__2024-08-22T06:13:53.430694+00:00 [running]> on host 84a0d27b37bd
+[2024-08-22T06:24:58.632+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Vehicle_Data_scrape_Pipeline' AIRFLOW_CTX_TASK_ID='scrape_vehicle_info_from_link' AIRFLOW_CTX_EXECUTION_DATE='2024-08-22T06:13:53.430694+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-22T06:13:53.430694+00:00'
+[2024-08-22T06:24:58.642+0000] {logging_mixin.py:188} WARNING - 0it [00:00, ?it/s]
+[2024-08-22T06:24:58.643+0000] {logging_mixin.py:188} WARNING - 0it [00:00, ?it/s]
+[2024-08-22T06:24:58.651+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/vehicle/data_scraping_components/post_data_extraction.py", line 154, in scarpe_and_save
+    populate_table(data_table, car_df)
+  File "/opt/airflow/dags/components/utils/database_table_creation.py", line 43, in populate_table
+    data_tuples = [tuple(x) for x in data.to_records(index=False)]
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/frame.py", line 2479, in to_records
+    return np.rec.fromarrays(arrays, dtype={"names": names, "formats": formats})
+  File "/home/airflow/.local/lib/python3.8/site-packages/numpy/core/records.py", line 643, in fromarrays
+    shape = arrayList[0].shape
+IndexError: list index out of range
+[2024-08-22T06:24:58.687+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Vehicle_Data_scrape_Pipeline, task_id=scrape_vehicle_info_from_link, execution_date=20240822T061353, start_date=20240822T062458, end_date=20240822T062458
+[2024-08-22T06:24:58.696+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 105 for task scrape_vehicle_info_from_link (list index out of range; 1490)
+[2024-08-22T06:24:58.719+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-22T06:24:58.736+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

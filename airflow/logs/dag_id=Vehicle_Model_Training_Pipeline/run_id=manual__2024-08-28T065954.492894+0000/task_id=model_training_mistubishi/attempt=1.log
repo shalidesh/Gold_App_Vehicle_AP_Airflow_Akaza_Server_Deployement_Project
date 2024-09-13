@@ -1,0 +1,39 @@
+[2024-08-28T07:10:40.958+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Vehicle_Model_Training_Pipeline.model_training_mistubishi manual__2024-08-28T06:59:54.492894+00:00 [queued]>
+[2024-08-28T07:10:40.967+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Vehicle_Model_Training_Pipeline.model_training_mistubishi manual__2024-08-28T06:59:54.492894+00:00 [queued]>
+[2024-08-28T07:10:40.969+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-08-28T07:10:40.981+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): model_training_mistubishi> on 2024-08-28 06:59:54.492894+00:00
+[2024-08-28T07:10:40.993+0000] {standard_task_runner.py:60} INFO - Started process 11573 to run task
+[2024-08-28T07:10:40.996+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Vehicle_Model_Training_Pipeline', 'model_training_mistubishi', 'manual__2024-08-28T06:59:54.492894+00:00', '--job-id', '299', '--raw', '--subdir', 'DAGS_FOLDER/vehicle_model_training_pipeline.py', '--cfg-path', '/tmp/tmpe9azcbcx']
+[2024-08-28T07:10:40.998+0000] {standard_task_runner.py:88} INFO - Job 299: Subtask model_training_mistubishi
+[2024-08-28T07:10:41.044+0000] {task_command.py:423} INFO - Running <TaskInstance: Vehicle_Model_Training_Pipeline.model_training_mistubishi manual__2024-08-28T06:59:54.492894+00:00 [running]> on host 6d604cf72944
+[2024-08-28T07:10:41.106+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Vehicle_Model_Training_Pipeline' AIRFLOW_CTX_TASK_ID='model_training_mistubishi' AIRFLOW_CTX_EXECUTION_DATE='2024-08-28T06:59:54.492894+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-28T06:59:54.492894+00:00'
+[2024-08-28T07:10:41.153+0000] {logging_mixin.py:188} INFO - RandomForestRegressor()
+[2024-08-28T07:10:43.925+0000] {logging_mixin.py:188} INFO - DecisionTreeRegressor()
+[2024-08-28T07:10:44.116+0000] {logging_mixin.py:188} INFO - GradientBoostingRegressor()
+[2024-08-28T07:11:12.224+0000] {logging_mixin.py:188} INFO - LinearRegression()
+[2024-08-28T07:11:12.291+0000] {logging_mixin.py:188} INFO - XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=None, n_jobs=None,
+             num_parallel_tree=None, random_state=None, ...)
+[2024-08-28T07:11:17.498+0000] {logging_mixin.py:188} INFO - <catboost.core.CatBoostRegressor object at 0x7ff89fb607f0>
+[2024-08-28T07:11:27.674+0000] {logging_mixin.py:188} INFO - AdaBoostRegressor()
+[2024-08-28T07:11:37.768+0000] {logging_mixin.py:188} INFO - model report is {'Random Forest': 0.9971880218249537, 'Decision Tree': 0.9971880957107364, 'Gradient Boosting': 0.9958220902168474, 'Linear Regression': 0.851169764632793, 'XGBRegressor': 0.9971874750574573, 'CatBoosting Regressor': 0.9964218366942696, 'AdaBoost Regressor': 0.9685751631893494}
+[2024-08-28T07:11:37.773+0000] {logging_mixin.py:188} INFO - best model is :DecisionTreeRegressor()
+[2024-08-28T07:11:37.774+0000] {logging_mixin.py:188} INFO - criterion ['squared_error', 'friedman_mse', 'absolute_error', 'poisson']
+[2024-08-28T07:11:37.780+0000] {logging_mixin.py:188} INFO - Best found model on both training and testing dataset
+[2024-08-28T07:11:37.782+0000] {logging_mixin.py:188} INFO - r2_square is 0.9971880957107364
+[2024-08-28T07:11:37.789+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-08-28T07:11:37.801+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Vehicle_Model_Training_Pipeline, task_id=model_training_mistubishi, execution_date=20240828T065954, start_date=20240828T071040, end_date=20240828T071137
+[2024-08-28T07:11:37.808+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/context.py:207 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2024-08-28T07:11:37.821+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-08-28T07:11:37.829+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-08-28T07:11:39.730+0000] {email.py:281} INFO - Sent an alert email to ['deshanariyarathna@gmail.com']
+[2024-08-28T07:11:42.076+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-08-28T07:11:42.090+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,27 @@
+[2024-08-21T06:01:00.143+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Vehicle_Model_Training_Pipeline.model_training_micro manual__2024-08-21T06:00:33.438970+00:00 [queued]>
+[2024-08-21T06:01:00.150+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Vehicle_Model_Training_Pipeline.model_training_micro manual__2024-08-21T06:00:33.438970+00:00 [queued]>
+[2024-08-21T06:01:00.151+0000] {taskinstance.py:2193} INFO - Starting attempt 3 of 4
+[2024-08-21T06:01:00.162+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): model_training_micro> on 2024-08-21 06:00:33.438970+00:00
+[2024-08-21T06:01:00.169+0000] {standard_task_runner.py:60} INFO - Started process 468 to run task
+[2024-08-21T06:01:00.171+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Vehicle_Model_Training_Pipeline', 'model_training_micro', 'manual__2024-08-21T06:00:33.438970+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/vehicle_model_training_pipeline.py', '--cfg-path', '/tmp/tmpgbo53uco']
+[2024-08-21T06:01:00.173+0000] {standard_task_runner.py:88} INFO - Job 53: Subtask model_training_micro
+[2024-08-21T06:01:00.216+0000] {task_command.py:423} INFO - Running <TaskInstance: Vehicle_Model_Training_Pipeline.model_training_micro manual__2024-08-21T06:00:33.438970+00:00 [running]> on host aa70bba6a52c
+[2024-08-21T06:01:00.266+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Vehicle_Model_Training_Pipeline' AIRFLOW_CTX_TASK_ID='model_training_micro' AIRFLOW_CTX_EXECUTION_DATE='2024-08-21T06:00:33.438970+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-21T06:00:33.438970+00:00'
+[2024-08-21T06:01:00.274+0000] {logging_mixin.py:188} INFO - error [Errno 2] No such file or directory: 'artifacts/preprocessor.pkl'
+[2024-08-21T06:01:00.277+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/vehicle/model_training_components/model_training.py", line 63, in train_model
+    input_feature_train_arr=preprocessor.fit_transform(input_feature_train_df)
+AttributeError: 'NoneType' object has no attribute 'fit_transform'
+[2024-08-21T06:01:00.300+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Vehicle_Model_Training_Pipeline, task_id=model_training_micro, execution_date=20240821T060033, start_date=20240821T060100, end_date=20240821T060100
+[2024-08-21T06:01:00.309+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 53 for task model_training_micro ('NoneType' object has no attribute 'fit_transform'; 468)
+[2024-08-21T06:01:00.345+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-21T06:01:00.357+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

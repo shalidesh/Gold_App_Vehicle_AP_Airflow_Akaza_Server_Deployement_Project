@@ -41,7 +41,7 @@ function ForecastTable({ data}) {
                     <tbody>
                         {currentItems.map((row, index) => (
                             <tr key={index}>
-                                <th scope="row">{row.date}</th>
+                                <th scope="row">{row.ds ? row.ds : row.date}</th>
                                 <td>{parseFloat(row.yhat_manipulation_smooth).toFixed(2)}</td>
                                 <td>{parseFloat(row.yhat_upper_manipulation_smooth).toFixed(2)}</td>
                                 <td>{parseFloat(row.yhat_lower_manipulation_smooth).toFixed(2)}</td>

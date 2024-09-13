@@ -1,0 +1,34 @@
+[2024-08-21T04:40:19.588+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Vehicle_Model_Training_Pipeline.data_ingestion manual__2024-08-21T04:40:03.308241+00:00 [queued]>
+[2024-08-21T04:40:19.595+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Vehicle_Model_Training_Pipeline.data_ingestion manual__2024-08-21T04:40:03.308241+00:00 [queued]>
+[2024-08-21T04:40:19.596+0000] {taskinstance.py:2193} INFO - Starting attempt 3 of 4
+[2024-08-21T04:40:19.607+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): data_ingestion> on 2024-08-21 04:40:03.308241+00:00
+[2024-08-21T04:40:19.612+0000] {standard_task_runner.py:60} INFO - Started process 1198 to run task
+[2024-08-21T04:40:19.614+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Vehicle_Model_Training_Pipeline', 'data_ingestion', 'manual__2024-08-21T04:40:03.308241+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/vehicle_model_training_pipeline.py', '--cfg-path', '/tmp/tmpbo_1dfle']
+[2024-08-21T04:40:19.616+0000] {standard_task_runner.py:88} INFO - Job 25: Subtask data_ingestion
+[2024-08-21T04:40:19.659+0000] {task_command.py:423} INFO - Running <TaskInstance: Vehicle_Model_Training_Pipeline.data_ingestion manual__2024-08-21T04:40:03.308241+00:00 [running]> on host adf293b19e24
+[2024-08-21T04:40:19.728+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Vehicle_Model_Training_Pipeline' AIRFLOW_CTX_TASK_ID='data_ingestion' AIRFLOW_CTX_EXECUTION_DATE='2024-08-21T04:40:03.308241+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-21T04:40:03.308241+00:00'
+[2024-08-21T04:40:19.793+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/vehicle/model_training_components/data_ingestion.py", line 45, in data_feeding
+    populate_table(target_table_2, test_set)
+  File "/opt/airflow/dags/components/utils/database_table_creation.py", line 45, in populate_table
+    cur.executemany(query, data_tuples)
+psycopg2.errors.UndefinedColumn: column "posted_date" of relation "test_data" does not exist
+LINE 1: INSERT INTO test_data (brand, posted_date, model, year_of_ma...
+                                      ^
+
+[2024-08-21T04:40:19.827+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Vehicle_Model_Training_Pipeline, task_id=data_ingestion, execution_date=20240821T044003, start_date=20240821T044019, end_date=20240821T044019
+[2024-08-21T04:40:19.838+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 25 for task data_ingestion (column "posted_date" of relation "test_data" does not exist
+LINE 1: INSERT INTO test_data (brand, posted_date, model, year_of_ma...
+                                      ^
+; 1198)
+[2024-08-21T04:40:19.869+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-21T04:40:19.887+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
