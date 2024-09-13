@@ -1,0 +1,60 @@
+[2024-08-28T03:52:36.251+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_News_pipeline1.scrape_gold_news_content_from_urls scheduled__2024-08-27T00:00:00+00:00 [queued]>
+[2024-08-28T03:52:36.257+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_News_pipeline1.scrape_gold_news_content_from_urls scheduled__2024-08-27T00:00:00+00:00 [queued]>
+[2024-08-28T03:52:36.258+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-08-28T03:52:36.268+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): scrape_gold_news_content_from_urls> on 2024-08-27 00:00:00+00:00
+[2024-08-28T03:52:36.271+0000] {standard_task_runner.py:60} INFO - Started process 287 to run task
+[2024-08-28T03:52:36.274+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_News_pipeline1', 'scrape_gold_news_content_from_urls', 'scheduled__2024-08-27T00:00:00+00:00', '--job-id', '261', '--raw', '--subdir', 'DAGS_FOLDER/gold_news_pipeline.py', '--cfg-path', '/tmp/tmp8fx0qigc']
+[2024-08-28T03:52:36.276+0000] {standard_task_runner.py:88} INFO - Job 261: Subtask scrape_gold_news_content_from_urls
+[2024-08-28T03:52:36.312+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_News_pipeline1.scrape_gold_news_content_from_urls scheduled__2024-08-27T00:00:00+00:00 [running]> on host 205169223ca4
+[2024-08-28T03:52:36.480+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_News_pipeline1' AIRFLOW_CTX_TASK_ID='scrape_gold_news_content_from_urls' AIRFLOW_CTX_EXECUTION_DATE='2024-08-27T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-27T00:00:00+00:00'
+[2024-08-28T03:52:36.489+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-28T03:52:36.491+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-27/real-threat-net-zero-2050-coming-energy-crisis-alex-epstein
+[2024-08-28T03:52:38.703+0000] {logging_mixin.py:188} INFO - title --- The real threat: Net zero by 2050 & coming energy crisis – Alex Epstein
+[2024-08-28T03:52:38.705+0000] {logging_mixin.py:188} INFO - date --- Aug 27, 2024 - 6:05 PM
+[2024-08-28T03:52:38.706+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/43d64436-ecf5-4740-9baa-14244d3aaef7.jpeg
+[2024-08-28T03:52:38.708+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-28T03:52:38.709+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-28T03:52:38.710+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-27/bitcoin-bulls-battle-bears-control-62k-investors-eye-fridays-pce-report
+[2024-08-28T03:52:43.920+0000] {logging_mixin.py:188} INFO - title --- Bitcoin bulls battle bears for control at $62k as investors eye Friday’s PCE report
+[2024-08-28T03:52:43.921+0000] {logging_mixin.py:188} INFO - date --- Aug 27, 2024 - 8:29 PM
+[2024-08-28T03:52:43.922+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/4fdbaecc-0234-4e3b-b3a7-23b111e06398.jpeg
+[2024-08-28T03:52:43.924+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-28T03:52:43.924+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-28T03:52:43.925+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-27/gold-silver-platinum-prices-coiled-below-key-resistance-and-awaiting
+[2024-08-28T03:52:45.886+0000] {logging_mixin.py:188} INFO - title --- Gold, silver, platinum prices coiled below key resistance and awaiting catalyst – FX Empire’s Zernov
+[2024-08-28T03:52:45.887+0000] {logging_mixin.py:188} INFO - date --- Aug 27, 2024 - 7:54 PM
+[2024-08-28T03:52:45.889+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/fd4a743a-40f9-408f-9f43-f29754d4019d.jpeg
+[2024-08-28T03:52:45.891+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-28T03:52:45.891+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-28T03:52:45.892+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/opinion/2024-08-27/gold-achieves-new-heights-economic-factors-drive-record-breaking-performance
+[2024-08-28T03:52:50.776+0000] {logging_mixin.py:188} INFO - title --- Gold achieves new heights: economic factors drive record-breaking performance
+[2024-08-28T03:52:50.777+0000] {logging_mixin.py:188} INFO - date --- Aug 27, 2024 - 10:40 PM
+[2024-08-28T03:52:50.778+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/309d8577-ff8c-422d-bef4-fca1e585b73a.png
+[2024-08-28T03:52:50.780+0000] {logging_mixin.py:188} INFO - sample_text --- In a remarkable display of resilience, gold futures have once again etched its name in the annals of financial history, closing at an unprecedented $2,560.00. This latest achievement, marked by a $6.40 or 0.25% gain in the most active December contract, underscores the enduring appeal of gold as a store of value.
+[2024-08-28T03:52:50.780+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-28T03:52:50.781+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-27/india-willing-ditch-dollar-trade-brics-partners-excluding-china
+[2024-08-28T03:52:56.785+0000] {logging_mixin.py:188} INFO - title --- India willing to ditch the dollar in trade with BRICS partners, excluding China
+[2024-08-28T03:52:56.786+0000] {logging_mixin.py:188} INFO - date --- Aug 27, 2024 - 7:02 PM
+[2024-08-28T03:52:56.787+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/ca7f0971-093c-4493-8fde-6057f1584749.jpeg
+[2024-08-28T03:52:56.788+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-28T03:52:56.789+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-28T03:52:56.789+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-27/gold-silver-bit-weaker-bulls-likely-just-reloading
+[2024-08-28T03:53:11.879+0000] {logging_mixin.py:188} INFO - title --- Gold, silver a bit weaker; bulls likely just reloading
+[2024-08-28T03:53:11.880+0000] {logging_mixin.py:188} INFO - date --- Aug 27, 2024 - 4:12 PM
+[2024-08-28T03:53:11.881+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/39aab2f5-40a4-42ed-a35d-a79c298cb888.webp
+[2024-08-28T03:53:11.883+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-28T03:53:11.884+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-28T03:53:11.884+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-27/chinas-hong-kong-gold-imports-rose-17-july-jewelry-demand-continues-suffer
+[2024-08-28T03:53:15.948+0000] {logging_mixin.py:188} INFO - title --- China’s Hong Kong gold imports rose 17% in July, but jewelry demand continues to suffer under high prices
+[2024-08-28T03:53:15.949+0000] {logging_mixin.py:188} INFO - date --- Aug 27, 2024 - 3:57 PM
+[2024-08-28T03:53:15.950+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/02bbb1bb-c9c8-464e-87fb-54f43bccade1.jpeg
+[2024-08-28T03:53:15.952+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-28T03:53:15.953+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-28T03:53:15.953+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-27/nasdaq-files-launch-and-trade-bitcoin-index-options-cme-group-launch
+[2024-08-28T03:53:17.664+0000] {local_task_job_runner.py:121} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-08-28T03:53:17.673+0000] {process_utils.py:131} INFO - Sending 15 to group 287. PIDs of all processes in the group: [287]
+[2024-08-28T03:53:17.673+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 287
+[2024-08-28T03:53:17.675+0000] {taskinstance.py:2483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-08-28T03:53:17.677+0000] {logging_mixin.py:188} INFO - something wrong Task received SIGTERM signal
+[2024-08-28T03:53:17.679+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-28T03:53:17.680+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-27/gold-price-can-go-higher-it-has-not-seen-euphoric-overshoot-midas-touchs

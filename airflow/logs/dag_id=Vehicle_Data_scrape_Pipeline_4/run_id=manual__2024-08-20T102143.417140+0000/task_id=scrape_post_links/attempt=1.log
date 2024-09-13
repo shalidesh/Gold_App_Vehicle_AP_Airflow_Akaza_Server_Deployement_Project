@@ -1,0 +1,42 @@
+[2024-08-20T10:21:44.362+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Vehicle_Data_scrape_Pipeline_4.scrape_post_links manual__2024-08-20T10:21:43.417140+00:00 [queued]>
+[2024-08-20T10:21:44.368+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Vehicle_Data_scrape_Pipeline_4.scrape_post_links manual__2024-08-20T10:21:43.417140+00:00 [queued]>
+[2024-08-20T10:21:44.369+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-08-20T10:21:44.380+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): scrape_post_links> on 2024-08-20 10:21:43.417140+00:00
+[2024-08-20T10:21:44.384+0000] {standard_task_runner.py:60} INFO - Started process 2156 to run task
+[2024-08-20T10:21:44.386+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Vehicle_Data_scrape_Pipeline_4', 'scrape_post_links', 'manual__2024-08-20T10:21:43.417140+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/vehicle_data_scraping_pipeline.py', '--cfg-path', '/tmp/tmp52qplmp4']
+[2024-08-20T10:21:44.388+0000] {standard_task_runner.py:88} INFO - Job 12: Subtask scrape_post_links
+[2024-08-20T10:21:44.426+0000] {task_command.py:423} INFO - Running <TaskInstance: Vehicle_Data_scrape_Pipeline_4.scrape_post_links manual__2024-08-20T10:21:43.417140+00:00 [running]> on host 8369baedd275
+[2024-08-20T10:21:44.569+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Vehicle_Data_scrape_Pipeline_4' AIRFLOW_CTX_TASK_ID='scrape_post_links' AIRFLOW_CTX_EXECUTION_DATE='2024-08-20T10:21:43.417140+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-20T10:21:43.417140+00:00'
+[2024-08-20T10:21:45.980+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/4 [00:00<?, ?it/s]
+[2024-08-20T10:21:45.981+0000] {logging_mixin.py:188} WARNING - 100%|##########| 4/4 [00:00<00:00, 40427.03it/s]
+[2024-08-20T10:22:02.863+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/11 [00:00<?, ?it/s]
+[2024-08-20T10:22:02.864+0000] {logging_mixin.py:188} WARNING - 100%|##########| 11/11 [00:00<00:00, 60707.03it/s]
+[2024-08-20T10:22:17.561+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/24 [00:00<?, ?it/s]
+[2024-08-20T10:22:17.563+0000] {logging_mixin.py:188} WARNING - 100%|##########| 24/24 [00:00<00:00, 81245.60it/s]
+[2024-08-20T10:22:21.077+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/24 [00:00<?, ?it/s]
+[2024-08-20T10:22:21.078+0000] {logging_mixin.py:188} WARNING - 100%|##########| 24/24 [00:00<00:00, 92098.17it/s]
+[2024-08-20T10:22:22.544+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/5 [00:00<?, ?it/s]
+[2024-08-20T10:22:22.545+0000] {logging_mixin.py:188} WARNING - 100%|##########| 5/5 [00:00<00:00, 37854.73it/s]
+[2024-08-20T10:22:27.234+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/4 [00:00<?, ?it/s]
+[2024-08-20T10:22:27.235+0000] {logging_mixin.py:188} WARNING - 100%|##########| 4/4 [00:00<00:00, 43690.67it/s]
+[2024-08-20T10:22:40.028+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2024-08-20T10:22:40.029+0000] {logging_mixin.py:188} WARNING - 100%|##########| 1/1 [00:00<00:00, 16777.22it/s]
+[2024-08-20T10:22:45.260+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/vehicle/data_scraping_components/post_links_extraction.py", line 68, in scrape_links
+    upload_table('ikman_vehicle_post_links')
+  File "/opt/airflow/dags/components/utils/database_table_creation.py", line 29, in upload_table
+    with open(f'/var/lib/postgresql/csv/{table_name}.csv', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/var/lib/postgresql/csv/ikman_vehicle_post_links.csv'
+[2024-08-20T10:22:45.312+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Vehicle_Data_scrape_Pipeline_4, task_id=scrape_post_links, execution_date=20240820T102143, start_date=20240820T102144, end_date=20240820T102245
+[2024-08-20T10:22:45.321+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 12 for task scrape_post_links ([Errno 2] No such file or directory: '/var/lib/postgresql/csv/ikman_vehicle_post_links.csv'; 2156)
+[2024-08-20T10:22:45.369+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-20T10:22:45.391+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

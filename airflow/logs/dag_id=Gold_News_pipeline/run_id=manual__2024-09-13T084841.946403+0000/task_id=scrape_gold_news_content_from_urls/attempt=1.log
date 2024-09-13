@@ -1,0 +1,112 @@
+[2024-09-13T08:48:51.890+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_News_pipeline.scrape_gold_news_content_from_urls manual__2024-09-13T08:48:41.946403+00:00 [queued]>
+[2024-09-13T08:48:51.896+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_News_pipeline.scrape_gold_news_content_from_urls manual__2024-09-13T08:48:41.946403+00:00 [queued]>
+[2024-09-13T08:48:51.897+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-09-13T08:48:51.915+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): scrape_gold_news_content_from_urls> on 2024-09-13 08:48:41.946403+00:00
+[2024-09-13T08:48:51.919+0000] {standard_task_runner.py:60} INFO - Started process 315 to run task
+[2024-09-13T08:48:51.921+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_News_pipeline', 'scrape_gold_news_content_from_urls', 'manual__2024-09-13T08:48:41.946403+00:00', '--job-id', '80', '--raw', '--subdir', 'DAGS_FOLDER/gold_news_pipeline.py', '--cfg-path', '/tmp/tmp9gybionn']
+[2024-09-13T08:48:51.923+0000] {standard_task_runner.py:88} INFO - Job 80: Subtask scrape_gold_news_content_from_urls
+[2024-09-13T08:48:52.061+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_News_pipeline.scrape_gold_news_content_from_urls manual__2024-09-13T08:48:41.946403+00:00 [running]> on host a36ce14ede11
+[2024-09-13T08:48:52.121+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_News_pipeline' AIRFLOW_CTX_TASK_ID='scrape_gold_news_content_from_urls' AIRFLOW_CTX_EXECUTION_DATE='2024-09-13T08:48:41.946403+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-13T08:48:41.946403+00:00'
+[2024-09-13T08:48:52.126+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-09-13T08:48:52.127+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-09-12/gold-real-de-dollarization-play-nassim-taleb
+[2024-09-13T08:48:53.328+0000] {logging_mixin.py:188} INFO - title --- Gold is the real de-dollarization play – Nassim Taleb
+[2024-09-13T08:48:53.330+0000] {logging_mixin.py:188} INFO - date --- Sep 12, 2024 - 8:30 PM
+[2024-09-13T08:48:53.331+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/9869840a-5a0c-4a88-8072-cb99557a1693.jpeg
+[2024-09-13T08:48:53.332+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-09-13T08:48:53.333+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-09-13T08:48:53.333+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-09-12/bullish-sentiment-returns-stocks-and-cryptos-climb-higher-gold-hits-new-ath
+[2024-09-13T08:48:54.522+0000] {logging_mixin.py:188} INFO - title --- Bullish sentiment returns as stocks and cryptos climb higher, gold hits new ATH
+[2024-09-13T08:48:54.522+0000] {logging_mixin.py:188} INFO - date --- Sep 12, 2024 - 8:41 PM
+[2024-09-13T08:48:54.523+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/d1792dde-21b1-4610-99e3-ad2d5b7738a2.jpeg
+[2024-09-13T08:48:54.524+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-09-13T08:48:54.525+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-09-13T08:48:54.525+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-09-12/precious-metals-brace-breakouts-gold-silver-and-platinum-move-fx-empires
+[2024-09-13T08:48:55.728+0000] {logging_mixin.py:188} INFO - title --- Precious metals brace for breakouts with gold, silver and platinum on the move – FX Empire’s Zernov
+[2024-09-13T08:48:55.729+0000] {logging_mixin.py:188} INFO - date --- Sep 12, 2024 - 7:20 PM
+[2024-09-13T08:48:55.730+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/310d017f-ec83-411a-aa26-cdfd9f9be4fc.jpeg
+[2024-09-13T08:48:55.732+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-09-13T08:48:55.732+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-09-13T08:48:55.732+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-09-12/uk-set-classify-crypto-and-nfts-property-under-newly-proposed-legislation
+[2024-09-13T08:48:56.934+0000] {logging_mixin.py:188} INFO - title --- UK set to classify crypto and NFTs as property under newly proposed legislation
+[2024-09-13T08:48:56.935+0000] {logging_mixin.py:188} INFO - date --- Sep 12, 2024 - 7:30 PM
+[2024-09-13T08:48:56.936+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/1404a688-fe44-4e7f-bb7e-a82ea9f94bc0.jpeg
+[2024-09-13T08:48:56.937+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-09-13T08:48:56.938+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-09-13T08:48:56.939+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-09-12/gold-prices-push-record-highs-bullish-fundamentals-charts
+[2024-09-13T08:48:58.091+0000] {logging_mixin.py:188} INFO - title --- Gold prices push to record highs on bullish fundamentals, charts 
+[2024-09-13T08:48:58.092+0000] {logging_mixin.py:188} INFO - date --- Sep 12, 2024 - 5:07 PM
+[2024-09-13T08:48:58.093+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/39aab2f5-40a4-42ed-a35d-a79c298cb888.webp
+[2024-09-13T08:48:58.094+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-09-13T08:48:58.095+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-09-13T08:48:58.095+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-09-12/gold-price-pushing-new-all-time-high-against-euro-ecb-cuts-interest-rates
+[2024-09-13T08:48:59.288+0000] {logging_mixin.py:188} INFO - title --- Gold price pushing to new all-time high against euro as ECB cuts interest rates
+[2024-09-13T08:48:59.289+0000] {logging_mixin.py:188} INFO - date --- Sep 12, 2024 - 12:15 PM
+[2024-09-13T08:48:59.290+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/320b73f3-48b4-4462-b3b0-ac1d7b481bf1.jpeg
+[2024-09-13T08:48:59.291+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-09-13T08:48:59.291+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-09-13T08:48:59.292+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-09-12/analyst-who-correctly-guessed-gold-2500-looks-ahead-midas-touchs-florian
+[2024-09-13T08:49:00.501+0000] {logging_mixin.py:188} INFO - title --- Analyst who correctly guessed gold at $2,500 looks ahead - Midas Touch’s Florian Grummes
+[2024-09-13T08:49:00.502+0000] {logging_mixin.py:188} INFO - date --- Sep 12, 2024 - 5:22 PM
+[2024-09-13T08:49:00.503+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/43dd88a2-2f73-474f-89e7-7805e0783bd4.webp
+[2024-09-13T08:49:00.504+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-09-13T08:49:00.505+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-09-13T08:49:00.505+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-09-12/swift-developing-infrastructure-connect-fiat-tokenized-assets-and-cbdcs
+[2024-09-13T08:49:01.661+0000] {logging_mixin.py:188} INFO - title --- SWIFT developing infrastructure to connect fiat, tokenized assets, and CBDCs
+[2024-09-13T08:49:01.663+0000] {logging_mixin.py:188} INFO - date --- Sep 12, 2024 - 5:00 PM
+[2024-09-13T08:49:01.664+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/831645bb-f0f4-49b8-89f5-1a0be33e3ba8.png
+[2024-09-13T08:49:01.665+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-09-13T08:49:01.666+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-09-13T08:49:01.667+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-09-12/bitcoin-price-spikes-above-58k-analysts-predict-90k-you-know-it
+[2024-09-13T08:49:02.886+0000] {logging_mixin.py:188} INFO - title --- Bitcoin price spikes above $58k, analysts predict $90k ‘before you know it’
+[2024-09-13T08:49:02.887+0000] {logging_mixin.py:188} INFO - date --- Sep 12, 2024 - 3:05 PM
+[2024-09-13T08:49:02.888+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/fd5dc2e1-0db8-4069-86ce-f03d53754209.jpeg
+[2024-09-13T08:49:02.889+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-09-13T08:49:02.890+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-09-13T08:49:02.890+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-09-12/spot-gold-rallies-above-2525-ounce-us-ppi-mixed-august
+[2024-09-13T08:49:04.190+0000] {logging_mixin.py:188} INFO - title --- Spot gold rallies above $2,525 per ounce as U.S. PPI is mixed in August
+[2024-09-13T08:49:04.191+0000] {logging_mixin.py:188} INFO - date --- Sep 12, 2024 - 12:40 PM
+[2024-09-13T08:49:04.192+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/ce5b7a8f-e1b9-49d0-b5d7-f8fcd367b73b.jpeg
+[2024-09-13T08:49:04.195+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-09-13T08:49:04.196+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-09-13T08:49:04.196+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-09-11/bitcoin-and-gold-struggle-stocks-dump-and-pump-after-cpi-data-sparks-fed
+[2024-09-13T08:49:05.402+0000] {logging_mixin.py:188} INFO - title --- Bitcoin and gold struggle, stocks dump and pump after CPI data sparks Fed rate cut uncertainty
+[2024-09-13T08:49:05.403+0000] {logging_mixin.py:188} INFO - date --- Sep 11, 2024 - 8:35 PM
+[2024-09-13T08:49:05.404+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/1fac517e-cfe0-49e5-afe5-40f170160366.png
+[2024-09-13T08:49:05.405+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-09-13T08:49:05.406+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-09-13T08:49:05.406+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-09-11/silvers-struggle-will-chinas-economic-slowdown-keep-prices-stuck-phil
+[2024-09-13T08:49:06.530+0000] {logging_mixin.py:188} INFO - title --- Silver's struggle: Will China’s economic slowdown keep prices stuck? - Phil Streible
+[2024-09-13T08:49:06.530+0000] {logging_mixin.py:188} INFO - date --- Sep 11, 2024 - 7:41 PM
+[2024-09-13T08:49:06.531+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/439d1cdf-9e4f-4fd9-a8d4-960bc85933cd.webp
+[2024-09-13T08:49:06.533+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-09-13T08:49:06.533+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-09-13T08:49:06.534+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-09-11/bitcoin-loses-correlation-gold-investors-seek-traditional-safe-havens
+[2024-09-13T08:49:07.688+0000] {logging_mixin.py:188} INFO - title --- Bitcoin loses correlation with gold as investors seek traditional safe havens
+[2024-09-13T08:49:07.689+0000] {logging_mixin.py:188} INFO - date --- Sep 11, 2024 - 6:21 PM
+[2024-09-13T08:49:07.690+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/610b5284-e83f-4fd8-a6fb-d07ce8b7de1a.png
+[2024-09-13T08:49:07.691+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-09-13T08:49:07.692+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-09-13T08:49:07.692+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-09-11/size-does-matter-industry-frank-giustra
+[2024-09-13T08:49:08.873+0000] {logging_mixin.py:188} INFO - title --- 'Size does matter in this industry' - Frank Giustra
+[2024-09-13T08:49:08.874+0000] {logging_mixin.py:188} INFO - date --- Sep 11, 2024 - 8:50 PM
+[2024-09-13T08:49:08.875+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/280b1280-b0f0-4f5f-8b2d-43d2059f00b8.webp
+[2024-09-13T08:49:08.876+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-09-13T08:49:08.877+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-09-13T08:49:08.877+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-09-11/gold-rally-2750-2025-after-falling-2200-capital-economics
+[2024-09-13T08:49:10.015+0000] {logging_mixin.py:188} INFO - title --- Gold to rally to $2,750 by 2025 after falling to $2,200 - Capital Economics
+[2024-09-13T08:49:10.016+0000] {logging_mixin.py:188} INFO - date --- Sep 11, 2024 - 4:14 PM
+[2024-09-13T08:49:10.017+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/2f7a5320-7ea9-4f60-94f6-34ee8757d5a5.webp
+[2024-09-13T08:49:10.018+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-09-13T08:49:10.019+0000] {logging_mixin.py:188} INFO - lenfth of date ---15
+[2024-09-13T08:49:10.019+0000] {logging_mixin.py:188} INFO - length of links ---15
+[2024-09-13T08:49:10.020+0000] {logging_mixin.py:188} INFO - length of posted_title ---15
+[2024-09-13T08:49:10.020+0000] {logging_mixin.py:188} INFO - length of images ---15
+[2024-09-13T08:49:10.020+0000] {logging_mixin.py:188} INFO - length of text --15
+[2024-09-13T08:49:10.042+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-09-13T08:49:10.050+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Gold_News_pipeline, task_id=scrape_gold_news_content_from_urls, execution_date=20240913T084841, start_date=20240913T084851, end_date=20240913T084910
+[2024-09-13T08:49:10.054+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/context.py:207 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2024-09-13T08:49:10.060+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-09-13T08:49:10.061+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-09-13T08:49:12.106+0000] {email.py:281} INFO - Sent an alert email to ['deshanariyarathna@gmail.com']
+[2024-09-13T08:49:13.875+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-09-13T08:49:13.887+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

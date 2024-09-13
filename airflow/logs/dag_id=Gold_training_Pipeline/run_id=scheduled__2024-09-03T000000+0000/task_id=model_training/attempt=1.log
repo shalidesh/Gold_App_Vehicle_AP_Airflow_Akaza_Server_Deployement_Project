@@ -1,0 +1,17 @@
+[2024-09-13T09:24:05.683+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training scheduled__2024-09-03T00:00:00+00:00 [queued]>
+[2024-09-13T09:24:05.691+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training scheduled__2024-09-03T00:00:00+00:00 [queued]>
+[2024-09-13T09:24:05.691+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-09-13T09:24:05.703+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): model_training> on 2024-09-03 00:00:00+00:00
+[2024-09-13T09:24:05.708+0000] {standard_task_runner.py:60} INFO - Started process 1133 to run task
+[2024-09-13T09:24:05.710+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_training_Pipeline', 'model_training', 'scheduled__2024-09-03T00:00:00+00:00', '--job-id', '126', '--raw', '--subdir', 'DAGS_FOLDER/gold_training_pipeline.py', '--cfg-path', '/tmp/tmpzxvvm4rz']
+[2024-09-13T09:24:05.712+0000] {standard_task_runner.py:88} INFO - Job 126: Subtask model_training
+[2024-09-13T09:24:05.893+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_training_Pipeline.model_training scheduled__2024-09-03T00:00:00+00:00 [running]> on host f26b84aeab14
+[2024-09-13T09:24:05.946+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_training_Pipeline' AIRFLOW_CTX_TASK_ID='model_training' AIRFLOW_CTX_EXECUTION_DATE='2024-09-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-03T00:00:00+00:00'
+[2024-09-13T09:24:05.947+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-09-13T09:24:05.953+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Gold_training_Pipeline, task_id=model_training, execution_date=20240903T000000, start_date=20240913T092405, end_date=20240913T092405
+[2024-09-13T09:24:05.956+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/context.py:207 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2024-09-13T09:24:05.962+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-09-13T09:24:05.963+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-09-13T09:24:07.989+0000] {email.py:281} INFO - Sent an alert email to ['deshanariyarathna@gmail.com']
+[2024-09-13T09:24:11.029+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-09-13T09:24:11.039+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

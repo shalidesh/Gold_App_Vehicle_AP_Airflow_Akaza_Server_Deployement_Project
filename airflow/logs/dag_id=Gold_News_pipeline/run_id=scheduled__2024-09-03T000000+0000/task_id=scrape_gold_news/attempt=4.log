@@ -1,0 +1,36 @@
+[2024-09-13T07:41:06.316+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_News_pipeline.scrape_gold_news scheduled__2024-09-03T00:00:00+00:00 [queued]>
+[2024-09-13T07:41:06.330+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_News_pipeline.scrape_gold_news scheduled__2024-09-03T00:00:00+00:00 [queued]>
+[2024-09-13T07:41:06.331+0000] {taskinstance.py:2193} INFO - Starting attempt 4 of 4
+[2024-09-13T07:41:06.353+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): scrape_gold_news> on 2024-09-03 00:00:00+00:00
+[2024-09-13T07:41:06.362+0000] {standard_task_runner.py:60} INFO - Started process 537 to run task
+[2024-09-13T07:41:06.367+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_News_pipeline', 'scrape_gold_news', 'scheduled__2024-09-03T00:00:00+00:00', '--job-id', '65', '--raw', '--subdir', 'DAGS_FOLDER/gold_news_pipeline.py', '--cfg-path', '/tmp/tmpfddrdnz7']
+[2024-09-13T07:41:06.370+0000] {standard_task_runner.py:88} INFO - Job 65: Subtask scrape_gold_news
+[2024-09-13T07:41:06.683+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_News_pipeline.scrape_gold_news scheduled__2024-09-03T00:00:00+00:00 [running]> on host cc504f3f257f
+[2024-09-13T07:41:06.767+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_News_pipeline' AIRFLOW_CTX_TASK_ID='scrape_gold_news' AIRFLOW_CTX_EXECUTION_DATE='2024-09-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-03T00:00:00+00:00'
+[2024-09-13T07:41:09.420+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/gold/news_scraping/post_links_extraction.py", line 47, in scrape_gold_news_urls
+    upload_table_gold("gold_news_urls")
+  File "/opt/airflow/dags/components/utils/database_table_creation.py", line 29, in upload_table_gold
+    cur.execute(f"""
+psycopg2.errors.InsufficientPrivilege: could not open file "/var/lib/postgresql/gold/gold_news_urls.csv" for writing: Permission denied
+HINT:  COPY TO instructs the PostgreSQL server process to write a file. You may want a client-side facility such as psql's \copy.
+
+[2024-09-13T07:41:09.436+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=Gold_News_pipeline, task_id=scrape_gold_news, execution_date=20240903T000000, start_date=20240913T074106, end_date=20240913T074109
+[2024-09-13T07:41:09.440+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/context.py:207 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2024-09-13T07:41:09.444+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-09-13T07:41:09.445+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-09-13T07:41:11.548+0000] {email.py:281} INFO - Sent an alert email to ['deshanariyarathna@gmail.com']
+[2024-09-13T07:41:15.979+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 65 for task scrape_gold_news (could not open file "/var/lib/postgresql/gold/gold_news_urls.csv" for writing: Permission denied
+HINT:  COPY TO instructs the PostgreSQL server process to write a file. You may want a client-side facility such as psql's \copy.
+; 537)
+[2024-09-13T07:41:16.027+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-09-13T07:41:16.041+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,307 @@
+[2024-08-16T09:21:45.917+0000] {processor.py:161} INFO - Started process (PID=218) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:21:45.919+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:21:45.920+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:21:45.920+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:21:46.023+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:21:46.016+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/vehicle_model_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vehicle_model_training_pipeline.py", line 5, in <module>
+    from components.model_training_components.data_ingestion import data_feeding
+ModuleNotFoundError: No module named 'components.model_training_components'
+[2024-08-16T09:21:46.025+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:21:46.042+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 0.128 seconds
+[2024-08-16T09:22:16.534+0000] {processor.py:161} INFO - Started process (PID=247) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:22:16.536+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:22:16.537+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:22:16.536+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:22:16.647+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:22:16.642+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/vehicle_model_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vehicle_model_training_pipeline.py", line 5, in <module>
+    from components.model_training_components.data_ingestion import data_feeding
+ModuleNotFoundError: No module named 'components.model_training_components'
+[2024-08-16T09:22:16.650+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:22:16.666+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 0.134 seconds
+[2024-08-16T09:22:47.336+0000] {processor.py:161} INFO - Started process (PID=276) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:22:47.337+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:22:47.338+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:22:47.338+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:22:47.397+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:22:47.394+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/vehicle_model_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vehicle_model_training_pipeline.py", line 5, in <module>
+    from components.model_training_components.data_ingestion import data_feeding
+ModuleNotFoundError: No module named 'components.model_training_components'
+[2024-08-16T09:22:47.399+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:22:47.414+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 0.081 seconds
+[2024-08-16T09:23:18.172+0000] {processor.py:161} INFO - Started process (PID=305) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:23:18.173+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:23:18.174+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:23:18.174+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:23:18.222+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:23:18.219+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/vehicle_model_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vehicle_model_training_pipeline.py", line 5, in <module>
+    from components.model_training_components.data_ingestion import data_feeding
+ModuleNotFoundError: No module named 'components.model_training_components'
+[2024-08-16T09:23:18.224+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:23:18.238+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 0.068 seconds
+[2024-08-16T09:23:48.942+0000] {processor.py:161} INFO - Started process (PID=334) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:23:48.943+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:23:48.944+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:23:48.944+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:23:49.265+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:23:49.259+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/vehicle_model_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vehicle_model_training_pipeline.py", line 5, in <module>
+    from components.model_training_components.data_ingestion import data_feeding
+ModuleNotFoundError: No module named 'components.model_training_components'
+[2024-08-16T09:23:49.268+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:23:49.282+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 0.343 seconds
+[2024-08-16T09:24:08.365+0000] {processor.py:161} INFO - Started process (PID=363) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:08.366+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:24:08.367+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:24:08.367+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:08.399+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:24:08.399+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/vehicle_model_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vehicle_model_training_pipeline.py", line 5
+    from components..model_training_components.data_ingestion import data_feeding
+                    ^
+SyntaxError: invalid syntax
+[2024-08-16T09:24:08.400+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:08.417+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 0.054 seconds
+[2024-08-16T09:24:09.477+0000] {processor.py:161} INFO - Started process (PID=368) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:09.478+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:24:09.479+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:24:09.479+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:09.579+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:24:09.574+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/vehicle_model_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vehicle_model_training_pipeline.py", line 5, in <module>
+    from components.utils.model_training_components.data_ingestion import data_feeding
+ModuleNotFoundError: No module named 'components.utils.model_training_components'
+[2024-08-16T09:24:09.581+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:09.596+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 0.122 seconds
+[2024-08-16T09:24:13.536+0000] {processor.py:161} INFO - Started process (PID=373) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:13.538+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:24:13.539+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:24:13.538+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:13.624+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:24:13.620+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/vehicle_model_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vehicle_model_training_pipeline.py", line 5, in <module>
+    from components.utils.model_training_components.data_ingestion import data_feeding
+ModuleNotFoundError: No module named 'components.utils.model_training_components'
+[2024-08-16T09:24:13.626+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:13.641+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 0.107 seconds
+[2024-08-16T09:24:15.556+0000] {processor.py:161} INFO - Started process (PID=378) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:15.557+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:24:15.558+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:24:15.558+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:15.592+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:24:15.592+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/vehicle_model_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vehicle_model_training_pipeline.py", line 7
+    from components..model_training_components.model_training import train_model
+                    ^
+SyntaxError: invalid syntax
+[2024-08-16T09:24:15.593+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:15.608+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 0.054 seconds
+[2024-08-16T09:24:17.619+0000] {processor.py:161} INFO - Started process (PID=383) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:17.621+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:24:17.622+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:24:17.621+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:17.825+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:24:17.781+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/vehicle_model_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vehicle_model_training_pipeline.py", line 5, in <module>
+    from components.utils.model_training_components.data_ingestion import data_feeding
+ModuleNotFoundError: No module named 'components.utils.model_training_components'
+[2024-08-16T09:24:17.872+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:17.890+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 0.273 seconds
+[2024-08-16T09:24:48.024+0000] {processor.py:161} INFO - Started process (PID=412) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:48.027+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:24:48.028+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:24:48.028+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:48.130+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:24:48.123+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/vehicle_model_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vehicle_model_training_pipeline.py", line 5, in <module>
+    from components.utils.model_training_components.data_ingestion import data_feeding
+ModuleNotFoundError: No module named 'components.utils.model_training_components'
+[2024-08-16T09:24:48.132+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:24:48.151+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 0.131 seconds
+[2024-08-16T09:25:18.737+0000] {processor.py:161} INFO - Started process (PID=441) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:25:18.738+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:25:18.748+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:25:18.748+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:25:19.105+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:25:19.098+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/vehicle_model_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vehicle_model_training_pipeline.py", line 5, in <module>
+    from components.utils.model_training_components.data_ingestion import data_feeding
+ModuleNotFoundError: No module named 'components.utils.model_training_components'
+[2024-08-16T09:25:19.107+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:25:19.123+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 0.387 seconds
+[2024-08-16T09:25:49.380+0000] {processor.py:161} INFO - Started process (PID=470) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:25:49.381+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:25:49.382+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:25:49.382+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:25:49.540+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:25:49.533+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/vehicle_model_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vehicle_model_training_pipeline.py", line 5, in <module>
+    from components.utils.model_training_components.data_ingestion import data_feeding
+ModuleNotFoundError: No module named 'components.utils.model_training_components'
+[2024-08-16T09:25:49.543+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:25:49.557+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 0.179 seconds
+[2024-08-16T09:26:20.075+0000] {processor.py:161} INFO - Started process (PID=500) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:26:20.087+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:26:20.089+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:26:20.089+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:26:20.420+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:26:20.414+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/vehicle_model_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vehicle_model_training_pipeline.py", line 5, in <module>
+    from components.utils.model_training_components.data_ingestion import data_feeding
+ModuleNotFoundError: No module named 'components.utils.model_training_components'
+[2024-08-16T09:26:20.423+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:26:20.440+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 0.367 seconds
+[2024-08-16T09:26:50.758+0000] {processor.py:161} INFO - Started process (PID=529) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:26:50.759+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:26:50.760+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:26:50.760+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:26:51.234+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:26:51.216+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/vehicle_model_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/vehicle_model_training_pipeline.py", line 5, in <module>
+    from components.utils.model_training_components.data_ingestion import data_feeding
+ModuleNotFoundError: No module named 'components.utils.model_training_components'
+[2024-08-16T09:26:51.236+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:26:51.250+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 0.494 seconds
+[2024-08-16T09:27:18.505+0000] {processor.py:161} INFO - Started process (PID=558) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:27:18.506+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:27:18.507+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:27:18.507+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:27:19.425+0000] {processor.py:840} INFO - DAG(s) 'model_training_pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:27:19.587+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:27:19.587+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-16T09:27:19.602+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:27:19.602+0000] {dag.py:3834} INFO - Setting next_dagrun for model_training_pipeline to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-16T09:27:19.643+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 1.140 seconds
+[2024-08-16T09:27:50.231+0000] {processor.py:161} INFO - Started process (PID=607) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:27:50.232+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:27:50.233+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:27:50.233+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:27:51.085+0000] {processor.py:840} INFO - DAG(s) 'model_training_pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:27:51.176+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:27:51.175+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-16T09:27:51.191+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:27:51.190+0000] {dag.py:3834} INFO - Setting next_dagrun for model_training_pipeline to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-16T09:27:51.207+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 0.978 seconds
+[2024-08-16T09:28:21.631+0000] {processor.py:161} INFO - Started process (PID=656) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:28:21.632+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T09:28:21.633+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:28:21.633+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:28:22.526+0000] {processor.py:840} INFO - DAG(s) 'model_training_pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T09:28:22.588+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:28:22.588+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-16T09:28:22.601+0000] {logging_mixin.py:188} INFO - [2024-08-16T09:28:22.600+0000] {dag.py:3834} INFO - Setting next_dagrun for model_training_pipeline to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-16T09:28:22.614+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 0.985 seconds
+[2024-08-16T10:52:43.527+0000] {processor.py:161} INFO - Started process (PID=231) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:52:43.623+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T10:52:43.625+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:52:43.624+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:52:57.442+0000] {processor.py:840} INFO - DAG(s) 'model_training_pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:52:58.057+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:52:58.056+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-16T10:52:58.117+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:52:58.117+0000] {dag.py:3834} INFO - Setting next_dagrun for model_training_pipeline to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-16T10:52:58.149+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 14.627 seconds
+[2024-08-16T10:53:28.622+0000] {processor.py:161} INFO - Started process (PID=309) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:53:28.623+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T10:53:28.624+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:53:28.624+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:53:29.615+0000] {processor.py:840} INFO - DAG(s) 'model_training_pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:53:29.732+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:53:29.731+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-16T10:53:29.747+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:53:29.746+0000] {dag.py:3834} INFO - Setting next_dagrun for model_training_pipeline to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-16T10:53:29.785+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 1.167 seconds
+[2024-08-16T10:54:01.293+0000] {processor.py:161} INFO - Started process (PID=377) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:54:01.295+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T10:54:01.296+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:54:01.296+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:54:02.703+0000] {processor.py:840} INFO - DAG(s) 'model_training_pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:54:02.847+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:54:02.845+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-16T10:54:02.873+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:54:02.873+0000] {dag.py:3834} INFO - Setting next_dagrun for model_training_pipeline to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-16T10:54:02.896+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 1.607 seconds
+[2024-08-16T10:54:34.031+0000] {processor.py:161} INFO - Started process (PID=422) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:54:34.125+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T10:54:34.126+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:54:34.125+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:54:36.306+0000] {processor.py:840} INFO - DAG(s) 'model_training_pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:54:36.486+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:54:36.486+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-16T10:54:36.500+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:54:36.500+0000] {dag.py:3834} INFO - Setting next_dagrun for model_training_pipeline to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-16T10:54:36.535+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.506 seconds
+[2024-08-16T10:55:07.087+0000] {processor.py:161} INFO - Started process (PID=488) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:55:07.177+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T10:55:07.179+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:55:07.178+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:55:08.393+0000] {processor.py:840} INFO - DAG(s) 'model_training_pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:55:08.606+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:55:08.605+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-16T10:55:08.626+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:55:08.626+0000] {dag.py:3834} INFO - Setting next_dagrun for model_training_pipeline to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-16T10:55:08.649+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 1.565 seconds
+[2024-08-16T10:55:39.540+0000] {processor.py:161} INFO - Started process (PID=539) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:55:39.611+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T10:55:39.613+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:55:39.612+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:55:40.993+0000] {processor.py:840} INFO - DAG(s) 'model_training_pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:55:41.114+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:55:41.113+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-16T10:55:41.134+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:55:41.134+0000] {dag.py:3834} INFO - Setting next_dagrun for model_training_pipeline to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-16T10:55:41.157+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 1.620 seconds
+[2024-08-16T10:56:11.513+0000] {processor.py:161} INFO - Started process (PID=605) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:56:11.579+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T10:56:11.581+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:56:11.580+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:56:13.040+0000] {processor.py:840} INFO - DAG(s) 'model_training_pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:56:13.250+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:56:13.250+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-16T10:56:13.279+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:56:13.278+0000] {dag.py:3834} INFO - Setting next_dagrun for model_training_pipeline to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-16T10:56:13.460+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 1.949 seconds
+[2024-08-16T10:56:44.235+0000] {processor.py:161} INFO - Started process (PID=650) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:56:44.237+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T10:56:44.238+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:56:44.238+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:56:46.992+0000] {processor.py:840} INFO - DAG(s) 'model_training_pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:56:47.103+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:56:47.102+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-16T10:56:47.118+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:56:47.118+0000] {dag.py:3834} INFO - Setting next_dagrun for model_training_pipeline to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-16T10:56:47.145+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.916 seconds
+[2024-08-16T10:57:17.514+0000] {processor.py:161} INFO - Started process (PID=699) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:57:17.516+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T10:57:17.517+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:57:17.517+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:57:19.116+0000] {processor.py:840} INFO - DAG(s) 'model_training_pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:57:19.244+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:57:19.243+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-16T10:57:19.260+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:57:19.260+0000] {dag.py:3834} INFO - Setting next_dagrun for model_training_pipeline to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-16T10:57:19.282+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 1.771 seconds
+[2024-08-16T10:57:50.398+0000] {processor.py:161} INFO - Started process (PID=745) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:57:50.485+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-08-16T10:57:50.486+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:57:50.485+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:57:52.849+0000] {processor.py:840} INFO - DAG(s) 'model_training_pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-08-16T10:57:52.997+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:57:52.997+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-16T10:57:53.014+0000] {logging_mixin.py:188} INFO - [2024-08-16T10:57:53.013+0000] {dag.py:3834} INFO - Setting next_dagrun for model_training_pipeline to 2024-08-16 00:00:00+00:00, run_after=2024-08-17 00:00:00+00:00
+[2024-08-16T10:57:53.029+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.633 seconds

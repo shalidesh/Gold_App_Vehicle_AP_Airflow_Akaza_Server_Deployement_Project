@@ -1,0 +1,32 @@
+[2024-08-27T07:46:43.284+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_News_pipeline.scrape_gold_news scheduled__2024-08-21T00:00:00+00:00 [queued]>
+[2024-08-27T07:46:43.290+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_News_pipeline.scrape_gold_news scheduled__2024-08-21T00:00:00+00:00 [queued]>
+[2024-08-27T07:46:43.291+0000] {taskinstance.py:2193} INFO - Starting attempt 3 of 4
+[2024-08-27T07:46:43.304+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): scrape_gold_news> on 2024-08-21 00:00:00+00:00
+[2024-08-27T07:46:43.308+0000] {standard_task_runner.py:60} INFO - Started process 868 to run task
+[2024-08-27T07:46:43.311+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_News_pipeline', 'scrape_gold_news', 'scheduled__2024-08-21T00:00:00+00:00', '--job-id', '215', '--raw', '--subdir', 'DAGS_FOLDER/gold_news_pipeline.py', '--cfg-path', '/tmp/tmpmlnik123']
+[2024-08-27T07:46:43.313+0000] {standard_task_runner.py:88} INFO - Job 215: Subtask scrape_gold_news
+[2024-08-27T07:46:43.352+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_News_pipeline.scrape_gold_news scheduled__2024-08-21T00:00:00+00:00 [running]> on host 6c6a25447d9d
+[2024-08-27T07:46:43.529+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_News_pipeline' AIRFLOW_CTX_TASK_ID='scrape_gold_news' AIRFLOW_CTX_EXECUTION_DATE='2024-08-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-21T00:00:00+00:00'
+[2024-08-27T07:46:46.270+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/gold/news_scraping/post_links_extraction.py", line 47, in scrape_gold_news_urls
+    upload_table("gold_news_urls")
+  File "/opt/airflow/dags/components/utils/database_table_creation.py", line 29, in upload_table
+    cur.execute(f"""
+psycopg2.errors.InsufficientPrivilege: could not open file "/var/lib/postgresql/gold/gold_news_urls.csv" for writing: Permission denied
+HINT:  COPY TO instructs the PostgreSQL server process to write a file. You may want a client-side facility such as psql's \copy.
+
+[2024-08-27T07:46:46.294+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Gold_News_pipeline, task_id=scrape_gold_news, execution_date=20240821T000000, start_date=20240827T074643, end_date=20240827T074646
+[2024-08-27T07:46:46.306+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 215 for task scrape_gold_news (could not open file "/var/lib/postgresql/gold/gold_news_urls.csv" for writing: Permission denied
+HINT:  COPY TO instructs the PostgreSQL server process to write a file. You may want a client-side facility such as psql's \copy.
+; 868)
+[2024-08-27T07:46:46.337+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-27T07:46:46.356+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

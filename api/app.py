@@ -26,11 +26,9 @@ CORS(app)
 
 mongo = PyMongo(app)
 
-news_df = os.path.join("data_tables", "gold_post_data.csv")
-prediction_df = os.path.join("data_tables", "prediction.csv")
-
-train_df_path = os.path.join("data_tables", "gold_train_data.csv")
-gold_df_path = os.path.join("data_tables", "gold_databases.csv")
+news_df = os.path.join("airflow_scrape_database", "gold_post_data.csv")
+train_df_path = os.path.join("local_databases", "gold_train_data.csv")
+gold_df_path = os.path.join("local_databases", "gold_databases.csv")
 
 train_df=pd.read_csv(train_df_path)
 gold_df=pd.read_csv(gold_df_path)

@@ -1,0 +1,127 @@
+[2024-08-27T08:35:22.213+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_News_pipeline1.scrape_gold_news_content_from_urls manual__2024-08-27T08:34:12.710737+00:00 [queued]>
+[2024-08-27T08:35:22.220+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_News_pipeline1.scrape_gold_news_content_from_urls manual__2024-08-27T08:34:12.710737+00:00 [queued]>
+[2024-08-27T08:35:22.222+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 4
+[2024-08-27T08:35:22.232+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): scrape_gold_news_content_from_urls> on 2024-08-27 08:34:12.710737+00:00
+[2024-08-27T08:35:22.236+0000] {standard_task_runner.py:60} INFO - Started process 5358 to run task
+[2024-08-27T08:35:22.238+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_News_pipeline1', 'scrape_gold_news_content_from_urls', 'manual__2024-08-27T08:34:12.710737+00:00', '--job-id', '237', '--raw', '--subdir', 'DAGS_FOLDER/gold_news_pipeline.py', '--cfg-path', '/tmp/tmps0bo3mei']
+[2024-08-27T08:35:22.240+0000] {standard_task_runner.py:88} INFO - Job 237: Subtask scrape_gold_news_content_from_urls
+[2024-08-27T08:35:22.283+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_News_pipeline1.scrape_gold_news_content_from_urls manual__2024-08-27T08:34:12.710737+00:00 [running]> on host 6c6a25447d9d
+[2024-08-27T08:35:22.441+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_News_pipeline1' AIRFLOW_CTX_TASK_ID='scrape_gold_news_content_from_urls' AIRFLOW_CTX_EXECUTION_DATE='2024-08-27T08:34:12.710737+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-27T08:34:12.710737+00:00'
+[2024-08-27T08:35:22.446+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-27T08:35:22.447+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/opinion/2024-08-26/gold-reaches-new-record-high-following-powells-historic-speech
+[2024-08-27T08:35:26.661+0000] {logging_mixin.py:188} INFO - title --- Gold Reaches New Record High Following Powell's Historic Speech
+[2024-08-27T08:35:26.663+0000] {logging_mixin.py:188} INFO - date --- 00:28
+[2024-08-27T08:35:26.664+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/0dc5bde8-295b-4e47-b0d0-331a47de367d.png
+[2024-08-27T08:35:26.666+0000] {logging_mixin.py:188} INFO - sample_text --- In a remarkable turn of events, gold futures have once again traded to a new record closing price of $2,533.60, following Federal Reserve Chairman Jerome Powell's pivotal speech at the Economic Symposium in Jackson Hole, Wyoming. The speech, which signaled a shift in monetary policy, has sent ripples through various financial sectors, including precious metals and U.S. equities.
+[2024-08-27T08:35:26.666+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-27T08:35:26.667+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-26/gold-still-has-plenty-room-run-hedge-funds-bullish-bets-hit-4-year-high
+[2024-08-27T08:35:29.147+0000] {logging_mixin.py:188} INFO - title --- Gold still has plenty of room to run as hedge funds’ bullish bets hit 4-year high
+[2024-08-27T08:35:29.149+0000] {logging_mixin.py:188} INFO - date --- Aug 26, 2024 - 4:58 PM
+[2024-08-27T08:35:29.150+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/5538120a-4ddd-46fa-99a2-8094f10d80d6.webp
+[2024-08-27T08:35:29.152+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-27T08:35:29.153+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-27T08:35:29.154+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-26/volatility-spikes-across-all-markets-rate-cut-hopes-lift-bitcoin-back-above
+[2024-08-27T08:35:31.388+0000] {logging_mixin.py:188} INFO - title --- Volatility spikes across all markets as rate cut hopes lift Bitcoin back above $63k support 
+[2024-08-27T08:35:31.390+0000] {logging_mixin.py:188} INFO - date --- Aug 26, 2024 - 8:53 PM
+[2024-08-27T08:35:31.391+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/a0847153-804b-4758-ba44-a6782c6cbb45.jpeg
+[2024-08-27T08:35:31.393+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-27T08:35:31.394+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-27T08:35:31.394+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-26/do-what-central-banks-are-doing-buy-gold-bank-america
+[2024-08-27T08:35:33.219+0000] {logging_mixin.py:188} INFO - title --- ‘Do what central banks are doing... buy gold’ - Bank of America
+[2024-08-27T08:35:33.221+0000] {logging_mixin.py:188} INFO - date --- Aug 26, 2024 - 8:05 PM
+[2024-08-27T08:35:33.222+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/b452d41d-2c28-42ac-80f2-11717e4e0ddf.webp
+[2024-08-27T08:35:33.224+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-27T08:35:33.224+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-27T08:35:33.225+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-26/free-speech-under-attack-telegram-ceo-arrested-france-macron-says-its-no
+[2024-08-27T08:35:37.377+0000] {logging_mixin.py:188} INFO - title --- Free speech under attack? Telegram CEO arrested in France, Macron says it’s ‘in no way political’
+[2024-08-27T08:35:37.379+0000] {logging_mixin.py:188} INFO - date --- Aug 26, 2024 - 6:49 PM
+[2024-08-27T08:35:37.380+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/7bb2677a-9483-4c91-871e-16e662a9344c.jpeg
+[2024-08-27T08:35:37.382+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-27T08:35:37.383+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-27T08:35:37.384+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-26/gold-and-silver-prices-remain-rangebound-declining-dollar-should-restart
+[2024-08-27T08:35:42.385+0000] {logging_mixin.py:188} INFO - title --- Gold and silver prices remain rangebound, but a declining dollar should restart their uptrends – ActionForex
+[2024-08-27T08:35:42.386+0000] {logging_mixin.py:188} INFO - date --- Aug 26, 2024 - 4:36 PM
+[2024-08-27T08:35:42.387+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/508972d2-7670-488f-ba93-6daabb429f00.jpeg
+[2024-08-27T08:35:42.389+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-27T08:35:42.390+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-27T08:35:42.391+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-26/canada-impose-100-tariffs-chinese-made-evs-bid-protect-canadian-auto-and
+[2024-08-27T08:35:50.002+0000] {logging_mixin.py:188} INFO - title --- Canada to impose 100% tariffs on Chinese-made EVs in bid to protect Canadian auto and metal workers
+[2024-08-27T08:35:50.003+0000] {logging_mixin.py:188} INFO - date --- Aug 26, 2024 - 4:42 PM
+[2024-08-27T08:35:50.005+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/2360ca7b-e0ff-4d4c-8907-96883185f75a.jpeg
+[2024-08-27T08:35:50.006+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-27T08:35:50.007+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-27T08:35:50.008+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-26/gold-modestly-safe-haven-demand-easy-fed-friendly-charts
+[2024-08-27T08:35:54.084+0000] {logging_mixin.py:188} INFO - title --- Gold modestly up on safe-haven demand, easy Fed, friendly charts
+[2024-08-27T08:35:54.086+0000] {logging_mixin.py:188} INFO - date --- Aug 26, 2024 - 4:27 PM
+[2024-08-27T08:35:54.087+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/39aab2f5-40a4-42ed-a35d-a79c298cb888.webp
+[2024-08-27T08:35:54.089+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-27T08:35:54.090+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-27T08:35:54.091+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-26/gold-prices-boosted-interest-rate-optimism-lower-usd-and-treasury-yields
+[2024-08-27T08:35:56.106+0000] {logging_mixin.py:188} INFO - title --- Gold prices boosted by interest rate optimism, lower USD and Treasury yields, silver will follow after Fed cuts – Heraeus
+[2024-08-27T08:35:56.107+0000] {logging_mixin.py:188} INFO - date --- Aug 26, 2024 - 3:02 PM
+[2024-08-27T08:35:56.108+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/f7c86e14-9925-4041-9efd-d59b85974beb.jpeg
+[2024-08-27T08:35:56.109+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-27T08:35:56.110+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-27T08:35:56.110+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-26/gold-price-holding-near-record-highs-us-durable-goods-orders-rise-99-july
+[2024-08-27T08:36:01.200+0000] {logging_mixin.py:188} INFO - title --- Gold price holding near record highs as U.S. durable goods orders rise 9.9% in July
+[2024-08-27T08:36:01.201+0000] {logging_mixin.py:188} INFO - date --- Aug 26, 2024 - 12:37 PM
+[2024-08-27T08:36:01.202+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/2ffff41b-99db-44ad-936a-1aa9269d299c.jpeg
+[2024-08-27T08:36:01.204+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-27T08:36:01.205+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-27T08:36:01.206+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-26/bitcoin-surges-65k-fed-dovish-comments-etf-inflows
+[2024-08-27T08:36:03.939+0000] {logging_mixin.py:188} INFO - title --- Bitcoin surges to $65k on Fed dovish comments, ETF inflows
+[2024-08-27T08:36:03.941+0000] {logging_mixin.py:188} INFO - date --- Aug 26, 2024 - 2:59 PM
+[2024-08-27T08:36:03.942+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/8a7897b5-aa52-4f4f-a589-7d7997b1edd1.jpeg
+[2024-08-27T08:36:03.944+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-27T08:36:03.945+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-27T08:36:03.945+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-26/silver-always-outperforms-wheatons-randy-smallwood-precious-metals
+[2024-08-27T08:36:06.818+0000] {logging_mixin.py:188} INFO - title --- Silver always outperforms - Wheaton's Randy Smallwood on precious metals
+[2024-08-27T08:36:06.819+0000] {logging_mixin.py:188} INFO - date --- Aug 26, 2024 - 12:08 PM
+[2024-08-27T08:36:06.820+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/85bdbfb8-3297-4c4c-b55a-db8b8f1a8d21.webp
+[2024-08-27T08:36:06.821+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-27T08:36:06.822+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-27T08:36:06.823+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/opinion/2024-08-26/gold-swot-first-time-ever-bar-gold-worth-cool-one-million-dollars
+[2024-08-27T08:36:09.138+0000] {logging_mixin.py:188} INFO - title --- Gold SWOT: For the first time ever, a bar of gold is worth a cool one million dollars
+[2024-08-27T08:36:09.140+0000] {logging_mixin.py:188} INFO - date --- Aug 26, 2024 - 2:30 PM
+[2024-08-27T08:36:09.141+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/09984b2e-d97e-4919-b30e-2e5a8a9a7cb1.png
+[2024-08-27T08:36:09.142+0000] {logging_mixin.py:188} INFO - sample_text --- Strengths
+[2024-08-27T08:36:09.143+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-27T08:36:09.144+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/news/article/2024-08-26/silver-recycling-set-rise-silver-institutes-michael-dirienzo
+[2024-08-27T08:36:13.301+0000] {logging_mixin.py:188} INFO - title --- Silver recycling is set to rise - Silver Institutes' Michael DiRienzo
+[2024-08-27T08:36:13.302+0000] {logging_mixin.py:188} INFO - date --- Aug 26, 2024 - 12:31 PM
+[2024-08-27T08:36:13.303+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/5de0b7ce-5f0b-4901-8320-13d8fe58bfc3.webp
+[2024-08-27T08:36:13.304+0000] {logging_mixin.py:188} INFO - sample_text --- 
+[2024-08-27T08:36:13.305+0000] {logging_mixin.py:188} INFO - ##########################################
+[2024-08-27T08:36:13.306+0000] {logging_mixin.py:188} INFO - link --- https://www.kitco.com/opinion/2024-08-26/crypto-swot-bitcoin-and-wider-crypto-market-are-nursing-sharp-losses-month
+[2024-08-27T08:36:17.377+0000] {logging_mixin.py:188} INFO - title --- Crypto SWOT: Bitcoin and the wider crypto market are nursing sharp losses for the month
+[2024-08-27T08:36:17.379+0000] {logging_mixin.py:188} INFO - date --- Aug 26, 2024 - 2:44 PM
+[2024-08-27T08:36:17.379+0000] {logging_mixin.py:188} INFO - post_image --- https://images.kitco.com/img/height_756,width_1340/icms/06236690-24ca-42ca-a0f2-734599183fe9.png
+[2024-08-27T08:36:17.381+0000] {logging_mixin.py:188} INFO - sample_text --- Strengths
+[2024-08-27T08:36:17.382+0000] {logging_mixin.py:188} INFO - lenfth of date ---15
+[2024-08-27T08:36:17.383+0000] {logging_mixin.py:188} INFO - length of links ---15
+[2024-08-27T08:36:17.383+0000] {logging_mixin.py:188} INFO - length of posted_title ---15
+[2024-08-27T08:36:17.384+0000] {logging_mixin.py:188} INFO - length of images ---15
+[2024-08-27T08:36:17.384+0000] {logging_mixin.py:188} INFO - length of text --15
+[2024-08-27T08:36:17.405+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/gold/news_scraping/post_data_extraction.py", line 138, in scrape_gold_news_content_from_urls
+    upload_table(data_table)
+  File "/opt/airflow/dags/components/utils/database_table_creation.py", line 29, in upload_table
+    cur.execute(f"""
+psycopg2.errors.InsufficientPrivilege: could not open file "/var/lib/postgresql/gold/gold_post_data.csv" for writing: Permission denied
+HINT:  COPY TO instructs the PostgreSQL server process to write a file. You may want a client-side facility such as psql's \copy.
+
+[2024-08-27T08:36:17.432+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Gold_News_pipeline1, task_id=scrape_gold_news_content_from_urls, execution_date=20240827T083412, start_date=20240827T083522, end_date=20240827T083617
+[2024-08-27T08:36:17.442+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 237 for task scrape_gold_news_content_from_urls (could not open file "/var/lib/postgresql/gold/gold_post_data.csv" for writing: Permission denied
+HINT:  COPY TO instructs the PostgreSQL server process to write a file. You may want a client-side facility such as psql's \copy.
+; 5358)
+[2024-08-27T08:36:17.472+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-27T08:36:17.486+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
