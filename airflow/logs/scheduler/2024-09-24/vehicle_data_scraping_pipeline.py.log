@@ -1342,3 +1342,290 @@
 [2024-09-24T10:59:16.018+0000] {logging_mixin.py:188} INFO - [2024-09-24T10:59:16.018+0000] {dag.py:3047} INFO - Sync 1 DAGs
 [2024-09-24T10:59:16.033+0000] {logging_mixin.py:188} INFO - [2024-09-24T10:59:16.033+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-08-28 00:00:00+00:00, run_after=2024-08-29 00:00:00+00:00
 [2024-09-24T10:59:16.052+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.633 seconds
+[2024-09-24T10:59:46.499+0000] {processor.py:161} INFO - Started process (PID=1001) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T10:59:46.500+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T10:59:46.502+0000] {logging_mixin.py:188} INFO - [2024-09-24T10:59:46.501+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T10:59:46.909+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T10:59:46.955+0000] {logging_mixin.py:188} INFO - [2024-09-24T10:59:46.954+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T10:59:46.975+0000] {logging_mixin.py:188} INFO - [2024-09-24T10:59:46.974+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-08-28 00:00:00+00:00, run_after=2024-08-29 00:00:00+00:00
+[2024-09-24T10:59:46.999+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.503 seconds
+[2024-09-24T11:00:17.175+0000] {processor.py:161} INFO - Started process (PID=1053) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:00:17.176+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:00:17.177+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:00:17.177+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:00:17.675+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:00:17.741+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:00:17.740+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:00:17.878+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:00:17.877+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-08-28 00:00:00+00:00, run_after=2024-08-29 00:00:00+00:00
+[2024-09-24T11:00:17.897+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.726 seconds
+[2024-09-24T11:00:48.001+0000] {processor.py:161} INFO - Started process (PID=1099) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:00:48.003+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:00:48.005+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:00:48.004+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:00:48.667+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:00:48.716+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:00:48.715+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:00:48.734+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:00:48.734+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-08-28 00:00:00+00:00, run_after=2024-08-29 00:00:00+00:00
+[2024-09-24T11:00:48.756+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.760 seconds
+[2024-09-24T11:01:18.952+0000] {processor.py:161} INFO - Started process (PID=1148) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:01:18.953+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:01:18.954+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:01:18.954+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:01:19.502+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:01:19.535+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:01:19.534+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:01:19.550+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:01:19.549+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-08-28 00:00:00+00:00, run_after=2024-08-29 00:00:00+00:00
+[2024-09-24T11:01:19.569+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.620 seconds
+[2024-09-24T11:01:49.857+0000] {processor.py:161} INFO - Started process (PID=1197) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:01:49.859+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:01:49.860+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:01:49.860+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:01:50.367+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:01:50.410+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:01:50.410+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:01:50.427+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:01:50.427+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-08-28 00:00:00+00:00, run_after=2024-08-29 00:00:00+00:00
+[2024-09-24T11:01:50.445+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.590 seconds
+[2024-09-24T11:02:20.551+0000] {processor.py:161} INFO - Started process (PID=1246) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:02:20.553+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:02:20.555+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:02:20.554+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:02:20.983+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:02:21.018+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:02:21.017+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:02:21.034+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:02:21.034+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-08-28 00:00:00+00:00, run_after=2024-08-29 00:00:00+00:00
+[2024-09-24T11:02:21.144+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.597 seconds
+[2024-09-24T11:02:51.624+0000] {processor.py:161} INFO - Started process (PID=1295) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:02:51.626+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:02:51.627+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:02:51.627+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:02:52.087+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:02:52.126+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:02:52.126+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:02:52.251+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:02:52.251+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-08-28 00:00:00+00:00, run_after=2024-08-29 00:00:00+00:00
+[2024-09-24T11:02:52.535+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.913 seconds
+[2024-09-24T11:03:23.043+0000] {processor.py:161} INFO - Started process (PID=1350) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:03:23.045+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:03:23.046+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:03:23.046+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:03:23.578+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:03:23.637+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:03:23.637+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:03:23.654+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:03:23.654+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-08-28 00:00:00+00:00, run_after=2024-08-29 00:00:00+00:00
+[2024-09-24T11:03:23.676+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.635 seconds
+[2024-09-24T11:03:53.777+0000] {processor.py:161} INFO - Started process (PID=1399) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:03:53.779+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:03:53.781+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:03:53.780+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:03:54.512+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:03:54.590+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:03:54.590+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:03:54.609+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:03:54.609+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-08-28 00:00:00+00:00, run_after=2024-08-29 00:00:00+00:00
+[2024-09-24T11:03:54.645+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.871 seconds
+[2024-09-24T11:04:25.105+0000] {processor.py:161} INFO - Started process (PID=1448) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:04:25.106+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:04:25.107+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:04:25.107+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:04:25.499+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:04:25.680+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:04:25.680+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:04:25.697+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:04:25.697+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-08-28 00:00:00+00:00, run_after=2024-08-29 00:00:00+00:00
+[2024-09-24T11:04:25.717+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.614 seconds
+[2024-09-24T11:04:55.965+0000] {processor.py:161} INFO - Started process (PID=1497) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:04:55.967+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:04:55.969+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:04:55.968+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:04:56.401+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:04:56.435+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:04:56.434+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:04:56.449+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:04:56.449+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-08-28 00:00:00+00:00, run_after=2024-08-29 00:00:00+00:00
+[2024-09-24T11:04:56.464+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.502 seconds
+[2024-09-24T11:05:06.247+0000] {processor.py:161} INFO - Started process (PID=1515) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:05:06.249+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:05:06.250+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:06.249+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:05:06.876+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:05:07.116+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:07.115+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:05:07.136+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:07.136+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-28 00:00:00+00:00, run_after=2024-09-29 00:00:00+00:00
+[2024-09-24T11:05:07.162+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.919 seconds
+[2024-09-24T11:05:09.277+0000] {processor.py:161} INFO - Started process (PID=1521) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:05:09.278+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:05:09.280+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:09.279+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:05:09.867+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:05:09.880+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:09.880+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:05:09.896+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:09.896+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:05:09.927+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.653 seconds
+[2024-09-24T11:05:21.207+0000] {processor.py:161} INFO - Started process (PID=1552) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:05:21.209+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:05:21.211+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:21.210+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:05:21.800+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:05:21.813+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:21.813+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:05:21.829+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:21.828+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:05:21.853+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.649 seconds
+[2024-09-24T11:05:29.025+0000] {processor.py:161} INFO - Started process (PID=1570) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:05:29.027+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:05:29.028+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:29.028+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:05:29.570+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:05:29.583+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:29.582+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:05:29.603+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:29.602+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:05:29.625+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.602 seconds
+[2024-09-24T11:05:59.882+0000] {processor.py:161} INFO - Started process (PID=1620) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:05:59.883+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:05:59.884+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:59.884+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:06:00.557+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:06:00.700+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:06:00.699+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:06:00.712+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:06:00.712+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:06:00.733+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.853 seconds
+[2024-09-24T11:06:30.929+0000] {processor.py:161} INFO - Started process (PID=1669) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:06:30.930+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:06:30.932+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:06:30.931+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:06:31.572+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:06:31.648+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:06:31.648+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:06:31.660+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:06:31.660+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:06:31.678+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.751 seconds
+[2024-09-24T11:07:01.981+0000] {processor.py:161} INFO - Started process (PID=1718) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:07:01.982+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:07:01.984+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:07:01.983+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:07:02.614+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:07:02.672+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:07:02.672+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:07:02.686+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:07:02.685+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:07:02.704+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.726 seconds
+[2024-09-24T11:07:32.875+0000] {processor.py:161} INFO - Started process (PID=1767) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:07:32.877+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:07:32.878+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:07:32.878+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:07:33.507+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:07:33.561+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:07:33.561+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:07:33.576+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:07:33.576+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:07:33.607+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.735 seconds
+[2024-09-24T11:08:04.162+0000] {processor.py:161} INFO - Started process (PID=1816) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:08:04.163+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:08:04.164+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:08:04.164+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:08:04.615+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:08:04.687+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:08:04.686+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:08:04.705+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:08:04.704+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:08:04.833+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.673 seconds
+[2024-09-24T11:08:34.928+0000] {processor.py:161} INFO - Started process (PID=1865) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:08:34.930+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:08:34.931+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:08:34.931+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:08:35.524+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:08:35.607+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:08:35.606+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:08:35.621+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:08:35.621+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:08:35.640+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.714 seconds
+[2024-09-24T11:09:05.824+0000] {processor.py:161} INFO - Started process (PID=1914) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:09:05.826+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:09:05.827+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:09:05.827+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:09:06.433+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:09:06.476+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:09:06.475+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:09:06.488+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:09:06.488+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:09:06.508+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.686 seconds
+[2024-09-24T11:09:36.570+0000] {processor.py:161} INFO - Started process (PID=1962) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:09:36.571+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:09:36.572+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:09:36.572+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:09:37.098+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:09:37.198+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:09:37.197+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:09:37.211+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:09:37.211+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:09:37.228+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.660 seconds
+[2024-09-24T11:10:07.331+0000] {processor.py:161} INFO - Started process (PID=2011) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:10:07.332+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:10:07.333+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:10:07.333+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:10:07.750+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:10:07.845+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:10:07.845+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:10:07.864+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:10:07.863+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:10:07.884+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.555 seconds
+[2024-09-24T11:10:38.494+0000] {processor.py:161} INFO - Started process (PID=2060) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:10:38.496+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:10:38.497+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:10:38.497+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:10:39.061+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:10:39.104+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:10:39.104+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:10:39.117+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:10:39.116+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:10:39.134+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.642 seconds
+[2024-09-24T11:11:09.645+0000] {processor.py:161} INFO - Started process (PID=2109) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:11:09.647+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:11:09.648+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:11:09.648+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:11:10.196+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:11:10.250+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:11:10.249+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:11:10.263+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:11:10.263+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:11:10.285+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.643 seconds
+[2024-09-24T11:11:40.441+0000] {processor.py:161} INFO - Started process (PID=2158) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:11:40.442+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:11:40.443+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:11:40.443+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:11:40.880+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:11:41.051+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:11:41.051+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:11:41.071+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:11:41.071+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:11:41.094+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.656 seconds
+[2024-09-24T11:12:11.238+0000] {processor.py:161} INFO - Started process (PID=2207) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:12:11.239+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:12:11.241+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:12:11.240+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:12:11.948+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:12:12.087+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:12:12.086+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:12:12.106+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:12:12.106+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:12:12.129+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.894 seconds
+[2024-09-24T11:12:42.550+0000] {processor.py:161} INFO - Started process (PID=2255) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:12:42.552+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:12:42.553+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:12:42.553+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:12:43.167+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:12:43.271+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:12:43.271+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:12:43.285+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:12:43.285+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:12:43.301+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.753 seconds
+[2024-09-24T11:13:13.823+0000] {processor.py:161} INFO - Started process (PID=2304) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:13:13.824+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:13:13.825+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:13:13.825+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:13:14.300+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:13:14.352+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:13:14.351+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:13:14.364+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:13:14.364+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:13:14.380+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.560 seconds
+[2024-09-24T11:13:44.465+0000] {processor.py:161} INFO - Started process (PID=2350) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:13:44.466+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:13:44.468+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:13:44.467+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:13:45.016+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:13:45.106+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:13:45.106+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:13:45.119+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:13:45.119+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:13:45.133+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.672 seconds
+[2024-09-24T11:14:15.539+0000] {processor.py:161} INFO - Started process (PID=2396) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:14:15.540+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:14:15.541+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:14:15.541+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:14:16.062+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:14:16.110+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:14:16.110+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:14:16.125+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:14:16.125+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:14:16.142+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.605 seconds
+[2024-09-24T11:14:46.316+0000] {processor.py:161} INFO - Started process (PID=2445) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:14:46.317+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:14:46.318+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:14:46.318+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:14:46.786+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:14:46.903+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:14:46.903+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:14:46.923+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:14:46.923+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:14:47.044+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.731 seconds
+[2024-09-24T11:15:17.484+0000] {processor.py:161} INFO - Started process (PID=2493) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:15:17.486+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:15:17.487+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:15:17.487+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:15:17.978+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:15:18.045+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:15:18.045+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:15:18.057+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:15:18.057+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:15:18.070+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.588 seconds
+[2024-09-24T11:15:48.203+0000] {processor.py:161} INFO - Started process (PID=2542) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:15:48.205+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:15:48.206+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:15:48.206+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:15:48.689+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:15:48.734+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:15:48.733+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:15:48.747+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:15:48.747+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:15:48.761+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.560 seconds
+[2024-09-24T11:16:19.047+0000] {processor.py:161} INFO - Started process (PID=2591) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:16:19.048+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:16:19.049+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:16:19.049+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:16:19.506+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:16:19.557+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:16:19.557+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:16:19.571+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:16:19.571+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:16:19.585+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.540 seconds
+[2024-09-24T11:16:49.659+0000] {processor.py:161} INFO - Started process (PID=2640) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:16:49.660+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:16:49.661+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:16:49.661+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:16:50.129+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:16:50.172+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:16:50.172+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:16:50.185+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:16:50.185+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:16:50.199+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.542 seconds
+[2024-09-24T11:17:20.453+0000] {processor.py:161} INFO - Started process (PID=2692) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:17:20.454+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:17:20.456+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:17:20.455+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:17:20.972+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:17:21.063+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:17:21.063+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:17:21.077+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:17:21.077+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:17:21.171+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.721 seconds
+[2024-09-24T11:17:51.660+0000] {processor.py:161} INFO - Started process (PID=2738) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:17:51.661+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:17:51.663+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:17:51.662+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:17:52.131+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:17:52.181+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:17:52.181+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:17:52.195+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:17:52.195+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:17:52.208+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.551 seconds
+[2024-09-24T11:18:22.369+0000] {processor.py:161} INFO - Started process (PID=2787) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:18:22.371+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:18:22.372+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:18:22.372+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:18:22.857+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:18:22.920+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:18:22.919+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:18:22.934+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:18:22.933+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:18:22.946+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.579 seconds
+[2024-09-24T11:18:53.411+0000] {processor.py:161} INFO - Started process (PID=2842) to work on /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:18:53.413+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_data_scraping_pipeline.py for tasks to queue
+[2024-09-24T11:18:53.414+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:18:53.414+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:18:54.086+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Data_scrape_Pipeline' retrieved from /opt/airflow/dags/vehicle_data_scraping_pipeline.py
+[2024-09-24T11:18:54.193+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:18:54.192+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:18:54.210+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:18:54.210+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Data_scrape_Pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:18:54.232+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_data_scraping_pipeline.py took 0.824 seconds

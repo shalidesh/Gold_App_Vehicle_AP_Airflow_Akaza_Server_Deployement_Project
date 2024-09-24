@@ -1342,3 +1342,269 @@
 [2024-09-24T10:59:15.994+0000] {logging_mixin.py:188} INFO - [2024-09-24T10:59:15.994+0000] {dag.py:3047} INFO - Sync 1 DAGs
 [2024-09-24T10:59:16.009+0000] {logging_mixin.py:188} INFO - [2024-09-24T10:59:16.009+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
 [2024-09-24T10:59:16.028+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.598 seconds
+[2024-09-24T10:59:46.506+0000] {processor.py:161} INFO - Started process (PID=1004) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T10:59:46.507+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T10:59:46.508+0000] {logging_mixin.py:188} INFO - [2024-09-24T10:59:46.508+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T10:59:46.886+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T10:59:46.924+0000] {logging_mixin.py:188} INFO - [2024-09-24T10:59:46.924+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T10:59:46.942+0000] {logging_mixin.py:188} INFO - [2024-09-24T10:59:46.941+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T10:59:46.964+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.461 seconds
+[2024-09-24T11:00:17.025+0000] {processor.py:161} INFO - Started process (PID=1050) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:00:17.026+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:00:17.027+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:00:17.027+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:00:17.531+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:00:17.586+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:00:17.585+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:00:17.776+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:00:17.775+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:00:17.803+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.780 seconds
+[2024-09-24T11:00:48.013+0000] {processor.py:161} INFO - Started process (PID=1102) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:00:48.014+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:00:48.016+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:00:48.015+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:00:48.644+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:00:48.682+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:00:48.682+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:00:48.698+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:00:48.698+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:00:48.721+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.714 seconds
+[2024-09-24T11:01:18.959+0000] {processor.py:161} INFO - Started process (PID=1151) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:01:18.960+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:01:18.962+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:01:18.962+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:01:19.482+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:01:19.516+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:01:19.515+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:01:19.530+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:01:19.530+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:01:19.547+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.590 seconds
+[2024-09-24T11:01:49.865+0000] {processor.py:161} INFO - Started process (PID=1200) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:01:49.867+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:01:49.868+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:01:49.868+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:01:50.335+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:01:50.387+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:01:50.387+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:01:50.404+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:01:50.404+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:01:50.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.559 seconds
+[2024-09-24T11:02:20.560+0000] {processor.py:161} INFO - Started process (PID=1249) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:02:20.562+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:02:20.563+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:02:20.563+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:02:20.964+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:02:20.999+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:02:20.999+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:02:21.014+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:02:21.014+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:02:21.133+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.576 seconds
+[2024-09-24T11:02:51.635+0000] {processor.py:161} INFO - Started process (PID=1298) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:02:51.636+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:02:51.638+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:02:51.638+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:02:52.067+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:02:52.104+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:02:52.104+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:02:52.240+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:02:52.240+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:02:52.369+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.737 seconds
+[2024-09-24T11:03:23.048+0000] {processor.py:161} INFO - Started process (PID=1353) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:03:23.049+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:03:23.051+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:03:23.050+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:03:23.547+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:03:23.593+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:03:23.593+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:03:23.610+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:03:23.610+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:03:23.632+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.587 seconds
+[2024-09-24T11:03:53.786+0000] {processor.py:161} INFO - Started process (PID=1402) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:03:53.788+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:03:53.790+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:03:53.789+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:03:54.436+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:03:54.505+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:03:54.504+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:03:54.523+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:03:54.523+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:03:54.559+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.777 seconds
+[2024-09-24T11:04:25.111+0000] {processor.py:161} INFO - Started process (PID=1451) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:04:25.112+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:04:25.113+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:04:25.113+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:04:25.482+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:04:25.655+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:04:25.654+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:04:25.674+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:04:25.673+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:04:25.692+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.584 seconds
+[2024-09-24T11:04:55.970+0000] {processor.py:161} INFO - Started process (PID=1500) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:04:55.971+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:04:55.972+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:04:55.972+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:04:56.382+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:04:56.415+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:04:56.415+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:04:56.430+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:04:56.430+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:04:56.448+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.481 seconds
+[2024-09-24T11:05:26.534+0000] {processor.py:161} INFO - Started process (PID=1564) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:05:26.535+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:05:26.536+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:26.536+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:05:27.034+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:05:27.085+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:27.085+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:05:27.105+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:27.105+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:05:27.243+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.711 seconds
+[2024-09-24T11:05:58.108+0000] {processor.py:161} INFO - Started process (PID=1614) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:05:58.110+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:05:58.111+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:58.111+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:05:58.706+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:05:58.744+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:58.744+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:05:58.767+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:05:58.767+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:05:58.792+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.686 seconds
+[2024-09-24T11:06:29.863+0000] {processor.py:161} INFO - Started process (PID=1663) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:06:29.864+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:06:29.865+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:06:29.865+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:06:30.423+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:06:30.476+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:06:30.476+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:06:30.489+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:06:30.489+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:06:30.508+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.647 seconds
+[2024-09-24T11:07:00.776+0000] {processor.py:161} INFO - Started process (PID=1712) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:07:00.777+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:07:00.779+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:07:00.778+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:07:01.393+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:07:01.453+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:07:01.452+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:07:01.466+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:07:01.466+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:07:01.486+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.713 seconds
+[2024-09-24T11:07:32.192+0000] {processor.py:161} INFO - Started process (PID=1761) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:07:32.194+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:07:32.195+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:07:32.195+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:07:32.710+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:07:32.748+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:07:32.747+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:07:32.763+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:07:32.763+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:07:32.791+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.601 seconds
+[2024-09-24T11:08:03.526+0000] {processor.py:161} INFO - Started process (PID=1810) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:08:03.527+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:08:03.528+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:08:03.527+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:08:03.919+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:08:03.968+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:08:03.968+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:08:03.985+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:08:03.985+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:08:04.097+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.573 seconds
+[2024-09-24T11:08:34.260+0000] {processor.py:161} INFO - Started process (PID=1859) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:08:34.261+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:08:34.262+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:08:34.262+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:08:34.789+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:08:34.825+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:08:34.825+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:08:34.841+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:08:34.841+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:08:34.863+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.605 seconds
+[2024-09-24T11:09:05.061+0000] {processor.py:161} INFO - Started process (PID=1908) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:09:05.062+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:09:05.064+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:09:05.063+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:09:05.680+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:09:05.714+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:09:05.714+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:09:05.728+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:09:05.728+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:09:05.748+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.689 seconds
+[2024-09-24T11:09:35.936+0000] {processor.py:161} INFO - Started process (PID=1956) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:09:35.938+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:09:35.939+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:09:35.939+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:09:36.360+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:09:36.480+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:09:36.479+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:09:36.492+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:09:36.492+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:09:36.511+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.577 seconds
+[2024-09-24T11:10:06.675+0000] {processor.py:161} INFO - Started process (PID=2005) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:10:06.676+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:10:06.677+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:10:06.677+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:10:07.152+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:10:07.219+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:10:07.219+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:10:07.235+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:10:07.235+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:10:07.253+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.581 seconds
+[2024-09-24T11:10:37.853+0000] {processor.py:161} INFO - Started process (PID=2054) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:10:37.855+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:10:37.856+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:10:37.855+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:10:38.282+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:10:38.314+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:10:38.314+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:10:38.330+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:10:38.330+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:10:38.426+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.575 seconds
+[2024-09-24T11:11:08.591+0000] {processor.py:161} INFO - Started process (PID=2103) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:11:08.592+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:11:08.593+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:11:08.593+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:11:09.045+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:11:09.077+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:11:09.077+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:11:09.091+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:11:09.091+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:11:09.107+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.518 seconds
+[2024-09-24T11:11:39.373+0000] {processor.py:161} INFO - Started process (PID=2152) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:11:39.374+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:11:39.375+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:11:39.375+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:11:39.825+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:11:39.854+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:11:39.854+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:11:39.867+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:11:39.867+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:11:39.884+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.514 seconds
+[2024-09-24T11:12:10.518+0000] {processor.py:161} INFO - Started process (PID=2201) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:12:10.519+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:12:10.520+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:12:10.520+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:12:11.093+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:12:11.144+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:12:11.144+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:12:11.158+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:12:11.158+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:12:11.171+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.656 seconds
+[2024-09-24T11:12:41.978+0000] {processor.py:161} INFO - Started process (PID=2249) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:12:41.979+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:12:41.980+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:12:41.980+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:12:42.333+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:12:42.365+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:12:42.365+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:12:42.379+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:12:42.379+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:12:42.472+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.497 seconds
+[2024-09-24T11:13:13.222+0000] {processor.py:161} INFO - Started process (PID=2298) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:13:13.223+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:13:13.224+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:13:13.224+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:13:13.715+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:13:13.750+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:13:13.749+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:13:13.767+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:13:13.767+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:13:13.782+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.562 seconds
+[2024-09-24T11:13:44.443+0000] {processor.py:161} INFO - Started process (PID=2347) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:13:44.444+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:13:44.446+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:13:44.445+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:13:44.976+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:13:45.041+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:13:45.040+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:13:45.058+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:13:45.058+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:13:45.077+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.637 seconds
+[2024-09-24T11:14:15.546+0000] {processor.py:161} INFO - Started process (PID=2399) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:14:15.547+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:14:15.548+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:14:15.548+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:14:16.040+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:14:16.074+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:14:16.073+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:14:16.087+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:14:16.087+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:14:16.103+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.561 seconds
+[2024-09-24T11:14:46.322+0000] {processor.py:161} INFO - Started process (PID=2448) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:14:46.323+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:14:46.324+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:14:46.323+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:14:46.730+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:14:46.799+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:14:46.799+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:14:46.819+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:14:46.819+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:14:46.948+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.628 seconds
+[2024-09-24T11:15:17.495+0000] {processor.py:161} INFO - Started process (PID=2496) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:15:17.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:15:17.498+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:15:17.497+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:15:17.948+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:15:17.988+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:15:17.988+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:15:18.006+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:15:18.006+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:15:18.025+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.532 seconds
+[2024-09-24T11:15:48.214+0000] {processor.py:161} INFO - Started process (PID=2545) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:15:48.216+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:15:48.217+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:15:48.217+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:15:48.666+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:15:48.699+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:15:48.699+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:15:48.713+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:15:48.713+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:15:48.727+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.516 seconds
+[2024-09-24T11:16:19.055+0000] {processor.py:161} INFO - Started process (PID=2594) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:16:19.057+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:16:19.058+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:16:19.058+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:16:19.484+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:16:19.519+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:16:19.519+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:16:19.533+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:16:19.533+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:16:19.548+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.495 seconds
+[2024-09-24T11:16:49.663+0000] {processor.py:161} INFO - Started process (PID=2643) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:16:49.664+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:16:49.665+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:16:49.665+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:16:50.112+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:16:50.141+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:16:50.141+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:16:50.154+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:16:50.154+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:16:50.169+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.509 seconds
+[2024-09-24T11:17:20.241+0000] {processor.py:161} INFO - Started process (PID=2689) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:17:20.242+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:17:20.243+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:17:20.243+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:17:20.725+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:17:20.761+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:17:20.761+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:17:20.776+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:17:20.776+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:17:20.895+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.657 seconds
+[2024-09-24T11:17:51.669+0000] {processor.py:161} INFO - Started process (PID=2741) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:17:51.671+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:17:51.672+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:17:51.672+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:17:52.115+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:17:52.146+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:17:52.146+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:17:52.162+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:17:52.162+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:17:52.175+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.508 seconds
+[2024-09-24T11:18:22.375+0000] {processor.py:161} INFO - Started process (PID=2790) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:18:22.376+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:18:22.377+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:18:22.377+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:18:22.834+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:18:22.872+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:18:22.871+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:18:22.889+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:18:22.888+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:18:22.904+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.532 seconds
+[2024-09-24T11:18:53.419+0000] {processor.py:161} INFO - Started process (PID=2845) to work on /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:18:53.420+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_news_pipeline.py for tasks to queue
+[2024-09-24T11:18:53.422+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:18:53.422+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:18:54.034+0000] {processor.py:840} INFO - DAG(s) 'Gold_News_pipeline' retrieved from /opt/airflow/dags/gold_news_pipeline.py
+[2024-09-24T11:18:54.089+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:18:54.088+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-09-24T11:18:54.107+0000] {logging_mixin.py:188} INFO - [2024-09-24T11:18:54.107+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_News_pipeline to 2024-09-24 00:00:00+00:00, run_after=2024-09-25 00:00:00+00:00
+[2024-09-24T11:18:54.131+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_news_pipeline.py took 0.716 seconds

@@ -42433,3 +42433,82 @@ File Path                                             PID    Runtime      # DAGs
 /opt/airflow/dags/vehicle_data_scraping_pipeline.py                            1           0  0.57s           2024-09-24T10:55:08
 /opt/airflow/dags/gold_news_pipeline.py                                        1           0  0.55s           2024-09-24T10:55:08
 ================================================================================
+[2024-09-24T10:56:02.568+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/vehicle_model_training_pipeline.py                           1           0  0.97s           2024-09-24T10:55:44
+/opt/airflow/dags/gold_training_pipeline.py                                    1           0  0.71s           2024-09-24T10:55:41
+/opt/airflow/dags/vehicle_data_scraping_pipeline.py                            1           0  0.63s           2024-09-24T10:55:39
+/opt/airflow/dags/gold_news_pipeline.py                                        1           0  0.59s           2024-09-24T10:55:39
+================================================================================
+[2024-09-24T10:56:28.463+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-09-24T10:56:29.194+0000] {manager.py:741} INFO - There are 4 files in /opt/airflow/dags
+[2024-09-24T10:56:33.258+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/vehicle_model_training_pipeline.py                           1           0  1.12s           2024-09-24T10:56:16
+/opt/airflow/dags/gold_training_pipeline.py                                    1           0  0.72s           2024-09-24T10:56:12
+/opt/airflow/dags/gold_news_pipeline.py                                        1           0  0.63s           2024-09-24T10:56:10
+/opt/airflow/dags/vehicle_data_scraping_pipeline.py                            1           0  0.60s           2024-09-24T10:56:10
+================================================================================
+[2024-09-24T10:57:04.000+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/vehicle_model_training_pipeline.py                           1           0  1.07s           2024-09-24T10:56:47
+/opt/airflow/dags/vehicle_data_scraping_pipeline.py                            1           0  0.69s           2024-09-24T10:56:41
+/opt/airflow/dags/gold_news_pipeline.py                                        1           0  0.65s           2024-09-24T10:56:40
+/opt/airflow/dags/gold_training_pipeline.py                                    1           0  0.64s           2024-09-24T10:56:43
+================================================================================
+[2024-09-24T10:57:34.166+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/vehicle_model_training_pipeline.py                           1           0  1.45s           2024-09-24T10:57:19
+/opt/airflow/dags/gold_news_pipeline.py                                        1           0  0.85s           2024-09-24T10:57:11
+/opt/airflow/dags/vehicle_data_scraping_pipeline.py                            1           0  0.78s           2024-09-24T10:57:12
+/opt/airflow/dags/gold_training_pipeline.py                                    1           0  0.72s           2024-09-24T10:57:13
+================================================================================
+[2024-09-24T10:58:04.321+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/vehicle_model_training_pipeline.py                           1           0  1.18s           2024-09-24T10:57:51
+/opt/airflow/dags/gold_training_pipeline.py                                    1           0  0.77s           2024-09-24T10:57:45
+/opt/airflow/dags/vehicle_data_scraping_pipeline.py                            1           0  0.66s           2024-09-24T10:57:43
+/opt/airflow/dags/gold_news_pipeline.py                                        1           0  0.56s           2024-09-24T10:57:42
+================================================================================
+[2024-09-24T10:58:34.564+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/vehicle_model_training_pipeline.py                           1           0  1.08s           2024-09-24T10:58:22
+/opt/airflow/dags/gold_training_pipeline.py                                    1           0  0.85s           2024-09-24T10:58:16
+/opt/airflow/dags/vehicle_data_scraping_pipeline.py                            1           0  0.63s           2024-09-24T10:58:14
+/opt/airflow/dags/gold_news_pipeline.py                                        1           0  0.57s           2024-09-24T10:58:13
+================================================================================
+[2024-09-24T10:59:05.268+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/vehicle_model_training_pipeline.py                           1           0  0.97s           2024-09-24T10:58:54
+/opt/airflow/dags/gold_training_pipeline.py                                    1           0  0.76s           2024-09-24T10:58:48
+/opt/airflow/dags/vehicle_data_scraping_pipeline.py                            1           0  0.57s           2024-09-24T10:58:45
+/opt/airflow/dags/gold_news_pipeline.py                                        1           0  0.53s           2024-09-24T10:58:45
+================================================================================
