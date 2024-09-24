@@ -256,9 +256,9 @@ def gold_price_Predict():
 
     forecast[cols] = forecast[cols].applymap(ounce_lkr)
 
-    forecast['yhat_manipulation'] = forecast['yhat_upper']+12000
-    forecast['yhat_lower_manipulation']=forecast['yhat_upper']+8000
-    forecast['yhat_upper_manipulation']=forecast['yhat_upper']+15000
+    forecast['yhat_manipulation'] = forecast['yhat_upper']+22000
+    forecast['yhat_lower_manipulation']=forecast['yhat_upper']+13000
+    forecast['yhat_upper_manipulation']=forecast['yhat_upper']+25000
 
     forecast['yhat_manipulation_smooth'] = forecast['yhat_manipulation'].rolling(window=7, min_periods=1).mean().round(-2)
     forecast['yhat_lower_manipulation_smooth'] = forecast['yhat_lower_manipulation'].rolling(window=5, min_periods=1).mean().round(-2)
