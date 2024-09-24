@@ -10,7 +10,7 @@ function ValidationPage() {
 
     // Define the minimum and maximum selectable dates
     const minDate = new Date('2024-09-09');
-    const maxDate = new Date();
+    // const maxDate = new Date();
     
     return (
       <div className='container ml-5'>
@@ -28,7 +28,7 @@ function ValidationPage() {
                       selected={startDate} 
                       onChange={date => setStartDate(date)} 
                       minDate={minDate}
-                      maxDate={maxDate}
+                      // maxDate={maxDate}
                       className='form-control'
                   />
 

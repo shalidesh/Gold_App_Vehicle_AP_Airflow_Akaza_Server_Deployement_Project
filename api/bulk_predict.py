@@ -1,21 +1,12 @@
-from flask import Flask, request, jsonify
-from flask_pymongo import PyMongo
-from bson.json_util import dumps
+from flask import request
 from werkzeug.security import generate_password_hash, check_password_hash
-import os
-from bson import json_util
 import pandas as pd
-import os
 import nltk
 nltk.download('punkt')
-from flask_cors import CORS
 import yfinance as yf
-from bs4 import BeautifulSoup
 import pandas as pd
-import requests
-import datetime
 import json
-from prophet.serialize import model_to_json, model_from_json
+from prophet.serialize import  model_from_json
 
 # Load model
 with open('models/model_prophet.json', 'r') as fin:
@@ -40,7 +31,7 @@ def ounce_lkr(x):
     return rounded_price
 
 
-date_string='2024-12-12'
+date_string='2024-12-24'
 request_date = pd.to_datetime(date_string)
 
 today_date = pd.to_datetime('today').normalize()
@@ -74,9 +65,9 @@ cols = [col for col in forecast.columns if col != 'ds']
 
 forecast[cols] = forecast[cols].applymap(ounce_lkr)
 
-forecast['yhat_manipulation'] = forecast['yhat_upper']+15000
-forecast['yhat_lower_manipulation']=forecast['yhat_upper']+5000
-forecast['yhat_upper_manipulation']=forecast['yhat_upper']+20000
+forecast['yhat_manipulation'] = forecast['yhat_upper']+22000
+forecast['yhat_lower_manipulation']=forecast['yhat_upper']+13000
+forecast['yhat_upper_manipulation']=forecast['yhat_upper']+25000
 
 forecast['yhat_manipulation_smooth'] = forecast['yhat_manipulation'].rolling(window=7, min_periods=1).mean().round(-2)
 forecast['yhat_lower_manipulation_smooth'] = forecast['yhat_lower_manipulation'].rolling(window=5, min_periods=1).mean().round(-2)
@@ -84,4 +75,4 @@ forecast['yhat_upper_manipulation_smooth'] = forecast['yhat_upper_manipulation']
 
 response_dataframe=forecast[["ds","yhat_manipulation_smooth","yhat_lower_manipulation_smooth","yhat_upper_manipulation_smooth"]]
 
-response_dataframe.to_csv('2024-09-12.csv')
+response_dataframe.to_csv('2024-09-24.csv')

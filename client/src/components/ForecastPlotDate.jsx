@@ -75,6 +75,11 @@ function ForecastPlotDate(startDate) {
               data={plotData}
               layout={ {width: 1000, height: 600, title: 'Gold Price Forecast'} }
             />
+            <p><b>Date</b> - Forecast Price Captured Date</p>
+            <p><b>Forecasted Price(Rs)</b> - Captured exact price on Selected Date</p>
+            <p><b>Upper Bound(Rs)</b> - Captured Upper bound Price on Selected Date</p>
+            <p><b>Lower Bound(Rs)</b>  - Captured Lower bound Price on Selected Date</p>
+            
             <ForecastTable data={graphdata.slice(-90)} />
           </>
         )}
