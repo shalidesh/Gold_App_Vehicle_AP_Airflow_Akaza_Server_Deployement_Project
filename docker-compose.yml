@@ -27,7 +27,8 @@ x-airflow-common:
     - ./airflow/logs:/opt/airflow/logs
     - ./airflow/config:/opt/airflow/config
     - ./airflow/plugins:/opt/airflow/plugins
-    - vehicle_api_artifacts:/opt/airflow/artifacts
+    - vehicle_api_artifacts:/opt/airflow/artifacts/vehicle:rw
+    - gold_api_artifacts:/opt/airflow/artifacts/gold:rw
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
@@ -42,9 +43,9 @@ services:
       POSTGRES_PASSWORD: airflow
       POSTGRES_DB: airflow
     volumes:
-      - postgres-db-volume:/var/lib/postgresql/data
-      - postgres_api_data:/var/lib/postgresql/vehicle
-      - postgres_gold_data:/var/lib/postgresql/gold
+      - postgres-db-volume:/var/lib/postgresql/data:rw
+      - postgres_api_data:/var/lib/postgresql/vehicle:rw
+      - postgres_gold_data:/var/lib/postgresql/gold:rw
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "airflow"]
       interval: 10s
@@ -183,6 +184,7 @@ services:
       - "5000:5000"
     volumes:
       - postgres_gold_data:/backend/airflow_scrape_database
+      - gold_api_artifacts:/backend/artifacts
 
   vehicle_api:
     build: ./vehicle_api
@@ -193,6 +195,9 @@ services:
       - SECRET_KEY='thisismynewversionscreatversion'
       - USER='cdb'
       - PASSWORD='cdb123456'
+    volumes:
+      - postgres_api_data:/app/databases/airflow_scrape_databases
+      - vehicle_api_artifacts:/app/artifacts
 
   my-react-app:
     build:
@@ -220,4 +225,5 @@ volumes:
   postgres-db-volume:
   postgres_api_data:
   vehicle_api_artifacts:
+  gold_api_artifacts:
   postgres_gold_data:

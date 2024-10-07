@@ -23,7 +23,7 @@ function App() {
         <Route path="/" element={ user ?  <Home /> : <Login /> } />
         <Route path="/news" element={user ? <News />: <Login />} />
         <Route path="/prophet" element={user ? <Prophet />: <Login />} />
-        <Route path="/lstm" element={user ? <Lstm />: <Login />} />
+        <Route path="/prophet1" element={user ? <Lstm />: <Login />} />
         <Route path="/customer" element={user ? <Customer />: <Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/database" element={user ? <Database /> : <Login />} />

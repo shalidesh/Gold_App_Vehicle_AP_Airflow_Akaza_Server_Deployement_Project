@@ -1,0 +1,495 @@
+[2024-10-03T10:52:27.845+0000] {processor.py:161} INFO - Started process (PID=247) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:52:27.846+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T10:52:27.847+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:52:27.846+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:52:28.421+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:52:28.607+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:52:28.607+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T10:52:28.628+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:52:28.627+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T10:52:28.657+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.815 seconds
+[2024-10-03T10:52:58.832+0000] {processor.py:161} INFO - Started process (PID=276) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:52:58.833+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T10:52:58.834+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:52:58.834+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:52:59.346+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:52:59.411+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:52:59.411+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T10:52:59.430+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:52:59.430+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T10:52:59.528+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.698 seconds
+[2024-10-03T10:53:30.452+0000] {processor.py:161} INFO - Started process (PID=326) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:53:30.453+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T10:53:30.455+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:53:30.455+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:53:31.172+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:53:31.266+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:53:31.266+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T10:53:31.389+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:53:31.389+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T10:53:31.411+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.962 seconds
+[2024-10-03T10:54:01.858+0000] {processor.py:161} INFO - Started process (PID=383) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:54:01.859+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T10:54:01.860+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:54:01.860+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:54:02.445+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:54:02.518+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:54:02.517+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T10:54:02.536+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:54:02.536+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T10:54:02.552+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.697 seconds
+[2024-10-03T10:54:32.757+0000] {processor.py:161} INFO - Started process (PID=435) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:54:32.758+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T10:54:32.759+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:54:32.759+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:54:33.322+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:54:33.401+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:54:33.401+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T10:54:33.423+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:54:33.423+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T10:54:33.444+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.690 seconds
+[2024-10-03T10:55:03.506+0000] {processor.py:161} INFO - Started process (PID=482) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:55:03.507+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T10:55:03.508+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:55:03.508+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:55:04.296+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:55:04.406+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:55:04.406+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T10:55:04.423+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:55:04.423+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T10:55:04.453+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.950 seconds
+[2024-10-03T10:55:34.573+0000] {processor.py:161} INFO - Started process (PID=533) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:55:34.574+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T10:55:34.575+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:55:34.575+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:55:35.039+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:55:35.096+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:55:35.096+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T10:55:35.113+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:55:35.112+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T10:55:35.127+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.556 seconds
+[2024-10-03T10:55:48.676+0000] {processor.py:161} INFO - Started process (PID=576) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:55:48.679+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T10:55:48.680+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:55:48.680+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:55:49.215+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:55:49.448+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:55:49.448+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:Gold_training_Pipeline1
+[2024-10-03T10:55:49.456+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:55:49.456+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:Gold_training_Pipeline1
+[2024-10-03T10:55:49.462+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:55:49.462+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:Gold_training_Pipeline1
+[2024-10-03T10:55:49.463+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:55:49.463+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T10:55:49.470+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:55:49.470+0000] {dag.py:3069} INFO - Creating ORM DAG for Gold_training_Pipeline1
+[2024-10-03T10:55:49.477+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:55:49.477+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T10:55:49.497+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.823 seconds
+[2024-10-03T10:56:19.794+0000] {processor.py:161} INFO - Started process (PID=634) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:56:19.795+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T10:56:19.796+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:56:19.796+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:56:20.261+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:56:20.328+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:56:20.327+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T10:56:20.415+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:56:20.415+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T10:56:20.431+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.639 seconds
+[2024-10-03T10:56:51.214+0000] {processor.py:161} INFO - Started process (PID=689) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:56:51.215+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T10:56:51.216+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:56:51.216+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:56:51.954+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:56:52.048+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:56:52.048+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T10:56:52.065+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:56:52.065+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T10:56:52.080+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.868 seconds
+[2024-10-03T10:57:22.365+0000] {processor.py:161} INFO - Started process (PID=738) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:57:22.366+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T10:57:22.367+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:57:22.367+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:57:23.080+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:57:23.135+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:57:23.134+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T10:57:23.161+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:57:23.160+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T10:57:23.189+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.827 seconds
+[2024-10-03T10:57:53.697+0000] {processor.py:161} INFO - Started process (PID=797) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:57:53.698+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T10:57:53.699+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:57:53.699+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:57:54.218+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:57:54.292+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:57:54.292+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T10:57:54.306+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:57:54.305+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T10:57:54.321+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.627 seconds
+[2024-10-03T10:58:24.881+0000] {processor.py:161} INFO - Started process (PID=852) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:58:24.883+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T10:58:24.884+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:58:24.884+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:58:25.363+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:58:25.443+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:58:25.442+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T10:58:25.457+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:58:25.457+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T10:58:25.547+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.668 seconds
+[2024-10-03T10:58:56.294+0000] {processor.py:161} INFO - Started process (PID=904) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:58:56.296+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T10:58:56.297+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:58:56.296+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:58:56.918+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:58:56.999+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:58:56.999+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T10:58:57.016+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:58:57.016+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T10:58:57.036+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.744 seconds
+[2024-10-03T10:59:27.672+0000] {processor.py:161} INFO - Started process (PID=965) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:59:27.673+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T10:59:27.674+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:59:27.674+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:59:28.240+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:59:28.297+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:59:28.297+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T10:59:28.310+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:59:28.310+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T10:59:28.325+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.655 seconds
+[2024-10-03T10:59:59.211+0000] {processor.py:161} INFO - Started process (PID=1014) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:59:59.212+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T10:59:59.213+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:59:59.213+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:59:59.843+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T10:59:59.895+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:59:59.895+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T10:59:59.909+0000] {logging_mixin.py:188} INFO - [2024-10-03T10:59:59.909+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T10:59:59.924+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.715 seconds
+[2024-10-03T11:00:30.564+0000] {processor.py:161} INFO - Started process (PID=1064) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:00:30.565+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:00:30.566+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:00:30.566+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:00:31.039+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:00:31.115+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:00:31.114+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:00:31.131+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:00:31.131+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:00:31.152+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.590 seconds
+[2024-10-03T11:01:02.104+0000] {processor.py:161} INFO - Started process (PID=1116) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:01:02.106+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:01:02.107+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:01:02.107+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:01:02.818+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:01:02.881+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:01:02.880+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:01:02.897+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:01:02.896+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:01:02.920+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.818 seconds
+[2024-10-03T11:01:33.296+0000] {processor.py:161} INFO - Started process (PID=1170) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:01:33.297+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:01:33.298+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:01:33.298+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:01:33.939+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:01:34.011+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:01:34.011+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:01:34.027+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:01:34.027+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:01:34.254+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.960 seconds
+[2024-10-03T11:02:04.915+0000] {processor.py:161} INFO - Started process (PID=1219) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:02:04.916+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:02:04.918+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:02:04.917+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:02:05.509+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:02:05.594+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:02:05.593+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:02:05.607+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:02:05.607+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:02:05.625+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.712 seconds
+[2024-10-03T11:02:35.776+0000] {processor.py:161} INFO - Started process (PID=1268) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:02:35.777+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:02:35.779+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:02:35.779+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:02:36.235+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:02:36.305+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:02:36.304+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:02:36.327+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:02:36.327+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:02:36.454+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.680 seconds
+[2024-10-03T11:03:06.927+0000] {processor.py:161} INFO - Started process (PID=1317) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:03:06.929+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:03:06.930+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:03:06.930+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:03:07.468+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:03:07.522+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:03:07.521+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:03:07.623+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:03:07.622+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:03:07.642+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.717 seconds
+[2024-10-03T11:03:38.480+0000] {processor.py:161} INFO - Started process (PID=1366) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:03:38.481+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:03:38.483+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:03:38.482+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:03:39.103+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:03:39.179+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:03:39.179+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:03:39.191+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:03:39.191+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:03:39.210+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.732 seconds
+[2024-10-03T11:04:09.910+0000] {processor.py:161} INFO - Started process (PID=1415) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:04:09.911+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:04:09.912+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:04:09.911+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:04:10.453+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:04:10.540+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:04:10.540+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:04:10.552+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:04:10.551+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:04:10.567+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.660 seconds
+[2024-10-03T11:04:41.356+0000] {processor.py:161} INFO - Started process (PID=1464) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:04:41.358+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:04:41.359+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:04:41.359+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:04:41.907+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:04:41.978+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:04:41.978+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:04:41.991+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:04:41.991+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:04:42.008+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.654 seconds
+[2024-10-03T11:05:12.618+0000] {processor.py:161} INFO - Started process (PID=1513) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:05:12.619+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:05:12.620+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:05:12.620+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:05:13.109+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:05:13.177+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:05:13.176+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:05:13.193+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:05:13.193+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:05:13.301+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.685 seconds
+[2024-10-03T11:05:44.112+0000] {processor.py:161} INFO - Started process (PID=1562) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:05:44.113+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:05:44.115+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:05:44.114+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:05:44.720+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:05:44.803+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:05:44.803+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:05:44.819+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:05:44.819+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:05:44.838+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.728 seconds
+[2024-10-03T11:06:15.244+0000] {processor.py:161} INFO - Started process (PID=1611) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:06:15.245+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:06:15.247+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:06:15.246+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:06:15.774+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:06:15.832+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:06:15.832+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:06:15.846+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:06:15.846+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:06:15.861+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.620 seconds
+[2024-10-03T11:06:46.042+0000] {processor.py:161} INFO - Started process (PID=1660) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:06:46.044+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:06:46.045+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:06:46.045+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:06:46.637+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:06:46.686+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:06:46.686+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:06:46.699+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:06:46.699+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:06:46.713+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.673 seconds
+[2024-10-03T11:07:16.848+0000] {processor.py:161} INFO - Started process (PID=1715) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:07:16.850+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:07:16.851+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:07:16.851+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:07:17.492+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:07:17.563+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:07:17.563+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:07:17.574+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:07:17.574+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:07:17.591+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.745 seconds
+[2024-10-03T11:07:47.667+0000] {processor.py:161} INFO - Started process (PID=1764) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:07:47.668+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:07:47.669+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:07:47.669+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:07:48.133+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:07:48.231+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:07:48.230+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:07:48.244+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:07:48.244+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:07:48.347+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.682 seconds
+[2024-10-03T11:08:18.468+0000] {processor.py:161} INFO - Started process (PID=1813) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:08:18.469+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:08:18.471+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:08:18.470+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:08:19.056+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:08:19.121+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:08:19.121+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:08:19.134+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:08:19.133+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:08:19.353+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.887 seconds
+[2024-10-03T11:08:49.538+0000] {processor.py:161} INFO - Started process (PID=1862) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:08:49.540+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:08:49.541+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:08:49.541+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:08:50.100+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:08:50.166+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:08:50.166+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:08:50.180+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:08:50.180+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:08:50.198+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.662 seconds
+[2024-10-03T11:09:20.454+0000] {processor.py:161} INFO - Started process (PID=1911) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:09:20.455+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:09:20.456+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:09:20.456+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:09:21.027+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:09:21.090+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:09:21.089+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:09:21.101+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:09:21.101+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:09:21.114+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.662 seconds
+[2024-10-03T11:09:51.252+0000] {processor.py:161} INFO - Started process (PID=1960) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:09:51.253+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:09:51.254+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:09:51.254+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:09:51.916+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:09:51.998+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:09:51.997+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:09:52.017+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:09:52.017+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:09:52.046+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.796 seconds
+[2024-10-03T11:10:22.152+0000] {processor.py:161} INFO - Started process (PID=2007) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:10:22.154+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:10:22.155+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:10:22.155+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:10:22.603+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:10:22.670+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:10:22.670+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:10:22.686+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:10:22.686+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:10:22.776+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.627 seconds
+[2024-10-03T11:10:52.852+0000] {processor.py:161} INFO - Started process (PID=2036) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:10:52.853+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:10:52.854+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:10:52.854+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:10:53.442+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:10:53.494+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:10:53.493+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:10:53.508+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:10:53.507+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:10:53.521+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.671 seconds
+[2024-10-03T11:11:24.553+0000] {processor.py:161} INFO - Started process (PID=2082) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:11:24.554+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:11:24.555+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:11:24.555+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:11:25.080+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:11:25.135+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:11:25.135+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:11:25.150+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:11:25.150+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:11:25.164+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.614 seconds
+[2024-10-03T11:11:55.617+0000] {processor.py:161} INFO - Started process (PID=2131) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:11:55.618+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:11:55.619+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:11:55.619+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:11:56.177+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:11:56.336+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:11:56.335+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:11:56.352+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:11:56.351+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:11:56.372+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.757 seconds
+[2024-10-03T11:12:26.718+0000] {processor.py:161} INFO - Started process (PID=2180) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:12:26.719+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:12:26.720+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:12:26.719+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:12:27.196+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:12:27.279+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:12:27.279+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:12:27.292+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:12:27.292+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:12:27.306+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.590 seconds
+[2024-10-03T11:12:57.742+0000] {processor.py:161} INFO - Started process (PID=2229) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:12:57.744+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:12:57.745+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:12:57.745+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:12:58.400+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:12:58.458+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:12:58.458+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:12:58.473+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:12:58.473+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:12:58.492+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.752 seconds
+[2024-10-03T11:13:28.652+0000] {processor.py:161} INFO - Started process (PID=2278) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:13:28.653+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:13:28.655+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:13:28.654+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:13:29.324+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:13:29.405+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:13:29.405+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:13:29.420+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:13:29.419+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:13:29.436+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.786 seconds
+[2024-10-03T11:13:59.537+0000] {processor.py:161} INFO - Started process (PID=2327) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:13:59.539+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:13:59.540+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:13:59.540+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:14:00.165+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:14:00.250+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:14:00.250+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:14:00.263+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:14:00.262+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:14:00.281+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.747 seconds
+[2024-10-03T11:14:31.293+0000] {processor.py:161} INFO - Started process (PID=2376) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:14:31.294+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:14:31.295+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:14:31.295+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:14:31.892+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:14:31.948+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:14:31.948+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:14:31.963+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:14:31.963+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:14:31.980+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.690 seconds
+[2024-10-03T11:15:02.115+0000] {processor.py:161} INFO - Started process (PID=2425) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:15:02.117+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:15:02.117+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:15:02.117+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:15:02.653+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:15:02.724+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:15:02.724+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:15:02.748+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:15:02.748+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:15:02.882+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.768 seconds
+[2024-10-03T11:15:32.990+0000] {processor.py:161} INFO - Started process (PID=2474) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:15:32.991+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:15:32.992+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:15:32.992+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:15:33.648+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:15:33.725+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:15:33.725+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:15:33.741+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:15:33.741+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:15:33.754+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.766 seconds
+[2024-10-03T11:16:03.824+0000] {processor.py:161} INFO - Started process (PID=2523) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:16:03.825+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:16:03.826+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:16:03.826+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:16:04.422+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:16:04.505+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:16:04.505+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:16:04.525+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:16:04.524+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:16:04.544+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.722 seconds
+[2024-10-03T11:16:34.650+0000] {processor.py:161} INFO - Started process (PID=2572) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:16:34.651+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:16:34.652+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:16:34.651+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:16:35.236+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:16:35.296+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:16:35.295+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:16:35.310+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:16:35.309+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:16:35.327+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.679 seconds
+[2024-10-03T11:17:05.434+0000] {processor.py:161} INFO - Started process (PID=2621) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:17:05.436+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:17:05.437+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:17:05.437+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:17:06.187+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:17:06.249+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:17:06.249+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:17:06.269+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:17:06.269+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:17:06.288+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.857 seconds
+[2024-10-03T11:17:36.689+0000] {processor.py:161} INFO - Started process (PID=2670) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:17:36.690+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:17:36.691+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:17:36.691+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:17:37.202+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:17:37.260+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:17:37.259+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:17:37.275+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:17:37.275+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:17:37.370+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.683 seconds
+[2024-10-03T11:18:07.572+0000] {processor.py:161} INFO - Started process (PID=2719) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:18:07.574+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:18:07.575+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:18:07.574+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:18:08.118+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:18:08.192+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:18:08.192+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:18:08.213+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:18:08.213+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:18:08.230+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.660 seconds
+[2024-10-03T11:18:38.472+0000] {processor.py:161} INFO - Started process (PID=2768) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:18:38.473+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:18:38.474+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:18:38.474+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:18:38.950+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:18:39.002+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:18:39.002+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:18:39.018+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:18:39.018+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:18:39.032+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.562 seconds
+[2024-10-03T11:19:09.257+0000] {processor.py:161} INFO - Started process (PID=2817) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:19:09.258+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:19:09.260+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:19:09.259+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:19:09.806+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:19:09.878+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:19:09.878+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:19:09.892+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:19:09.892+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:19:09.911+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.659 seconds
+[2024-10-03T11:19:40.378+0000] {processor.py:161} INFO - Started process (PID=2866) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:19:40.379+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:19:40.380+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:19:40.380+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:19:40.908+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:19:40.902+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/gold_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/gold_training_pipeline.py", line 8, in <module>
+    from components.gold.model_training.model_training import forecast_model_training
+  File "/opt/airflow/dags/components/gold/model_training/model_training.py", line 28
+    print(train_df.head())
+    ^
+IndentationError: unexpected indent
+[2024-10-03T11:19:40.912+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:19:40.930+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.554 seconds
+[2024-10-03T11:20:11.077+0000] {processor.py:161} INFO - Started process (PID=2915) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:20:11.078+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:20:11.080+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:20:11.080+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:20:11.663+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:20:11.736+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:20:11.736+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:20:11.748+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:20:11.748+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:20:11.766+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.692 seconds
+[2024-10-03T11:20:42.440+0000] {processor.py:161} INFO - Started process (PID=2965) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:20:42.442+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:20:42.443+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:20:42.443+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:20:43.069+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:20:43.066+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/gold_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/gold_training_pipeline.py", line 8, in <module>
+    from components.gold.model_training.model_training import forecast_model_training
+  File "/opt/airflow/dags/components/gold/model_training/model_training.py", line 37
+    pass
+    ^
+IndentationError: unexpected indent
+[2024-10-03T11:20:43.070+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:20:43.081+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.643 seconds
+[2024-10-03T11:21:13.607+0000] {processor.py:161} INFO - Started process (PID=3014) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:21:13.608+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:21:13.610+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:21:13.610+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:21:14.213+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:21:14.264+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:21:14.264+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:21:14.276+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:21:14.276+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:21:14.305+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.701 seconds
+[2024-10-03T11:21:45.081+0000] {processor.py:161} INFO - Started process (PID=3063) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:21:45.082+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:21:45.084+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:21:45.084+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:21:45.773+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:21:45.851+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:21:45.851+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:21:45.864+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:21:45.864+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:21:45.881+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.802 seconds
+[2024-10-03T11:22:16.431+0000] {processor.py:161} INFO - Started process (PID=3112) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:22:16.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:22:16.434+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:22:16.434+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:22:17.209+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:22:17.274+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:22:17.274+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:22:17.290+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:22:17.290+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:22:17.310+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.881 seconds
+[2024-10-03T11:22:47.723+0000] {processor.py:161} INFO - Started process (PID=3167) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:22:47.725+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:22:47.726+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:22:47.726+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:22:48.298+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:22:48.377+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:22:48.377+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:22:48.391+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:22:48.391+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:22:48.495+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.774 seconds
+[2024-10-03T11:23:19.006+0000] {processor.py:161} INFO - Started process (PID=3216) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:23:19.008+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:23:19.009+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:23:19.009+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:23:19.565+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:23:19.556+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/gold_training_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/gold_training_pipeline.py", line 8, in <module>
+    from components.gold.model_training.model_training import forecast_model_training
+  File "/opt/airflow/dags/components/gold/model_training/model_training.py", line 81, in <module>
+    xgb_model = xgb.XGBRegressor(objective='reg:squarederror')
+NameError: name 'xgb' is not defined
+[2024-10-03T11:23:19.570+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:23:19.581+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.578 seconds
+[2024-10-03T11:23:50.101+0000] {processor.py:161} INFO - Started process (PID=3265) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:23:50.102+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:23:50.104+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:23:50.103+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:23:50.740+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:23:50.794+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:23:50.794+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:23:50.806+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:23:50.806+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:23:50.822+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.730 seconds
+[2024-10-03T11:24:20.939+0000] {processor.py:161} INFO - Started process (PID=3314) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:24:20.940+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:24:20.942+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:24:20.942+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:24:21.550+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:24:21.625+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:24:21.625+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:24:21.640+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:24:21.639+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:24:21.659+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.724 seconds
+[2024-10-03T11:24:52.161+0000] {processor.py:161} INFO - Started process (PID=3363) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:24:52.163+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:24:52.164+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:24:52.164+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:24:52.848+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:24:52.925+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:24:52.925+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:24:52.945+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:24:52.944+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:24:52.964+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.805 seconds
+[2024-10-03T11:25:23.730+0000] {processor.py:161} INFO - Started process (PID=3412) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:25:23.732+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:25:23.733+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:25:23.733+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:25:24.347+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:25:24.429+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:25:24.429+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:25:24.443+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:25:24.443+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:25:24.539+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.811 seconds
+[2024-10-03T11:25:54.858+0000] {processor.py:161} INFO - Started process (PID=3461) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:25:54.859+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-03T11:25:54.861+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:25:54.861+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:25:55.438+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline1' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-03T11:25:55.509+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:25:55.508+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-03T11:25:55.523+0000] {logging_mixin.py:188} INFO - [2024-10-03T11:25:55.523+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline1 to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T11:25:55.540+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 0.684 seconds

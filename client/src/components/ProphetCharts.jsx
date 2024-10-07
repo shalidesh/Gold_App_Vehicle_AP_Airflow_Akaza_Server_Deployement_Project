@@ -9,7 +9,6 @@ function ProphetCharts() {
 
     const [startDate, setStartDate] = useState(new Date());
     
-
     return (
       <div className='container ml-5'>
         <div className="row">
