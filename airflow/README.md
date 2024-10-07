@@ -40,3 +40,12 @@ DROP TABLE ikman_post_data;
 
 https://ikman.lk/en/ads/sri-lanka/cars/nissan?sort=date&order=desc&buy_now=0&urgent=0&page=6&tree.brand=nissan&enum.transmission=automatic&enum.fuel_type=petrol
 
+
+
+## App Permissions
+
+inside the scheduler service
+docker exec -u root -it <container_name> /bin/bash
+chmod -R 775 /opt/airflow/artifacts/gold
+
+

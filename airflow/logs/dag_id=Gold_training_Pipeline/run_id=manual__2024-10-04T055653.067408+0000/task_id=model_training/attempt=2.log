@@ -1,0 +1,40 @@
+[2024-10-04T06:02:33.639+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-04T05:56:53.067408+00:00 [queued]>
+[2024-10-04T06:02:33.719+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-04T05:56:53.067408+00:00 [queued]>
+[2024-10-04T06:02:33.720+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 4
+[2024-10-04T06:02:33.730+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): model_training> on 2024-10-04 05:56:53.067408+00:00
+[2024-10-04T06:02:33.736+0000] {standard_task_runner.py:60} INFO - Started process 1160 to run task
+[2024-10-04T06:02:33.738+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_training_Pipeline', 'model_training', 'manual__2024-10-04T05:56:53.067408+00:00', '--job-id', '262', '--raw', '--subdir', 'DAGS_FOLDER/gold_training_pipeline.py', '--cfg-path', '/tmp/tmpaufj2yzu']
+[2024-10-04T06:02:33.740+0000] {standard_task_runner.py:88} INFO - Job 262: Subtask model_training
+[2024-10-04T06:02:33.772+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-04T05:56:53.067408+00:00 [running]> on host 64f03f4c25a1
+[2024-10-04T06:02:33.825+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_training_Pipeline' AIRFLOW_CTX_TASK_ID='model_training' AIRFLOW_CTX_EXECUTION_DATE='2024-10-04T05:56:53.067408+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-04T05:56:53.067408+00:00'
+[2024-10-04T06:02:33.887+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpzix19n8z/0g772qei.json
+[2024-10-04T06:02:34.065+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpzix19n8z/9enqgsvq.json
+[2024-10-04T06:02:34.066+0000] {model.py:2042} DEBUG - idx 0
+[2024-10-04T06:02:34.067+0000] {model.py:2043} DEBUG - running CmdStan, num_threads: None
+[2024-10-04T06:02:34.067+0000] {model.py:2055} DEBUG - CmdStan args: ['/home/***/.local/lib/python3.8/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=93569', 'data', 'file=/tmp/tmpzix19n8z/0g772qei.json', 'init=/tmp/tmpzix19n8z/9enqgsvq.json', 'output', 'file=/tmp/tmpzix19n8z/prophet_modelc7axwr27/prophet_model-20241004060234.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+[2024-10-04T06:02:34.068+0000] {logging_mixin.py:188} WARNING - 06:02:34 - cmdstanpy - INFO - Chain [1] start processing
+[2024-10-04T06:02:34.068+0000] {model.py:2058} INFO - Chain [1] start processing
+[2024-10-04T06:02:35.905+0000] {logging_mixin.py:188} WARNING - 06:02:35 - cmdstanpy - INFO - Chain [1] done processing
+[2024-10-04T06:02:35.905+0000] {model.py:2115} INFO - Chain [1] done processing
+[2024-10-04T06:02:36.362+0000] {logging_mixin.py:188} INFO - Fitting 3 folds for each of 2 candidates, totalling 6 fits
+[2024-10-04T06:05:37.943+0000] {logging_mixin.py:188} INFO - Best parameters from GridSearchCV: {'learning_rate': 0.001, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 500}
+[2024-10-04T06:05:49.356+0000] {logging_mixin.py:188} INFO - Root Mean Squared Error (RMSE) of the hybrid model: 9115.200838846245
+[2024-10-04T06:05:49.359+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/gold/model_training/model_training.py", line 145, in forecast_model_training
+    joblib.dump(prophet_model, os.path.join(artifacts_path, "prophet_model.pkl"))
+  File "/home/airflow/.local/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 552, in dump
+    with open(filename, 'wb') as f:
+PermissionError: [Errno 13] Permission denied: 'artifacts/gold/prophet_model.pkl'
+[2024-10-04T06:05:49.382+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Gold_training_Pipeline, task_id=model_training, execution_date=20241004T055653, start_date=20241004T060233, end_date=20241004T060549
+[2024-10-04T06:05:49.398+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 262 for task model_training ([Errno 13] Permission denied: 'artifacts/gold/prophet_model.pkl'; 1160)
+[2024-10-04T06:05:49.445+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-10-04T06:05:49.460+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

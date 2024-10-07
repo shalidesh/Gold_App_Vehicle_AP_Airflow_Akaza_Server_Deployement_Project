@@ -42,8 +42,8 @@ function LeftBar() {
                         <Link to="/prophet">
                             <a className="collapse-item" >Prophet</a>
                         </Link>
-                        <Link to="/lstm">
-                            <a className="collapse-item" >LSTM</a>
+                        <Link to="/prophet1">
+                            <a className="collapse-item" >Prophet+XgBoost</a>
 
                         </Link>
                         

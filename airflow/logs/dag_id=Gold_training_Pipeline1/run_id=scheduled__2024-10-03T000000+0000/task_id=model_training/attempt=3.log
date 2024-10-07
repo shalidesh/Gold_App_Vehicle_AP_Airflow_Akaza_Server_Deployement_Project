@@ -1,0 +1,26 @@
+[2024-10-04T04:57:54.596+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_training_Pipeline1.model_training scheduled__2024-10-03T00:00:00+00:00 [queued]>
+[2024-10-04T04:57:54.602+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_training_Pipeline1.model_training scheduled__2024-10-03T00:00:00+00:00 [queued]>
+[2024-10-04T04:57:54.603+0000] {taskinstance.py:2193} INFO - Starting attempt 3 of 4
+[2024-10-04T04:57:54.686+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): model_training> on 2024-10-03 00:00:00+00:00
+[2024-10-04T04:57:54.692+0000] {standard_task_runner.py:60} INFO - Started process 397 to run task
+[2024-10-04T04:57:54.694+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_training_Pipeline1', 'model_training', 'scheduled__2024-10-03T00:00:00+00:00', '--job-id', '237', '--raw', '--subdir', 'DAGS_FOLDER/gold_training_pipeline.py', '--cfg-path', '/tmp/tmp15okrht6']
+[2024-10-04T04:57:54.700+0000] {standard_task_runner.py:88} INFO - Job 237: Subtask model_training
+[2024-10-04T04:57:54.756+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_training_Pipeline1.model_training scheduled__2024-10-03T00:00:00+00:00 [running]> on host 7277d8e72c00
+[2024-10-04T04:57:54.812+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_training_Pipeline1' AIRFLOW_CTX_TASK_ID='model_training' AIRFLOW_CTX_EXECUTION_DATE='2024-10-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-03T00:00:00+00:00'
+[2024-10-04T04:57:54.848+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/gold/model_training/model_training.py", line 56, in forecast_model_training
+    df['date'] = pd.to_datetime(df['date'], format='%d/%m/%Y')
+UnboundLocalError: local variable 'df' referenced before assignment
+[2024-10-04T04:57:54.863+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Gold_training_Pipeline1, task_id=model_training, execution_date=20241003T000000, start_date=20241004T045754, end_date=20241004T045754
+[2024-10-04T04:57:54.872+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 237 for task model_training (local variable 'df' referenced before assignment; 397)
+[2024-10-04T04:57:54.913+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-10-04T04:57:54.925+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

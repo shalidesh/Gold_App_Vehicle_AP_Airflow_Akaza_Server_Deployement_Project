@@ -10,3 +10,5 @@ nltk
 flask-cors
 yfinance
 prophet==1.1.5
+xgboost
+scikit-learn
