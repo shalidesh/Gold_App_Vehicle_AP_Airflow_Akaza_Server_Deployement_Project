@@ -18,76 +18,88 @@ import json
 import numpy as np
 import os
 from prophet.serialize import model_to_json, model_from_json
+import joblib
+import os
+import pandas as pd
+import numpy as np
+from prophet import Prophet
+import xgboost as xgb
+from components.inference_function import forecast_up_to_date
+from components.dataset_upload import check_table,create_table,populate_table
+from components.datasets_paths import train_df_path,gold_df_path,news_df_path
 
 app = Flask(__name__)
 # app.config["MONGO_URI"] = "mongodb://mongo:27017/gold_data"
-app.config["MONGO_URI"] = "mongodb://host.docker.internal:27017/gold_data";
+app.config["MONGO_URI"] = "mongodb://localhost:27017/gold_data"
 CORS(app)
 
 mongo = PyMongo(app)
 
-news_df = os.path.join("airflow_scrape_database", "gold_post_data.csv")
-train_df_path = os.path.join("local_databases", "gold_train_data.csv")
-gold_df_path = os.path.join("local_databases", "gold_databases.csv")
-
 train_df=pd.read_csv(train_df_path)
 gold_df=pd.read_csv(gold_df_path)
 
+
 # Load model
-with open('models/model_prophet.json', 'r') as fin:
+with open('models/version_03/model_prophet.json', 'r') as fin:
     model = model_from_json(json.load(fin)) 
 
 # When you want to load the models for prediction, read them from the files
-with open('models/model_regressor1.json', 'r') as fin:
+with open('models/version_03/model_regressor1.json', 'r') as fin:
     model_regressor1 = model_from_json(json.load(fin))
 
-with open('models/model_regressor2.json', 'r') as fin:
+with open('models/version_03/model_regressor2.json', 'r') as fin:
     model_regressor2 = model_from_json(json.load(fin))
 
-with open('models/model_regressor3.json', 'r') as fin:
+with open('models/version_03/model_regressor3.json', 'r') as fin:
     model_regressor3 = model_from_json(json.load(fin))
 
-with open('models/model_regressor4.json', 'r') as fin:
+with open('models/version_03/model_regressor4.json', 'r') as fin:
     model_regressor4 = model_from_json(json.load(fin))
 
 
-@app.route('/api/gold_price', methods=['GET'])
+# Ensure the upload folder exists
+UPLOAD_FOLDER = 'uploads'
+if not os.path.exists(UPLOAD_FOLDER):
+    os.makedirs(UPLOAD_FOLDER)
+
+
+
+@app.route('/gold_price', methods=['GET'])
 def get_gold_price():
-    headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
-                }
+    # headers = {
+    #             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
+    #             }
     
-    link='https://www.kitco.com/'
+    # link='https://www.kitco.com/'
     
-    response = requests.get(link,headers=headers)
-    soup = BeautifulSoup(response.text, 'html.parser')
+    # response = requests.get(link,headers=headers)
+    # soup = BeautifulSoup(response.text, 'html.parser')
 
-    header = soup.find("div", class_='flex justify-between gap-2')
+    # header = soup.find("div", class_='flex justify-between gap-2')
 
-    # Find all h3 tags within the header
-    h3_tags = header.find_all("div",class_='text-right font-medium')
-    span_tags = header.find_all("span")
+    # # Find all h3 tags within the header
+    # h3_tags = header.find_all("div",class_='text-right font-medium')
+    # span_tags = header.find_all("span")
 
-    texts = [h3.text for h3 in h3_tags]
-    spantexts = [h3.text for h3 in span_tags]
-    bid, ask= texts
-    change, performance = spantexts
+    # texts = [h3.text for h3 in h3_tags]
+    # spantexts = [h3.text for h3 in span_tags]
+    # bid, ask= texts
+    # change, performance = spantexts
 
 
     price_list={
 
-        'bid':bid,
-        'ask':ask,
-        'change':change,
-        'performance':performance
+        'bid':0,
+        'ask':0,
+        'change':0,
+        'performance':0
     }
 
     return jsonify(price_list)
 
 
-@app.route('/api/auth/register', methods=['POST'])
+@app.route('/auth/register', methods=['POST'])
 def register():
-    print("called register")
     _json = request.json
     _username = _json['username']
     _email = _json['email']
@@ -106,9 +118,8 @@ def register():
         return not_found()
     
 
-@app.route('/api/auth/login', methods=['POST'])
+@app.route('/auth/login', methods=['POST'])
 def login():
-    print("called register")
     _json = request.json
     _username = _json['username']
     _password = _json['password']
@@ -140,14 +151,14 @@ def get_first_four_sentences(text):
     return ' '.join(sentences[:2])
 
 
-@app.route('/api/user/news', methods=['GET'])
+@app.route('/user/news', methods=['GET'])
 def news():
-    df=pd.read_csv(news_df)
+    df=pd.read_csv(news_df_path)
     df = df.where(pd.notnull(df), None) 
     return jsonify(df.to_dict(orient='records'))
 
 
-@app.route('/api/database', methods=['POST'])
+@app.route('/database', methods=['POST'])
 def database():
     data = request.get_json()
     date_string = data['date'].replace("Z", "")
@@ -159,7 +170,7 @@ def database():
     df_dataset=pd.read_csv(file_path)
     return jsonify(df_dataset.to_dict(orient='records'))
 
-@app.route('/api/comparison', methods=['POST'])
+@app.route('/comparison', methods=['POST'])
 def comparison():
     data = request.get_json()
     date_string = data['date'].replace("Z", "")
@@ -168,23 +179,27 @@ def comparison():
     print(formatted_date)
 
     folder_path = 'BulkPredictionDatasets'
-    result_df = pd.DataFrame(columns=['date', 'yhat_manipulation_smooth'])
+    result_df = pd.DataFrame(columns=['date', 'yhat_manipulation_smooth','yhat_lower_manipulation_smooth','yhat_upper_manipulation_smooth'])
 
     for filename in os.listdir(folder_path):
         if filename.endswith('.csv'):
             file_path = os.path.join(folder_path, filename)
             df = pd.read_csv(file_path)
             filtered_df = df[df['ds'] == formatted_date]
+            print("----------")
+            print(filtered_df.head())
+            print("----------")
             if not filtered_df.empty:
                 filtered_df['date'] = filename.replace('.csv', '')
                 result_df = pd.concat([result_df, filtered_df[['date', 'yhat_manipulation_smooth','yhat_lower_manipulation_smooth','yhat_upper_manipulation_smooth']]], ignore_index=True)
                 result_df['date'] = pd.to_datetime(result_df['date'])
                 result_df = result_df.sort_values(by='date')
                 result_df = result_df.astype(str)
-    print(result_df.head())
+    
     return result_df.to_json(orient='records')
 
-@app.route('/api/gold_price_history', methods=['GET'])
+
+@app.route('/gold_price_history', methods=['GET'])
 def gold_price_history():
     gold_ticker = 'GC=F'
 
@@ -205,7 +220,7 @@ def gold_price_history():
     return gold_data_list
 
 
-@app.route('/api/real-data', methods=['POST'])
+@app.route('/real-data', methods=['POST'])
 def real_data():
     print("togle start")
     train = train_df.replace({np.nan: 0})
@@ -220,14 +235,15 @@ def ounce_lkr(x):
     return rounded_price
 
 
-@app.route('/api/forecast_prophet', methods=['POST'])
+@app.route('/forecast_prophet', methods=['POST'])
 def gold_price_Predict():
     data = request.get_json()
+    print(data)
     date_string = data['date'].replace("Z", "")
     request_date = pd.to_datetime(date_string)
 
     today_date = pd.to_datetime('today').normalize()
-    dataset_last_given_date = pd.to_datetime('2024-06-12')
+    dataset_last_given_date = pd.to_datetime('2024-09-27')
 
     day_count_difference_lastday_and_today = (today_date - dataset_last_given_date).days
     day_count_difference_requested_date_and_today = (request_date - today_date).days
@@ -269,6 +285,53 @@ def gold_price_Predict():
     response_dataframe=forecast[["ds","yhat_manipulation_smooth","yhat_lower_manipulation_smooth","yhat_upper_manipulation_smooth"]]
 
     return jsonify(response_dataframe.to_dict(orient='records'))
+
+
+@app.route('/forecast_prophet1', methods=['POST'])
+def gold_price_Predict1():
+    data = request.get_json()
+    date_only = data['date'].split("T")[0]
+
+    forecast_df = forecast_up_to_date(date_only)
+    print(forecast_df.head())
+
+    return jsonify(forecast_df.to_dict(orient='records'))
+
+
+@app.route('/upload', methods=['POST'])
+def upload_file():
+    if 'file' not in request.files:
+        return jsonify({'message': 'No file part'}), 400
+
+    file = request.files['file']
+    if file.filename == '':
+        return jsonify({'message': 'No selected file'}), 400
+
+    if file and file.filename.endswith('.csv'):
+        filepath = os.path.join(UPLOAD_FOLDER, file.filename)
+        file.save(filepath)
+        df=pd.read_csv(filepath)
+        print(df.info())
+        df=df.astype(str)
+
+        # check_table("preprocesed_gold_data_tables")
+        # create_table("preprocesed_gold_data_tables", 
+        #             ["date VARCHAR(255)",
+        #             "gold_lkr VARCHAR(255)",
+        #             "gold_price_usd VARCHAR(255)",
+        #             "silver_price VARCHAR(255)",
+        #             "sp_500_index  VARCHAR(255)",
+        #             "nyse_com_index VARCHAR(255)",
+        #             "usd_selling_exrate VARCHAR(255)",
+        #             "gold_futures VARCHAR(255)",
+        #             "effr VARCHAR(255)"
+        #         ]), 
+        # populate_table("preprocesed_gold_data_tables", df)
+
+        return jsonify({'message': 'File successfully uploaded'}), 200
+    else:
+        return jsonify({'message': 'Please upload a CSV file'}), 400
+    
 
 @app.errorhandler(404)
 def not_found(error=None):

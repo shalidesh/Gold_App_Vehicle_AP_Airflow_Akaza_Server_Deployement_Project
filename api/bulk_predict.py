@@ -1,12 +1,21 @@
-from flask import request
+from flask import Flask, request, jsonify
+from flask_pymongo import PyMongo
+from bson.json_util import dumps
 from werkzeug.security import generate_password_hash, check_password_hash
+import os
+from bson import json_util
 import pandas as pd
+import os
 import nltk
 nltk.download('punkt')
+from flask_cors import CORS
 import yfinance as yf
+from bs4 import BeautifulSoup
 import pandas as pd
+import requests
+import datetime
 import json
-from prophet.serialize import  model_from_json
+from prophet.serialize import model_to_json, model_from_json
 
 # Load model
 with open('models/model_prophet.json', 'r') as fin:
@@ -31,11 +40,11 @@ def ounce_lkr(x):
     return rounded_price
 
 
-date_string='2024-12-24'
+date_string='2025-1-2'
 request_date = pd.to_datetime(date_string)
 
 today_date = pd.to_datetime('today').normalize()
-dataset_last_given_date = pd.to_datetime('2024-06-12')
+dataset_last_given_date = pd.to_datetime('2024-09-27')
 
 day_count_difference_lastday_and_today = (today_date - dataset_last_given_date).days
 day_count_difference_requested_date_and_today = (request_date - today_date).days
@@ -75,4 +84,4 @@ forecast['yhat_upper_manipulation_smooth'] = forecast['yhat_upper_manipulation']
 
 response_dataframe=forecast[["ds","yhat_manipulation_smooth","yhat_lower_manipulation_smooth","yhat_upper_manipulation_smooth"]]
 
-response_dataframe.to_csv('2024-09-24.csv')
+response_dataframe.to_csv('2024-10-2.csv')

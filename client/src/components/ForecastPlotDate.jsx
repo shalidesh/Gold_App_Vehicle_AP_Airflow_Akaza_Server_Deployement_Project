@@ -18,7 +18,7 @@ function ForecastPlotDate(startDate) {
       setSpin(true)
 
       try {
-        const response = await axios.post(`/api/comparison`,{
+        const response = await axios.post(`/comparison`,{
           "date":startDate.startDate
         });
         setGraphData(response.data); 
@@ -79,7 +79,6 @@ function ForecastPlotDate(startDate) {
             <p><b>Forecasted Price(Rs)</b> - Captured exact price on Selected Date</p>
             <p><b>Upper Bound(Rs)</b> - Captured Upper bound Price on Selected Date</p>
             <p><b>Lower Bound(Rs)</b>  - Captured Lower bound Price on Selected Date</p>
-            
             <ForecastTable data={graphdata.slice(-90)} />
           </>
         )}

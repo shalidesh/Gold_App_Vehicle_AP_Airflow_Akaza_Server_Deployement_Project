@@ -38,7 +38,7 @@ function ChartViewer() {
 
   const loadData = useCallback(async () => {
     try {
-      const response = await fetch('/api/gold_price_history');
+      const response = await fetch('/gold_price_history');
       const data = await response.json();
       const fusionTable = new FusionCharts.DataStore().createDataTable(
         data,

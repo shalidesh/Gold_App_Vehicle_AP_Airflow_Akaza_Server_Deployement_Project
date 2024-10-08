@@ -17,13 +17,13 @@ function Dashboard() {
         // Fetch the gold price every 5 minute
         const interval = setInterval(async () => {  // Declare the function as async
             try {
-                const response = await axios.get('/api/gold_price');
+                const response = await axios.get('/gold_price');
                 console.log(response.data);
                 setPrice(response.data);          
             } catch (error) {
                 console.log("Error:", error);
             }
-        }, 300000);  // 60000 milliseconds = 1 minute
+        }, 10000);  // 60000 milliseconds = 1 minute
     
         // Clear the interval when the component unmounts
         return () => clearInterval(interval);

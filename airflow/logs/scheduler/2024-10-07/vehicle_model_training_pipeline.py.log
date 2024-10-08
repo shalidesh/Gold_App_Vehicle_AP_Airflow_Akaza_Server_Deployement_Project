@@ -1,0 +1,189 @@
+[2024-10-07T11:32:10.549+0000] {processor.py:161} INFO - Started process (PID=221) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:32:10.550+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:32:10.552+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:32:10.551+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:32:13.078+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:32:13.337+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:32:13.336+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:32:13.353+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:32:13.353+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:32:13.372+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.826 seconds
+[2024-10-07T11:32:44.086+0000] {processor.py:161} INFO - Started process (PID=549) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:32:44.104+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:32:44.109+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:32:44.107+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:32:46.084+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:32:46.231+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:32:46.230+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:32:46.251+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:32:46.251+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:32:46.271+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.208 seconds
+[2024-10-07T11:33:16.702+0000] {processor.py:161} INFO - Started process (PID=673) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:33:16.715+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:33:16.716+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:33:16.716+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:33:19.062+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:33:19.225+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:33:19.224+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:33:19.257+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:33:19.257+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:33:19.280+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.580 seconds
+[2024-10-07T11:33:49.833+0000] {processor.py:161} INFO - Started process (PID=737) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:33:49.834+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:33:49.835+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:33:49.835+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:33:51.965+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:33:52.244+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:33:52.244+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:33:52.270+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:33:52.269+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:33:52.342+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.513 seconds
+[2024-10-07T11:34:22.602+0000] {processor.py:161} INFO - Started process (PID=805) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:34:22.614+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:34:22.615+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:34:22.615+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:34:24.923+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:34:25.256+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:34:25.256+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:34:25.281+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:34:25.280+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:34:25.337+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.738 seconds
+[2024-10-07T11:34:55.762+0000] {processor.py:161} INFO - Started process (PID=874) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:34:55.763+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:34:55.765+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:34:55.765+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:34:57.835+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:34:58.026+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:34:58.025+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:34:58.081+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:34:58.080+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:34:58.145+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.386 seconds
+[2024-10-07T11:35:28.342+0000] {processor.py:161} INFO - Started process (PID=942) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:35:28.343+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:35:28.344+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:35:28.344+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:35:30.833+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:35:31.103+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:35:31.103+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:35:31.145+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:35:31.144+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:35:31.204+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.866 seconds
+[2024-10-07T11:36:01.728+0000] {processor.py:161} INFO - Started process (PID=1021) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:36:01.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:36:01.741+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:36:01.741+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:36:04.806+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:36:05.057+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:36:05.057+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:36:05.170+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:36:05.170+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:36:05.232+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 3.507 seconds
+[2024-10-07T11:36:35.465+0000] {processor.py:161} INFO - Started process (PID=1092) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:36:35.471+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:36:35.480+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:36:35.479+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:36:37.757+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:36:37.871+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:36:37.870+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:36:37.890+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:36:37.890+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:36:37.913+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.452 seconds
+[2024-10-07T11:37:08.443+0000] {processor.py:161} INFO - Started process (PID=1163) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:37:08.456+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:37:08.463+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:37:08.463+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:37:11.792+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:37:12.037+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:37:12.037+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:37:12.079+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:37:12.079+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:37:12.159+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 3.719 seconds
+[2024-10-07T11:37:42.531+0000] {processor.py:161} INFO - Started process (PID=1229) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:37:42.536+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:37:42.538+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:37:42.537+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:37:45.139+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:37:45.302+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:37:45.301+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:37:45.347+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:37:45.346+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:37:45.380+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.853 seconds
+[2024-10-07T11:38:15.564+0000] {processor.py:161} INFO - Started process (PID=1298) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:38:15.577+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:38:15.595+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:38:15.594+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:38:18.083+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:38:18.223+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:38:18.221+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:38:18.327+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:38:18.327+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:38:18.369+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.806 seconds
+[2024-10-07T11:38:48.801+0000] {processor.py:161} INFO - Started process (PID=1368) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:38:48.818+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:38:48.838+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:38:48.838+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:38:51.850+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:38:51.979+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:38:51.978+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:38:52.039+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:38:52.039+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:38:52.098+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 3.304 seconds
+[2024-10-07T11:39:22.674+0000] {processor.py:161} INFO - Started process (PID=1436) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:39:22.676+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:39:22.676+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:39:22.676+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:39:24.751+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:39:24.903+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:39:24.902+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:39:24.941+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:39:24.941+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:39:25.005+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.328 seconds
+[2024-10-07T11:39:55.710+0000] {processor.py:161} INFO - Started process (PID=1505) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:39:55.721+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:39:55.725+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:39:55.724+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:39:57.928+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:39:58.055+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:39:58.054+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:39:58.091+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:39:58.091+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:39:58.129+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.429 seconds
+[2024-10-07T11:40:28.693+0000] {processor.py:161} INFO - Started process (PID=1573) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:40:28.700+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:40:28.702+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:40:28.702+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:40:31.045+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:40:31.186+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:40:31.185+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:40:31.229+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:40:31.229+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:40:31.289+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.603 seconds
+[2024-10-07T11:41:01.593+0000] {processor.py:161} INFO - Started process (PID=1641) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:41:01.594+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:41:01.594+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:41:01.594+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:41:03.550+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:41:03.742+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:41:03.741+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:41:03.776+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:41:03.775+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:41:03.807+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.217 seconds
+[2024-10-07T11:41:34.057+0000] {processor.py:161} INFO - Started process (PID=1715) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:41:34.060+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:41:34.062+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:41:34.061+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:41:36.052+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:41:36.216+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:41:36.215+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:41:36.268+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:41:36.268+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:41:36.314+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.260 seconds
+[2024-10-07T11:42:06.575+0000] {processor.py:161} INFO - Started process (PID=1782) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:42:06.576+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:42:06.577+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:42:06.576+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:42:08.886+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:42:09.025+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:42:09.024+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:42:09.078+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:42:09.077+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:42:09.126+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.553 seconds
+[2024-10-07T11:42:39.633+0000] {processor.py:161} INFO - Started process (PID=1850) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:42:39.634+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:42:39.635+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:42:39.635+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:42:41.917+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:42:42.088+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:42:42.088+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:42:42.159+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:42:42.159+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:42:42.238+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.608 seconds
+[2024-10-07T11:43:13.158+0000] {processor.py:161} INFO - Started process (PID=1918) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:43:13.162+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:43:13.166+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:43:13.166+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:43:15.212+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:43:15.347+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:43:15.346+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:43:15.393+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:43:15.393+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:43:15.461+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.307 seconds
+[2024-10-07T11:43:45.785+0000] {processor.py:161} INFO - Started process (PID=1985) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:43:45.786+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:43:45.787+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:43:45.787+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:43:47.849+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:43:48.033+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:43:48.032+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:43:48.080+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:43:48.080+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:43:48.170+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.390 seconds
+[2024-10-07T11:44:18.287+0000] {processor.py:161} INFO - Started process (PID=2052) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:44:18.288+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:44:18.289+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:44:18.289+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:44:20.852+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:44:21.040+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:44:21.039+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:44:21.091+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:44:21.090+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:44:21.176+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.892 seconds
+[2024-10-07T11:44:51.968+0000] {processor.py:161} INFO - Started process (PID=2120) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:44:51.969+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:44:51.970+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:44:51.970+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:44:53.887+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:44:54.004+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:44:54.004+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:44:54.026+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:44:54.026+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:44:54.050+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.085 seconds
+[2024-10-07T11:45:24.263+0000] {processor.py:161} INFO - Started process (PID=2188) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:45:24.269+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:45:24.289+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:45:24.288+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:45:26.595+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:45:26.799+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:45:26.797+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:45:26.836+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:45:26.836+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:45:26.872+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.612 seconds
+[2024-10-07T11:45:57.029+0000] {processor.py:161} INFO - Started process (PID=2255) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:45:57.030+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:45:57.031+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:45:57.031+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:45:59.191+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:45:59.329+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:45:59.328+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:45:59.382+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:45:59.381+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:45:59.447+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.420 seconds
+[2024-10-07T11:46:29.952+0000] {processor.py:161} INFO - Started process (PID=2322) to work on /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:46:29.971+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/vehicle_model_training_pipeline.py for tasks to queue
+[2024-10-07T11:46:29.973+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:46:29.972+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:46:32.571+0000] {processor.py:840} INFO - DAG(s) 'Vehicle_Model_Training_Pipeline' retrieved from /opt/airflow/dags/vehicle_model_training_pipeline.py
+[2024-10-07T11:46:32.712+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:46:32.712+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-07T11:46:32.746+0000] {logging_mixin.py:188} INFO - [2024-10-07T11:46:32.746+0000] {dag.py:3834} INFO - Setting next_dagrun for Vehicle_Model_Training_Pipeline to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-07T11:46:32.791+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/vehicle_model_training_pipeline.py took 2.849 seconds

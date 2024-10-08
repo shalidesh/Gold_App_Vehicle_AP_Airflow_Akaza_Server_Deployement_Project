@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Plot from 'react-plotly.js';
 import axios from "axios";
 import ForecastTable from './ForecastTable';
+import ForecastTableXgBoost from './ForecastTableXgBoost';
 
 function ProphetXgboostPlot(startDate) {
 
@@ -20,7 +21,7 @@ function ProphetXgboostPlot(startDate) {
       setSpin(true)
 
       try {
-        const response = await axios.post(`/api/forecast_prophet1`,{
+        const response = await axios.post(`/forecast_prophet1`,{
           "date":startDate.startDate
         });
 
@@ -110,7 +111,7 @@ function ProphetXgboostPlot(startDate) {
               layout={ {width: 1000, height: 600, title: 'Gold Price Forecast'} }
             />
             {/* {graphdata2} */}
-            {/* <ForecastTable data={graphdata.slice(-40)} /> */}
+            <ForecastTableXgBoost data={graphdata.slice(-40)} />
           </>
         )}
       </div>
