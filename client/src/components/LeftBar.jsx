@@ -51,28 +51,19 @@ function LeftBar() {
                 </div>
             </li>
 
-            <Link to="/customer">
-                <li className="nav-item">
-                    <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                        aria-expanded="true" aria-controls="collapseUtilities">
-                        <i className="fas fa-fw fa-wrench"></i>
-                        <span>Customer Identification</span>
-                    </a>
-                    
-                </li>
-            </Link>
-
-            <Link to="/news">
-                <li className="nav-item">
-                    <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                        aria-expanded="true" aria-controls="collapseUtilities">
-                        <i className="fas fa-fw fa-wrench"></i>
-                        <span>Gold News</span>
-                    </a>
-                    
-                </li>
-            </Link>
-
+            <li className="nav-item">
+                <Link to="/news">
+                    <li className="nav-item">
+                        <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                            aria-expanded="true" aria-controls="collapseUtilities">
+                            <i className="fas fa-fw fa-wrench"></i>
+                            <span>Gold News</span>
+                        </a>
+                        
+                    </li>
+                </Link>
+            </li>
+            
             <li className="nav-item">
                 <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages_ai"
                     aria-expanded="true" aria-controls="collapsePages_ai">
@@ -94,6 +85,33 @@ function LeftBar() {
                 </div>
             </li>
 
+            <li className="nav-item">
+                <Link to="/customer">
+                    <li className="nav-item">
+                        <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                            aria-expanded="true" aria-controls="collapseUtilities">
+                            <i className="fas fa-fw fa-wrench"></i>
+                            <span>Customer Identification</span>
+                        </a>
+                        
+                    </li>
+                </Link>
+
+            </li>
+            
+            <li className="nav-item">
+                <Link to="/model_training">
+                    <li className="nav-item">
+                        <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                            aria-expanded="true" aria-controls="collapseUtilities">
+                            <i className="fas fa-fw fa-cogs"></i>
+                            <span>Model Traning</span>
+                        </a>
+                        
+                    </li>
+                </Link>
+            </li>
+            
             <div className="text-center d-none d-md-inline">
                 <button className="rounded-circle border-0" id="sidebarToggle"></button>
             </div>

@@ -9,7 +9,7 @@ function NewsTitles() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('/api/user/news');
+                const response = await axios.get('/user/news');
                 setData(response.data)          
                 
             } catch (error) {
