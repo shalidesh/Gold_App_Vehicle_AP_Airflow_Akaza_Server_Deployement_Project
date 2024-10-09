@@ -14,3 +14,6 @@
 [2024-10-09T10:41:00.089+0000] {model.py:2055} DEBUG - CmdStan args: ['/home/***/.local/lib/python3.8/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=98595', 'data', 'file=/tmp/tmp5mlqzgzo/xhfou5me.json', 'init=/tmp/tmp5mlqzgzo/2lu0hh8p.json', 'output', 'file=/tmp/tmp5mlqzgzo/prophet_model6hjaum0d/prophet_model-20241009104100.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
 [2024-10-09T10:41:00.090+0000] {logging_mixin.py:188} WARNING - 10:41:00 - cmdstanpy - INFO - Chain [1] start processing
 [2024-10-09T10:41:00.090+0000] {model.py:2058} INFO - Chain [1] start processing
+[2024-10-09T10:41:02.162+0000] {logging_mixin.py:188} WARNING - 10:41:02 - cmdstanpy - INFO - Chain [1] done processing
+[2024-10-09T10:41:02.162+0000] {model.py:2115} INFO - Chain [1] done processing
+[2024-10-09T10:41:02.935+0000] {logging_mixin.py:188} INFO - Fitting 3 folds for each of 1 candidates, totalling 3 fits
