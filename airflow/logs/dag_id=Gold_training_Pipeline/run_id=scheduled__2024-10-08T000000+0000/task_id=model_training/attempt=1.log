@@ -1,0 +1,50 @@
+[2024-10-09T05:17:30.409+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training scheduled__2024-10-08T00:00:00+00:00 [queued]>
+[2024-10-09T05:17:30.417+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training scheduled__2024-10-08T00:00:00+00:00 [queued]>
+[2024-10-09T05:17:30.420+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-10-09T05:17:30.467+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): model_training> on 2024-10-08 00:00:00+00:00
+[2024-10-09T05:17:30.480+0000] {standard_task_runner.py:60} INFO - Started process 1171 to run task
+[2024-10-09T05:17:30.482+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_training_Pipeline', 'model_training', 'scheduled__2024-10-08T00:00:00+00:00', '--job-id', '306', '--raw', '--subdir', 'DAGS_FOLDER/gold_training_pipeline.py', '--cfg-path', '/tmp/tmpzczw2b2s']
+[2024-10-09T05:17:30.485+0000] {standard_task_runner.py:88} INFO - Job 306: Subtask model_training
+[2024-10-09T05:17:30.533+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_training_Pipeline.model_training scheduled__2024-10-08T00:00:00+00:00 [running]> on host 68dba313a760
+[2024-10-09T05:17:30.597+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_training_Pipeline' AIRFLOW_CTX_TASK_ID='model_training' AIRFLOW_CTX_EXECUTION_DATE='2024-10-08T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-08T00:00:00+00:00'
+[2024-10-09T05:17:30.700+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpvmby7byv/zrx1n4ei.json
+[2024-10-09T05:17:30.970+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpvmby7byv/8lbxcmqk.json
+[2024-10-09T05:17:30.979+0000] {model.py:2042} DEBUG - idx 0
+[2024-10-09T05:17:30.980+0000] {model.py:2043} DEBUG - running CmdStan, num_threads: None
+[2024-10-09T05:17:30.981+0000] {model.py:2055} DEBUG - CmdStan args: ['/home/***/.local/lib/python3.8/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=99632', 'data', 'file=/tmp/tmpvmby7byv/zrx1n4ei.json', 'init=/tmp/tmpvmby7byv/8lbxcmqk.json', 'output', 'file=/tmp/tmpvmby7byv/prophet_modelu1bux6dq/prophet_model-20241009051730.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+[2024-10-09T05:17:30.982+0000] {logging_mixin.py:188} WARNING - 05:17:30 - cmdstanpy - INFO - Chain [1] start processing
+[2024-10-09T05:17:30.982+0000] {model.py:2058} INFO - Chain [1] start processing
+[2024-10-09T05:17:33.419+0000] {logging_mixin.py:188} WARNING - 05:17:33 - cmdstanpy - INFO - Chain [1] done processing
+[2024-10-09T05:17:33.419+0000] {model.py:2115} INFO - Chain [1] done processing
+[2024-10-09T05:17:34.090+0000] {logging_mixin.py:188} INFO - Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[2024-10-09T05:27:00.978+0000] {local_task_job_runner.py:121} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-10-09T05:27:01.010+0000] {process_utils.py:131} INFO - Sending 15 to group 1171. PIDs of all processes in the group: [1171]
+[2024-10-09T05:27:01.011+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 1171
+[2024-10-09T05:27:03.235+0000] {local_task_job_runner.py:121} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-10-09T05:27:03.239+0000] {process_utils.py:131} INFO - Sending 15 to group 1171. PIDs of all processes in the group: [1171]
+[2024-10-09T05:27:03.240+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 1171
+[2024-10-09T07:59:24.625+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training scheduled__2024-10-08T00:00:00+00:00 [queued]>
+[2024-10-09T07:59:24.670+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training scheduled__2024-10-08T00:00:00+00:00 [queued]>
+[2024-10-09T07:59:24.671+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-10-09T07:59:24.764+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): model_training> on 2024-10-08 00:00:00+00:00
+[2024-10-09T07:59:24.784+0000] {standard_task_runner.py:60} INFO - Started process 19131 to run task
+[2024-10-09T07:59:24.787+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_training_Pipeline', 'model_training', 'scheduled__2024-10-08T00:00:00+00:00', '--job-id', '357', '--raw', '--subdir', 'DAGS_FOLDER/gold_training_pipeline.py', '--cfg-path', '/tmp/tmptqqc6q1j']
+[2024-10-09T07:59:24.788+0000] {standard_task_runner.py:88} INFO - Job 357: Subtask model_training
+[2024-10-09T07:59:24.829+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_training_Pipeline.model_training scheduled__2024-10-08T00:00:00+00:00 [running]> on host fc9c765b6318
+[2024-10-09T07:59:24.916+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_training_Pipeline' AIRFLOW_CTX_TASK_ID='model_training' AIRFLOW_CTX_EXECUTION_DATE='2024-10-08T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-08T00:00:00+00:00'
+[2024-10-09T07:59:24.968+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmp_3wmivof/sm4w17gm.json
+[2024-10-09T07:59:25.154+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmp_3wmivof/gdbwv23s.json
+[2024-10-09T07:59:25.155+0000] {model.py:2042} DEBUG - idx 0
+[2024-10-09T07:59:25.156+0000] {model.py:2043} DEBUG - running CmdStan, num_threads: None
+[2024-10-09T07:59:25.157+0000] {model.py:2055} DEBUG - CmdStan args: ['/home/***/.local/lib/python3.8/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=43296', 'data', 'file=/tmp/tmp_3wmivof/sm4w17gm.json', 'init=/tmp/tmp_3wmivof/gdbwv23s.json', 'output', 'file=/tmp/tmp_3wmivof/prophet_modelaankwy9v/prophet_model-20241009075925.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+[2024-10-09T07:59:25.158+0000] {logging_mixin.py:188} WARNING - 07:59:25 - cmdstanpy - INFO - Chain [1] start processing
+[2024-10-09T07:59:25.157+0000] {model.py:2058} INFO - Chain [1] start processing
+[2024-10-09T07:59:27.679+0000] {logging_mixin.py:188} WARNING - 07:59:27 - cmdstanpy - INFO - Chain [1] done processing
+[2024-10-09T07:59:27.679+0000] {model.py:2115} INFO - Chain [1] done processing
+[2024-10-09T07:59:28.164+0000] {logging_mixin.py:188} INFO - Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[2024-10-09T08:00:47.757+0000] {local_task_job_runner.py:121} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-10-09T08:00:47.792+0000] {process_utils.py:131} INFO - Sending 15 to group 19131. PIDs of all processes in the group: [19131]
+[2024-10-09T08:00:47.793+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 19131
+[2024-10-09T08:00:49.849+0000] {local_task_job_runner.py:121} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-10-09T08:00:49.850+0000] {process_utils.py:131} INFO - Sending 15 to group 19131. PIDs of all processes in the group: [19131]
+[2024-10-09T08:00:49.851+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 19131

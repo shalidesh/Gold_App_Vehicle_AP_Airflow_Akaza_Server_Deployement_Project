@@ -28,7 +28,8 @@ x-airflow-common:
     - ./airflow/config:/opt/airflow/config
     - ./airflow/plugins:/opt/airflow/plugins
     - vehicle_api_artifacts:/opt/airflow/artifacts/vehicle:rw
-    - gold_api_artifacts:/opt/airflow/artifacts/gold:rw
+    - gold_api_artifacts:/opt/airflow/artifacts/gold/models:rw
+    - gold_api_daily_reports:/opt/airflow/artifacts/gold/daily_reports:rw
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
@@ -185,6 +186,7 @@ services:
     volumes:
       - postgres_gold_data:/backend/airflow_scrape_database
       - gold_api_artifacts:/backend/artifacts
+      - gold_api_daily_reports:/backend/daily_reports
 
   vehicle_api:
     build: ./vehicle_api
@@ -227,3 +229,4 @@ volumes:
   vehicle_api_artifacts:
   gold_api_artifacts:
   postgres_gold_data:
+  gold_api_daily_reports:

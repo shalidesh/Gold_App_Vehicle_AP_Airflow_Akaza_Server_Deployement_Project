@@ -16,7 +16,7 @@ from sklearn.model_selection import GridSearchCV
 import matplotlib.pyplot as plt
 import joblib
 
-artifacts_path=os.path.join("artifacts","gold")
+artifacts_path=os.path.join("artifacts","gold","models")
 
 # Create lag features for the residuals for a 90-day sliding window
 def create_lag_features(data, lags, target_col):

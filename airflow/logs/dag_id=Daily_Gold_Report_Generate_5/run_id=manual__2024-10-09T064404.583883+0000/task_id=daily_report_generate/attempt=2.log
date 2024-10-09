@@ -1,0 +1,40 @@
+[2024-10-09T06:49:20.212+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Daily_Gold_Report_Generate_5.daily_report_generate manual__2024-10-09T06:44:04.583883+00:00 [queued]>
+[2024-10-09T06:49:20.217+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Daily_Gold_Report_Generate_5.daily_report_generate manual__2024-10-09T06:44:04.583883+00:00 [queued]>
+[2024-10-09T06:49:20.218+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 4
+[2024-10-09T06:49:20.227+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): daily_report_generate> on 2024-10-09 06:44:04.583883+00:00
+[2024-10-09T06:49:20.232+0000] {standard_task_runner.py:60} INFO - Started process 565 to run task
+[2024-10-09T06:49:20.234+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Daily_Gold_Report_Generate_5', 'daily_report_generate', 'manual__2024-10-09T06:44:04.583883+00:00', '--job-id', '344', '--raw', '--subdir', 'DAGS_FOLDER/gold_daily_report_generate_pipeline.py', '--cfg-path', '/tmp/tmpgp331h30']
+[2024-10-09T06:49:20.235+0000] {standard_task_runner.py:88} INFO - Job 344: Subtask daily_report_generate
+[2024-10-09T06:49:20.268+0000] {task_command.py:423} INFO - Running <TaskInstance: Daily_Gold_Report_Generate_5.daily_report_generate manual__2024-10-09T06:44:04.583883+00:00 [running]> on host fc9c765b6318
+[2024-10-09T06:49:20.446+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Daily_Gold_Report_Generate_5' AIRFLOW_CTX_TASK_ID='daily_report_generate' AIRFLOW_CTX_EXECUTION_DATE='2024-10-09T06:44:04.583883+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-09T06:44:04.583883+00:00'
+[2024-10-09T06:49:20.447+0000] {logging_mixin.py:188} INFO - date is ---------
+[2024-10-09T06:49:20.448+0000] {logging_mixin.py:188} INFO - 2024-10-09
+[2024-10-09T06:49:20.448+0000] {logging_mixin.py:188} INFO - forecasting start______________
+[2024-10-09T06:49:20.468+0000] {logging_mixin.py:188} INFO - Prepare the data with lags______________
+[2024-10-09T06:49:21.086+0000] {logging_mixin.py:188} INFO - Prophet forecast______________
+[2024-10-09T06:49:21.117+0000] {logging_mixin.py:188} INFO - Predict residuals using XGBoost______________
+[2024-10-09T06:49:21.117+0000] {logging_mixin.py:188} INFO - make_future_residual_predictions______________
+[2024-10-09T06:49:21.118+0000] {logging_mixin.py:188} INFO - no meet if condition
+[2024-10-09T06:49:21.121+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/sklearn/base.py:465 UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+[2024-10-09T06:49:21.122+0000] {logging_mixin.py:188} INFO - scaler transformed-------
+[2024-10-09T06:49:21.122+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/gold/post_training/report_generate.py", line 159, in generate_reports_daily
+    forecast_df = forecast_up_to_date(date_only)
+  File "/opt/airflow/dags/components/gold/post_training/report_generate.py", line 81, in forecast_up_to_date
+    future_residuals_pred = make_future_residual_predictions(last_sequence, xgb_model, num_predictions=len(future_dates))
+  File "/opt/airflow/dags/components/gold/post_training/report_generate.py", line 124, in make_future_residual_predictions
+    print(current_seq_scaled.head())
+AttributeError: 'numpy.ndarray' object has no attribute 'head'
+[2024-10-09T06:49:21.137+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Daily_Gold_Report_Generate_5, task_id=daily_report_generate, execution_date=20241009T064404, start_date=20241009T064920, end_date=20241009T064921
+[2024-10-09T06:49:21.145+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 344 for task daily_report_generate ('numpy.ndarray' object has no attribute 'head'; 565)
+[2024-10-09T06:49:21.170+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-10-09T06:49:21.179+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

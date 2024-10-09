@@ -178,7 +178,7 @@ def comparison():
     formatted_date = request_date.strftime('%Y-%m-%d')
     print(formatted_date)
 
-    folder_path = 'BulkPredictionDatasets'
+    folder_path = 'daily_reports'
     result_df = pd.DataFrame(columns=['date', 'yhat_manipulation_smooth','yhat_lower_manipulation_smooth','yhat_upper_manipulation_smooth'])
 
     for filename in os.listdir(folder_path):

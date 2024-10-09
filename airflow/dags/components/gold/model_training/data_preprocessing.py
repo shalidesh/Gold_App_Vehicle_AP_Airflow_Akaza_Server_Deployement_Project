@@ -16,7 +16,7 @@ def preprocess_data(source_table,data_table):
 
     check_table(data_table)
     create_table(data_table, 
-                    ["date VARCHAR(255)",
+                    ["Date VARCHAR(255)",
                     "gold_lkr VARCHAR(255)",
                     "gold_price_usd VARCHAR(255)",
                     "silver_price VARCHAR(255)",

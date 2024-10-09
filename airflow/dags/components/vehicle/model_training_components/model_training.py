@@ -20,12 +20,12 @@ from components.utils.utils import load_object,evaluate_models,save_object
 from components.utils.configs import host, database, port, user, password
 
 
-preprocessor_path=os.path.join("artifacts",'preprocessor.pkl')
+preprocessor_path=os.path.join('artifacts',"vehicle","preprocessor.pkl")
 
 
 def train_model(source_table1,train_model_name):
 
-    trained_model_file_path=os.path.join("artifacts",f"{train_model_name}_model.pkl")
+    trained_model_file_path=os.path.join("artifacts","vehicle",f"{train_model_name}_model.pkl")
 
     with psycopg2.connect(host=host, port=port, database=database, user=user, password=password) as conn:
         with conn.cursor() as cur:
