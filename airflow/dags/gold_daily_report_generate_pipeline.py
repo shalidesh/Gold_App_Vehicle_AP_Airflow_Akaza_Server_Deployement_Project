@@ -9,7 +9,7 @@ from components.gold.post_training.report_generate import generate_reports_daily
 default_args = {
     'owner': 'sdeshan',
     'depends_on_past': False,
-    'start_date': datetime(2024, 10, 9),
+    'start_date': datetime(2024, 10, 10),
     'schedule_interval' : 'None',
     'email_on_failure': True,
     'email_on_success': True,

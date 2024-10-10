@@ -1,0 +1,26 @@
+[2024-10-10T10:13:01.568+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_training_Pipeline1.send_mails manual__2024-10-10T10:12:47.947544+00:00 [queued]>
+[2024-10-10T10:13:01.576+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_training_Pipeline1.send_mails manual__2024-10-10T10:12:47.947544+00:00 [queued]>
+[2024-10-10T10:13:01.577+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-10-10T10:13:01.588+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): send_mails> on 2024-10-10 10:12:47.947544+00:00
+[2024-10-10T10:13:01.595+0000] {standard_task_runner.py:60} INFO - Started process 15608 to run task
+[2024-10-10T10:13:01.599+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_training_Pipeline1', 'send_mails', 'manual__2024-10-10T10:12:47.947544+00:00', '--job-id', '442', '--raw', '--subdir', 'DAGS_FOLDER/gold_training_pipeline.py', '--cfg-path', '/tmp/tmp4z7zs2_k']
+[2024-10-10T10:13:01.599+0000] {standard_task_runner.py:88} INFO - Job 442: Subtask send_mails
+[2024-10-10T10:13:01.638+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_training_Pipeline1.send_mails manual__2024-10-10T10:12:47.947544+00:00 [running]> on host 3c39c54b31c0
+[2024-10-10T10:13:01.705+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_training_Pipeline1' AIRFLOW_CTX_TASK_ID='send_mails' AIRFLOW_CTX_EXECUTION_DATE='2024-10-10T10:12:47.947544+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-10T10:12:47.947544+00:00'
+[2024-10-10T10:13:01.708+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/gold/post_training/sending_mails.py", line 46, in mail_sending
+    with open(attachment_path, "rb") as attachment:
+FileNotFoundError: [Errno 2] No such file or directory: 'df_interpolated.csv'
+[2024-10-10T10:13:01.723+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Gold_training_Pipeline1, task_id=send_mails, execution_date=20241010T101247, start_date=20241010T101301, end_date=20241010T101301
+[2024-10-10T10:13:01.733+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 442 for task send_mails ([Errno 2] No such file or directory: 'df_interpolated.csv'; 15608)
+[2024-10-10T10:13:01.772+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-10-10T10:13:01.785+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

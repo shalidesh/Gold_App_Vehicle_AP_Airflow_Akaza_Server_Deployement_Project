@@ -13,7 +13,7 @@ from components.gold.post_training.report_generate import generate_reports
 default_args = {
     'owner': 'sdeshan',
     'depends_on_past': False,
-    'start_date': datetime(2024, 10, 8),
+    'start_date': datetime(2024, 10, 10),
     'schedule_interval' : 'None',
     'email_on_failure': True,
     'email_on_success': True,
@@ -23,7 +23,7 @@ default_args = {
 }
 
 dag = DAG(
-    dag_id="Gold_training_Pipeline",
+    dag_id="Gold_training_Pipeline1",
     default_args=default_args,
     schedule_interval='0 0 * * *'
 )
@@ -58,15 +58,15 @@ model_training = PythonOperator(
     dag=dag,
 )
 
-# weekly_report_generate = PythonOperator(
-#     task_id='weekly_report_generate',
-#     python_callable=generate_reports,
-#     op_kwargs={'target_table': 'weekly_report'}, 
-#     on_success_callback = success_email,
-#     on_failure_callback = failure_email,
-#     provide_context = True,
-#     dag=dag,
-# )
+weekly_report_generate = PythonOperator(
+    task_id='weekly_report_generate',
+    python_callable=generate_reports,
+    op_kwargs={'target_table': 'weekly_report'}, 
+    on_success_callback = success_email,
+    on_failure_callback = failure_email,
+    provide_context = True,
+    dag=dag,
+)
 
 send_mails = PythonOperator(
     task_id='send_mails',
@@ -82,5 +82,5 @@ send_mails = PythonOperator(
 # Set the order of tasks
 data_preprocess.set_upstream(data_scraping)
 model_training.set_upstream(data_preprocess)
-# weekly_report_generate.set_upstream(model_training)
-send_mails.set_upstream(model_training)
+weekly_report_generate.set_upstream(model_training)
+send_mails.set_upstream(weekly_report_generate)

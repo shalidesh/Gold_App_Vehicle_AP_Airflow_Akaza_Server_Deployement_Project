@@ -1,0 +1,26 @@
+[2024-10-10T09:24:56.716+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-09T10:42:12.899974+00:00 [queued]>
+[2024-10-10T09:24:56.724+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-09T10:42:12.899974+00:00 [queued]>
+[2024-10-10T09:24:56.725+0000] {taskinstance.py:2193} INFO - Starting attempt 3 of 4
+[2024-10-10T09:24:56.738+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): model_training> on 2024-10-09 10:42:12.899974+00:00
+[2024-10-10T09:24:56.787+0000] {standard_task_runner.py:60} INFO - Started process 866 to run task
+[2024-10-10T09:24:56.794+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_training_Pipeline', 'model_training', 'manual__2024-10-09T10:42:12.899974+00:00', '--job-id', '388', '--raw', '--subdir', 'DAGS_FOLDER/gold_training_pipeline.py', '--cfg-path', '/tmp/tmpozw_dtv2']
+[2024-10-10T09:24:56.796+0000] {standard_task_runner.py:88} INFO - Job 388: Subtask model_training
+[2024-10-10T09:24:56.940+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-09T10:42:12.899974+00:00 [running]> on host 3c39c54b31c0
+[2024-10-10T09:24:57.135+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_training_Pipeline' AIRFLOW_CTX_TASK_ID='model_training' AIRFLOW_CTX_EXECUTION_DATE='2024-10-09T10:42:12.899974+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-09T10:42:12.899974+00:00'
+[2024-10-10T09:24:59.082+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpuza4w5c4/_2dp9o48.json
+[2024-10-10T09:24:59.302+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpuza4w5c4/5svihi7a.json
+[2024-10-10T09:24:59.968+0000] {model.py:2042} DEBUG - idx 0
+[2024-10-10T09:24:59.969+0000] {model.py:2043} DEBUG - running CmdStan, num_threads: None
+[2024-10-10T09:24:59.970+0000] {model.py:2055} DEBUG - CmdStan args: ['/home/***/.local/lib/python3.8/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=68992', 'data', 'file=/tmp/tmpuza4w5c4/_2dp9o48.json', 'init=/tmp/tmpuza4w5c4/5svihi7a.json', 'output', 'file=/tmp/tmpuza4w5c4/prophet_model3uq_a_kg/prophet_model-20241010092459.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+[2024-10-10T09:24:59.971+0000] {logging_mixin.py:188} WARNING - 09:24:59 - cmdstanpy - INFO - Chain [1] start processing
+[2024-10-10T09:24:59.971+0000] {model.py:2058} INFO - Chain [1] start processing
+[2024-10-10T09:25:03.806+0000] {logging_mixin.py:188} WARNING - 09:25:03 - cmdstanpy - INFO - Chain [1] done processing
+[2024-10-10T09:25:03.806+0000] {model.py:2115} INFO - Chain [1] done processing
+[2024-10-10T09:25:05.073+0000] {logging_mixin.py:188} INFO - Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[2024-10-10T09:35:05.513+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to removed. Terminating instance.
+[2024-10-10T09:35:05.996+0000] {process_utils.py:131} INFO - Sending 15 to group 866. PIDs of all processes in the group: [866]
+[2024-10-10T09:35:05.997+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 866
+[2024-10-10T09:36:06.191+0000] {process_utils.py:149} WARNING - process psutil.Process(pid=866, name='airflow task ru', status='sleeping', started='09:24:56') did not respond to SIGTERM. Trying SIGKILL
+[2024-10-10T09:36:06.482+0000] {process_utils.py:86} INFO - Sending the signal 9 to group 866
+[2024-10-10T09:36:08.280+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=866, name='airflow task ru', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='09:24:56') (866) terminated with exit code -9
+[2024-10-10T09:36:08.350+0000] {standard_task_runner.py:175} ERROR - Job 388 was killed before it finished (likely due to running out of memory)

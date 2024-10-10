@@ -112,7 +112,7 @@ def forecast_model_training(source_table):
 
             xgb_model = xgb.XGBRegressor(objective='reg:squarederror')
 
-            grid_search = GridSearchCV(estimator=xgb_model, param_grid=param_grid, cv=3, scoring='neg_mean_squared_error', verbose=1)
+            grid_search = GridSearchCV(estimator=xgb_model, param_grid=param_grid, cv=3, scoring='neg_mean_squared_error', verbose=2)
             grid_search.fit(X_train_scaled, y_train)
 
             # Best parameters from GridSearch

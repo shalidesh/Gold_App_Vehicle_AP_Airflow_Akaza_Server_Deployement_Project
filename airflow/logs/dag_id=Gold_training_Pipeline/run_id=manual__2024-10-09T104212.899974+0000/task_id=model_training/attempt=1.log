@@ -17,3 +17,7 @@
 [2024-10-09T10:42:29.513+0000] {logging_mixin.py:188} WARNING - 10:42:29 - cmdstanpy - INFO - Chain [1] done processing
 [2024-10-09T10:42:29.513+0000] {model.py:2115} INFO - Chain [1] done processing
 [2024-10-09T10:42:30.221+0000] {logging_mixin.py:188} INFO - Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[2024-10-10T03:45:08.115+0000] {local_task_job_runner.py:121} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-10-10T03:45:08.227+0000] {process_utils.py:131} INFO - Sending 15 to group 939. PIDs of all processes in the group: [939]
+[2024-10-10T03:45:08.238+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 939
+[2024-10-10T03:45:10.042+0000] {local_task_job_runner.py:121} ERROR - Received SIGTERM. Terminating subprocesses
