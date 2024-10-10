@@ -7,7 +7,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder,StandardScaler
 from components.utils.utils import save_object
 
-preprocessor_obj_file_path=os.path.join('artifacts',"preprocessor.pkl")
+preprocessor_obj_file_path=os.path.join('artifacts',"vehicle","preprocessor.pkl")
 
 
 def transform_data():

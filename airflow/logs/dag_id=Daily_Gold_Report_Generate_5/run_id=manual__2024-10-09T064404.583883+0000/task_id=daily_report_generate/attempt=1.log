@@ -1,0 +1,23 @@
+[2024-10-09T06:44:06.632+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Daily_Gold_Report_Generate_5.daily_report_generate manual__2024-10-09T06:44:04.583883+00:00 [queued]>
+[2024-10-09T06:44:06.638+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Daily_Gold_Report_Generate_5.daily_report_generate manual__2024-10-09T06:44:04.583883+00:00 [queued]>
+[2024-10-09T06:44:06.639+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-10-09T06:44:06.647+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): daily_report_generate> on 2024-10-09 06:44:04.583883+00:00
+[2024-10-09T06:44:06.654+0000] {standard_task_runner.py:60} INFO - Started process 4843 to run task
+[2024-10-09T06:44:06.661+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Daily_Gold_Report_Generate_5', 'daily_report_generate', 'manual__2024-10-09T06:44:04.583883+00:00', '--job-id', '341', '--raw', '--subdir', 'DAGS_FOLDER/gold_daily_report_generate_pipeline.py', '--cfg-path', '/tmp/tmp2j5gjx4n']
+[2024-10-09T06:44:06.662+0000] {standard_task_runner.py:88} INFO - Job 341: Subtask daily_report_generate
+[2024-10-09T06:44:06.737+0000] {task_command.py:423} INFO - Running <TaskInstance: Daily_Gold_Report_Generate_5.daily_report_generate manual__2024-10-09T06:44:04.583883+00:00 [running]> on host f779d918caa5
+[2024-10-09T06:44:07.134+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Daily_Gold_Report_Generate_5' AIRFLOW_CTX_TASK_ID='daily_report_generate' AIRFLOW_CTX_EXECUTION_DATE='2024-10-09T06:44:04.583883+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-09T06:44:04.583883+00:00'
+[2024-10-09T06:44:07.136+0000] {logging_mixin.py:188} INFO - date is ---------
+[2024-10-09T06:44:07.137+0000] {logging_mixin.py:188} INFO - 2024-10-09
+[2024-10-09T06:44:07.137+0000] {logging_mixin.py:188} INFO - forecasting start______________
+[2024-10-09T06:44:07.153+0000] {logging_mixin.py:188} INFO - Prepare the data with lags______________
+[2024-10-09T06:44:07.819+0000] {logging_mixin.py:188} INFO - Prophet forecast______________
+[2024-10-09T06:44:07.856+0000] {logging_mixin.py:188} INFO - Predict residuals using XGBoost______________
+[2024-10-09T06:44:07.857+0000] {logging_mixin.py:188} INFO - make_future_residual_predictions______________
+[2024-10-09T06:44:07.858+0000] {logging_mixin.py:188} INFO - no meet if condition
+[2024-10-09T06:44:07.862+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/sklearn/base.py:465 UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+[2024-10-09T06:44:07.863+0000] {logging_mixin.py:188} INFO - scaler transformed-------
+[2024-10-09T06:47:29.577+0000] {local_task_job_runner.py:121} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-10-09T06:47:29.582+0000] {process_utils.py:131} INFO - Sending 15 to group 4843. PIDs of all processes in the group: [4843]
+[2024-10-09T06:47:29.583+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 4843
+[2024-10-09T06:47:31.289+0000] {local_task_job_runner.py:121} ERROR - Received SIGTERM. Terminating subprocesses

@@ -16,7 +16,7 @@ from sklearn.model_selection import GridSearchCV
 import matplotlib.pyplot as plt
 import joblib
 
-artifacts_path=os.path.join("artifacts","gold")
+artifacts_path=os.path.join("artifacts","gold","models")
 
 # Create lag features for the residuals for a 90-day sliding window
 def create_lag_features(data, lags, target_col):
@@ -112,7 +112,7 @@ def forecast_model_training(source_table):
 
             xgb_model = xgb.XGBRegressor(objective='reg:squarederror')
 
-            grid_search = GridSearchCV(estimator=xgb_model, param_grid=param_grid, cv=3, scoring='neg_mean_squared_error', verbose=1)
+            grid_search = GridSearchCV(estimator=xgb_model, param_grid=param_grid, cv=3, scoring='neg_mean_squared_error', verbose=2)
             grid_search.fit(X_train_scaled, y_train)
 
             # Best parameters from GridSearch

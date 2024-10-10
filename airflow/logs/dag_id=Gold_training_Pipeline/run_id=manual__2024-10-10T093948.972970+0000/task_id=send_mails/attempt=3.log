@@ -1,0 +1,28 @@
+[2024-10-10T09:40:17.012+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_training_Pipeline.send_mails manual__2024-10-10T09:39:48.972970+00:00 [queued]>
+[2024-10-10T09:40:17.017+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_training_Pipeline.send_mails manual__2024-10-10T09:39:48.972970+00:00 [queued]>
+[2024-10-10T09:40:17.018+0000] {taskinstance.py:2193} INFO - Starting attempt 3 of 4
+[2024-10-10T09:40:17.029+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): send_mails> on 2024-10-10 09:39:48.972970+00:00
+[2024-10-10T09:40:17.034+0000] {standard_task_runner.py:60} INFO - Started process 6375 to run task
+[2024-10-10T09:40:17.035+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_training_Pipeline', 'send_mails', 'manual__2024-10-10T09:39:48.972970+00:00', '--job-id', '429', '--raw', '--subdir', 'DAGS_FOLDER/gold_training_pipeline.py', '--cfg-path', '/tmp/tmprssnahkz']
+[2024-10-10T09:40:17.036+0000] {standard_task_runner.py:88} INFO - Job 429: Subtask send_mails
+[2024-10-10T09:40:17.063+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_training_Pipeline.send_mails manual__2024-10-10T09:39:48.972970+00:00 [running]> on host 3c39c54b31c0
+[2024-10-10T09:40:17.105+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_training_Pipeline' AIRFLOW_CTX_TASK_ID='send_mails' AIRFLOW_CTX_EXECUTION_DATE='2024-10-10T09:39:48.972970+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-10T09:39:48.972970+00:00'
+[2024-10-10T09:40:17.107+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/gold/post_training/sending_mails.py", line 33, in mail_sending
+    send_email()
+  File "/opt/airflow/dags/components/gold/post_training/sending_mails.py", line 29, in send_email
+    email_operator.execute()
+TypeError: execute() missing 1 required positional argument: 'context'
+[2024-10-10T09:40:17.116+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Gold_training_Pipeline, task_id=send_mails, execution_date=20241010T093948, start_date=20241010T094017, end_date=20241010T094017
+[2024-10-10T09:40:17.123+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 429 for task send_mails (execute() missing 1 required positional argument: 'context'; 6375)
+[2024-10-10T09:40:17.169+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-10-10T09:40:17.180+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

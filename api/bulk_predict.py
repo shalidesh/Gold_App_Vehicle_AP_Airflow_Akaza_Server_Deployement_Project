@@ -28,7 +28,7 @@ with open('models/model_regressor1.json', 'r') as fin:
 with open('models/model_regressor2.json', 'r') as fin:
     model_regressor2 = model_from_json(json.load(fin))
 
-with open('models/model_regressor3.json', 'r') as fin:
+with open('models/model_regressor3.json', 'r') as fin:  
     model_regressor3 = model_from_json(json.load(fin))
 
 with open('models/model_regressor4.json', 'r') as fin:
@@ -40,7 +40,7 @@ def ounce_lkr(x):
     return rounded_price
 
 
-date_string='2025-1-2'
+date_string='2025-1-3'
 request_date = pd.to_datetime(date_string)
 
 today_date = pd.to_datetime('today').normalize()
@@ -84,4 +84,4 @@ forecast['yhat_upper_manipulation_smooth'] = forecast['yhat_upper_manipulation']
 
 response_dataframe=forecast[["ds","yhat_manipulation_smooth","yhat_lower_manipulation_smooth","yhat_upper_manipulation_smooth"]]
 
-response_dataframe.to_csv('2024-10-2.csv')
+response_dataframe.to_csv('2024-10-3.csv')
