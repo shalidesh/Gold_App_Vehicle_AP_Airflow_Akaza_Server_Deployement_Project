@@ -1,0 +1,55 @@
+[2024-10-14T04:20:40.225+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-14T04:20:16.911792+00:00 [queued]>
+[2024-10-14T04:20:40.249+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-14T04:20:16.911792+00:00 [queued]>
+[2024-10-14T04:20:40.260+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-10-14T04:20:40.666+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): model_training> on 2024-10-14 04:20:16.911792+00:00
+[2024-10-14T04:20:40.694+0000] {standard_task_runner.py:60} INFO - Started process 1287 to run task
+[2024-10-14T04:20:40.703+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_training_Pipeline', 'model_training', 'manual__2024-10-14T04:20:16.911792+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/gold_training_pipeline.py', '--cfg-path', '/tmp/tmpjp669hng']
+[2024-10-14T04:20:40.767+0000] {standard_task_runner.py:88} INFO - Job 46: Subtask model_training
+[2024-10-14T04:20:40.846+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-14T04:20:16.911792+00:00 [running]> on host d2fc084bce17
+[2024-10-14T04:20:40.962+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_training_Pipeline' AIRFLOW_CTX_TASK_ID='model_training' AIRFLOW_CTX_EXECUTION_DATE='2024-10-14T04:20:16.911792+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-14T04:20:16.911792+00:00'
+[2024-10-14T04:20:41.241+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmp092zv0rx/uh25kuz7.json
+[2024-10-14T04:20:41.753+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmp092zv0rx/5rax4f7f.json
+[2024-10-14T04:20:41.766+0000] {model.py:2042} DEBUG - idx 0
+[2024-10-14T04:20:41.779+0000] {model.py:2043} DEBUG - running CmdStan, num_threads: None
+[2024-10-14T04:20:41.784+0000] {model.py:2055} DEBUG - CmdStan args: ['/home/***/.local/lib/python3.8/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=87819', 'data', 'file=/tmp/tmp092zv0rx/uh25kuz7.json', 'init=/tmp/tmp092zv0rx/5rax4f7f.json', 'output', 'file=/tmp/tmp092zv0rx/prophet_model_scm8qqb/prophet_model-20241014042041.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+[2024-10-14T04:20:41.784+0000] {logging_mixin.py:188} WARNING - 04:20:41 - cmdstanpy - INFO - Chain [1] start processing
+[2024-10-14T04:20:41.784+0000] {model.py:2058} INFO - Chain [1] start processing
+[2024-10-14T04:20:46.829+0000] {logging_mixin.py:188} WARNING - 04:20:46 - cmdstanpy - INFO - Chain [1] done processing
+[2024-10-14T04:20:46.829+0000] {model.py:2115} INFO - Chain [1] done processing
+[2024-10-14T04:20:48.039+0000] {logging_mixin.py:188} INFO - Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[2024-10-14T04:44:23.006+0000] {logging_mixin.py:188} INFO - [CV] END learning_rate=0.001, max_depth=10, min_child_weight=1, n_estimators=500; total time=23.6min
+[2024-10-14T04:45:14.243+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-10-14T04:45:14.249+0000] {process_utils.py:131} INFO - Sending 15 to group 1287. PIDs of all processes in the group: [1287]
+[2024-10-14T04:45:14.256+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 1287
+[2024-10-14T04:45:15.001+0000] {taskinstance.py:2483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-10-14T04:45:15.005+0000] {logging_mixin.py:188} INFO - [CV] END learning_rate=0.001, max_depth=10, min_child_weight=1, n_estimators=500; total time=  52.0s
+[2024-10-14T04:45:50.822+0000] {local_task_job_runner.py:121} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-10-14T04:45:50.837+0000] {process_utils.py:131} INFO - Sending 15 to group 1287. PIDs of all processes in the group: [1287]
+[2024-10-14T04:45:50.838+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 1287
+[2024-10-14T04:45:52.990+0000] {taskinstance.py:2483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-10-14T04:45:52.996+0000] {logging_mixin.py:188} INFO - [CV] END learning_rate=0.001, max_depth=10, min_child_weight=1, n_estimators=500; total time=  38.0s
+[2024-10-14T04:45:53.027+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:425 FitFailedWarning:
+2 fits failed out of a total of 3.
+The score on these train-test partitions for these parameters will be set to nan.
+If these failures are not expected, you can try to debug them by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+2 fits failed with the following error:
+Traceback (most recent call last):
+  File "/home/***/.local/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 729, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/home/***/.local/lib/python3.8/site-packages/xgboost/core.py", line 726, in inner_f
+    return func(**kwargs)
+  File "/home/***/.local/lib/python3.8/site-packages/xgboost/sklearn.py", line 1108, in fit
+    self._Booster = train(
+  File "/home/***/.local/lib/python3.8/site-packages/xgboost/core.py", line 726, in inner_f
+    return func(**kwargs)
+  File "/home/***/.local/lib/python3.8/site-packages/xgboost/training.py", line 181, in train
+    bst.update(dtrain, iteration=i, fobj=obj)
+  File "/home/***/.local/lib/python3.8/site-packages/xgboost/core.py", line 2101, in update
+    _LIB.XGBoosterUpdateOneIter(
+  File "/home/***/.local/lib/python3.8/site-packages/***/models/taskinstance.py", line 2485, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+***.exceptions.AirflowException: Task received SIGTERM signal
+[2024-10-14T04:45:53.032+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/sklearn/model_selection/_search.py:979 UserWarning: One or more of the test scores are non-finite: [nan]

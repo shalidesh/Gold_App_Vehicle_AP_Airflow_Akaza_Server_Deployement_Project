@@ -1,0 +1,60 @@
+[2024-10-11T08:30:31.931+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-11T08:30:17.672861+00:00 [queued]>
+[2024-10-11T08:30:31.937+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-11T08:30:17.672861+00:00 [queued]>
+[2024-10-11T08:30:31.938+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-10-11T08:30:32.025+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): model_training> on 2024-10-11 08:30:17.672861+00:00
+[2024-10-11T08:30:32.031+0000] {standard_task_runner.py:60} INFO - Started process 4068 to run task
+[2024-10-11T08:30:32.033+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_training_Pipeline', 'model_training', 'manual__2024-10-11T08:30:17.672861+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/gold_training_pipeline.py', '--cfg-path', '/tmp/tmpt3svbxl1']
+[2024-10-11T08:30:32.035+0000] {standard_task_runner.py:88} INFO - Job 33: Subtask model_training
+[2024-10-11T08:30:32.075+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-11T08:30:17.672861+00:00 [running]> on host be922010cee5
+[2024-10-11T08:30:32.128+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_training_Pipeline' AIRFLOW_CTX_TASK_ID='model_training' AIRFLOW_CTX_EXECUTION_DATE='2024-10-11T08:30:17.672861+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-11T08:30:17.672861+00:00'
+[2024-10-11T08:30:32.211+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpq4yxlipt/c0je1rtd.json
+[2024-10-11T08:30:32.389+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpq4yxlipt/r6m5q4z_.json
+[2024-10-11T08:30:32.391+0000] {model.py:2042} DEBUG - idx 0
+[2024-10-11T08:30:32.391+0000] {model.py:2043} DEBUG - running CmdStan, num_threads: None
+[2024-10-11T08:30:32.392+0000] {model.py:2055} DEBUG - CmdStan args: ['/home/***/.local/lib/python3.8/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=47661', 'data', 'file=/tmp/tmpq4yxlipt/c0je1rtd.json', 'init=/tmp/tmpq4yxlipt/r6m5q4z_.json', 'output', 'file=/tmp/tmpq4yxlipt/prophet_modelvn813yhp/prophet_model-20241011083032.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+[2024-10-11T08:30:32.393+0000] {logging_mixin.py:188} WARNING - 08:30:32 - cmdstanpy - INFO - Chain [1] start processing
+[2024-10-11T08:30:32.393+0000] {model.py:2058} INFO - Chain [1] start processing
+[2024-10-11T08:30:34.265+0000] {logging_mixin.py:188} WARNING - 08:30:34 - cmdstanpy - INFO - Chain [1] done processing
+[2024-10-11T08:30:34.265+0000] {model.py:2115} INFO - Chain [1] done processing
+[2024-10-11T08:30:34.788+0000] {logging_mixin.py:188} INFO - Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[2024-10-11T08:42:33.579+0000] {logging_mixin.py:188} INFO - [CV] END learning_rate=0.001, max_depth=10, min_child_weight=1, n_estimators=500; total time=12.0min
+[2024-10-11T09:04:43.972+0000] {logging_mixin.py:188} INFO - [CV] END learning_rate=0.001, max_depth=10, min_child_weight=1, n_estimators=500; total time=22.2min
+[2024-10-11T09:27:08.338+0000] {logging_mixin.py:188} INFO - [CV] END learning_rate=0.001, max_depth=10, min_child_weight=1, n_estimators=500; total time=22.4min
+[2024-10-11T09:41:57.591+0000] {local_task_job_runner.py:121} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-10-11T09:41:57.770+0000] {process_utils.py:131} INFO - Sending 15 to group 4068. PIDs of all processes in the group: [4068]
+[2024-10-11T09:41:57.821+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 4068
+[2024-10-11T09:41:59.000+0000] {taskinstance.py:2483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-10-11T09:41:59.155+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/gold/model_training/model_training.py", line 116, in forecast_model_training
+    grid_search.fit(X_train_scaled, y_train)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/base.py", line 1152, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/model_selection/_search.py", line 936, in fit
+    self.best_estimator_.fit(X, y, **fit_params)
+  File "/home/airflow/.local/lib/python3.8/site-packages/xgboost/core.py", line 726, in inner_f
+    return func(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/xgboost/sklearn.py", line 1108, in fit
+    self._Booster = train(
+  File "/home/airflow/.local/lib/python3.8/site-packages/xgboost/core.py", line 726, in inner_f
+    return func(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/xgboost/training.py", line 181, in train
+    bst.update(dtrain, iteration=i, fobj=obj)
+  File "/home/airflow/.local/lib/python3.8/site-packages/xgboost/core.py", line 2101, in update
+    _LIB.XGBoosterUpdateOneIter(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2485, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-10-11T09:41:59.299+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Gold_training_Pipeline, task_id=model_training, execution_date=20241011T083017, start_date=20241011T083031, end_date=20241011T094159
+[2024-10-11T09:41:59.388+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 33 for task model_training (Task received SIGTERM signal; 4068)
+[2024-10-11T09:41:59.426+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=4068, status='terminated', exitcode=1, started='08:30:31') (4068) terminated with exit code 1
+[2024-10-11T09:41:59.453+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 143
+[2024-10-11T09:41:59.545+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

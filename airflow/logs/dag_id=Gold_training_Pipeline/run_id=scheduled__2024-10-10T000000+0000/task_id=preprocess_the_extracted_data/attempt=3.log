@@ -1,0 +1,32 @@
+[2024-10-11T08:10:42.319+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_training_Pipeline.preprocess_the_extracted_data scheduled__2024-10-10T00:00:00+00:00 [queued]>
+[2024-10-11T08:10:42.324+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_training_Pipeline.preprocess_the_extracted_data scheduled__2024-10-10T00:00:00+00:00 [queued]>
+[2024-10-11T08:10:42.325+0000] {taskinstance.py:2193} INFO - Starting attempt 3 of 4
+[2024-10-11T08:10:42.429+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): preprocess_the_extracted_data> on 2024-10-10 00:00:00+00:00
+[2024-10-11T08:10:42.435+0000] {standard_task_runner.py:60} INFO - Started process 547 to run task
+[2024-10-11T08:10:42.437+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_training_Pipeline', 'preprocess_the_extracted_data', 'scheduled__2024-10-10T00:00:00+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/gold_training_pipeline.py', '--cfg-path', '/tmp/tmpmorjg4hv']
+[2024-10-11T08:10:42.439+0000] {standard_task_runner.py:88} INFO - Job 15: Subtask preprocess_the_extracted_data
+[2024-10-11T08:10:42.472+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_training_Pipeline.preprocess_the_extracted_data scheduled__2024-10-10T00:00:00+00:00 [running]> on host be922010cee5
+[2024-10-11T08:10:42.521+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_training_Pipeline' AIRFLOW_CTX_TASK_ID='preprocess_the_extracted_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-10T00:00:00+00:00'
+[2024-10-11T08:10:42.543+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/gold/model_training/data_preprocessing.py", line 17, in preprocess_data
+    check_table(data_table)
+  File "/opt/airflow/dags/components/utils/database_table_creation.py", line 7, in check_table
+    with psycopg2.connect(host=host, port=port, database=database, user=user, password=password) as conn:
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "gold_demo-postgres-1" (172.25.0.2), port 5432 failed: FATAL:  database "pipeline_data" does not exist
+
+[2024-10-11T08:10:42.559+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Gold_training_Pipeline, task_id=preprocess_the_extracted_data, execution_date=20241010T000000, start_date=20241011T081042, end_date=20241011T081042
+[2024-10-11T08:10:42.567+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 15 for task preprocess_the_extracted_data (connection to server at "gold_demo-postgres-1" (172.25.0.2), port 5432 failed: FATAL:  database "pipeline_data" does not exist
+; 547)
+[2024-10-11T08:10:42.610+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-10-11T08:10:42.624+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
