@@ -1,0 +1,20 @@
+[2024-10-15T08:59:39.578+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-15T08:59:21.767298+00:00 [queued]>
+[2024-10-15T08:59:39.602+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-15T08:59:21.767298+00:00 [queued]>
+[2024-10-15T08:59:39.603+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-10-15T08:59:39.888+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): model_training> on 2024-10-15 08:59:21.767298+00:00
+[2024-10-15T08:59:39.894+0000] {standard_task_runner.py:60} INFO - Started process 631 to run task
+[2024-10-15T08:59:39.898+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_training_Pipeline', 'model_training', 'manual__2024-10-15T08:59:21.767298+00:00', '--job-id', '58', '--raw', '--subdir', 'DAGS_FOLDER/gold_training_pipeline.py', '--cfg-path', '/tmp/tmplu0jvtrv']
+[2024-10-15T08:59:39.900+0000] {standard_task_runner.py:88} INFO - Job 58: Subtask model_training
+[2024-10-15T08:59:40.016+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-15T08:59:21.767298+00:00 [running]> on host a0c7e0b03ffa
+[2024-10-15T08:59:40.125+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_training_Pipeline' AIRFLOW_CTX_TASK_ID='model_training' AIRFLOW_CTX_EXECUTION_DATE='2024-10-15T08:59:21.767298+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-15T08:59:21.767298+00:00'
+[2024-10-15T08:59:40.450+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpsqwk0jij/dxyx3f8s.json
+[2024-10-15T08:59:40.727+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpsqwk0jij/mha93u40.json
+[2024-10-15T08:59:40.736+0000] {model.py:2042} DEBUG - idx 0
+[2024-10-15T08:59:40.739+0000] {model.py:2043} DEBUG - running CmdStan, num_threads: None
+[2024-10-15T08:59:40.740+0000] {model.py:2055} DEBUG - CmdStan args: ['/home/***/.local/lib/python3.8/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=31293', 'data', 'file=/tmp/tmpsqwk0jij/dxyx3f8s.json', 'init=/tmp/tmpsqwk0jij/mha93u40.json', 'output', 'file=/tmp/tmpsqwk0jij/prophet_model6ocn8jte/prophet_model-20241015085940.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+[2024-10-15T08:59:40.744+0000] {logging_mixin.py:188} WARNING - 08:59:40 - cmdstanpy - INFO - Chain [1] start processing
+[2024-10-15T08:59:40.744+0000] {model.py:2058} INFO - Chain [1] start processing
+[2024-10-15T08:59:43.649+0000] {logging_mixin.py:188} WARNING - 08:59:43 - cmdstanpy - INFO - Chain [1] done processing
+[2024-10-15T08:59:43.649+0000] {model.py:2115} INFO - Chain [1] done processing
+[2024-10-15T08:59:44.968+0000] {logging_mixin.py:188} INFO - Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[2024-10-15T09:31:29.478+0000] {logging_mixin.py:188} INFO - [CV] END learning_rate=0.001, max_depth=10, min_child_weight=1, n_estimators=500; total time=31.7min
