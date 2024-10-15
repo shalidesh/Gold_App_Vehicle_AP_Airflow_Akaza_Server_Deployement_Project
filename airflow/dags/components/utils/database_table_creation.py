@@ -1,7 +1,5 @@
 import psycopg2
-from .configs import host, database, port, user, password
-
-
+from ....config.configs import host, database, port, user, password
 
 def check_table(table_name):
     with psycopg2.connect(host=host, port=port, database=database, user=user, password=password) as conn:

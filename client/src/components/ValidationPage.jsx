@@ -22,6 +22,11 @@ function ValidationPage() {
             </div>
 
             <div className="row">
+              <div className="row">
+                <div className="alert alert-danger mt-5" role="alert">
+                        New Version Released on 2024-10-12 !
+                    </div>
+              </div>
             
                 <div className="col-4">
                   <DatePicker 

@@ -64,30 +64,30 @@ function ProphetPlot(startDate) {
       name: 'Forecast',
       line: {color: 'blue'},
     },
-    {
-      x: graphdata.map(data => data.ds),
-      y: graphdata.map(data => data.yhat_lower_manipulation_smooth),
-      type: 'scatter',
-      mode: 'lines',
-      name: 'Lower Bound',
-      line: {color: 'red',dash: 'dot'},
-    },
-    {
-      x: graphdata.map(data => data.ds),
-      y: graphdata.map(data => data.yhat_upper_manipulation_smooth),
-      type: 'scatter',
-      mode: 'lines',
-      name: 'Upper Bound',
-      line: {color: 'green',dash: 'dot'},
-    },
-    ...(isChecked ? [{
-      x: graphdata2.map(data => data.date),
-      y: graphdata2.map(data => data.gld_price_lkr),
-      type: 'scatter',
-      mode: 'lines',
-      name: 'Actual Data',
-      line: {color: 'red', dash: 'dot'},
-    }] : [])
+    // {
+    //   x: graphdata.map(data => data.ds),
+    //   y: graphdata.map(data => data.yhat_lower_manipulation_smooth),
+    //   type: 'scatter',
+    //   mode: 'lines',
+    //   name: 'Lower Bound',
+    //   line: {color: 'red',dash: 'dot'},
+    // },
+    // {
+    //   x: graphdata.map(data => data.ds),
+    //   y: graphdata.map(data => data.yhat_upper_manipulation_smooth),
+    //   type: 'scatter',
+    //   mode: 'lines',
+    //   name: 'Upper Bound',
+    //   line: {color: 'green',dash: 'dot'},
+    // },
+    // ...(isChecked ? [{
+    //   x: graphdata2.map(data => data.date),
+    //   y: graphdata2.map(data => data.gld_price_lkr),
+    //   type: 'scatter',
+    //   mode: 'lines',
+    //   name: 'Actual Data',
+    //   line: {color: 'red', dash: 'dot'},
+    // }] : [])
   ];
 
   return (
@@ -102,8 +102,8 @@ function ProphetPlot(startDate) {
           <>
           {/* <h1 className='mt-5 mb-3'>Rs <span style={{ fontSize: '70px', fontWeight: 'bold',color: '#224abe' }}>205000</span> ({lastdata.ds})</h1> */}
             <h1 className='mt-5 mb-3'>Rs <span style={{ fontSize: '70px', fontWeight: 'bold',color: '#224abe' }}>{parseFloat(lastdata.yhat_manipulation_smooth).toFixed(2)}</span> ({lastdata.ds})</h1>
-            <p>Upper Bound - Rs <span style={{ fontSize: '20px', fontWeight: 'bold',color: '#224abe' }}>{parseFloat(lastdata.yhat_upper_manipulation_smooth).toFixed(2)}</span> </p>
-            <p>Lower Bound - Rs  <span style={{ fontSize: '20px', fontWeight: 'bold',color: '#224abe' }}>{parseFloat(lastdata.yhat_lower_manipulation_smooth).toFixed(2)}</span></p>
+            {/* <p>Upper Bound - Rs <span style={{ fontSize: '20px', fontWeight: 'bold',color: '#224abe' }}>{parseFloat(lastdata.yhat_upper_manipulation_smooth).toFixed(2)}</span> </p>
+            <p>Lower Bound - Rs  <span style={{ fontSize: '20px', fontWeight: 'bold',color: '#224abe' }}>{parseFloat(lastdata.yhat_lower_manipulation_smooth).toFixed(2)}</span></p> */}
 
             <div className="form-check form-switch">
             <input

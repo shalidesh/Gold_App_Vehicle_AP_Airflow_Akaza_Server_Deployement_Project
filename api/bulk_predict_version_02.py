@@ -1,4 +1,3 @@
-import os
 import pandas as pd
 import numpy as np
 from prophet import Prophet
@@ -8,16 +7,17 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV
 import matplotlib.pyplot as plt
 import joblib
-from datetime import datetime
+import os
 import logging
+from datetime import datetime
 
-# Create a directory to save the model files
+
 model_dir = os.path.join("models", "version_06")
 dataset_dir = os.path.join("data_tables", "df_interpolated_2024_10_11.csv")
+result_dir = os.path.join("daily_reports", "prediction_2024-10-15.csv")
 
-# Load the saved Prophet model
 prophet_model = joblib.load(os.path.join(model_dir, "prophet_model.pkl"))
-xgb_model = xgb.XGBRegressor()
+xgb_model = xgb.XGBRegressor(random_state=42)  # Ensure consistency by fixing random state
 xgb_model.load_model(os.path.join(model_dir, "xgb_model.json"))
 scaler = joblib.load(os.path.join(model_dir, "scaler.pkl"))
 regressors = joblib.load(os.path.join(model_dir, "regressors.pkl"))
@@ -41,11 +41,6 @@ def prepare_data_with_lags(df):
 
 # Function to handle forecast
 def forecast_up_to_date(selected_date):
-    # Load the dataset
-    df = pd.read_csv(dataset_dir)
-    df['date'] = pd.to_datetime(df['date'], format='%d/%m/%Y')
-    df = df.rename(columns={'date': 'ds', 'gold_lkr': 'y'})
-
     # Prepare the data with lags
     df_with_lags = prepare_data_with_lags(df)
     
@@ -85,7 +80,6 @@ def forecast_up_to_date(selected_date):
         'yhat_manipulation_smooth': (final_predictions+4000).astype(int)
     })
 
-
 # Function to create lag features for residuals
 def create_lag_features(data, lags, target_col):
     for lag in range(1, lags + 1):
@@ -116,3 +110,15 @@ def make_future_residual_predictions(last_sequence, model, num_predictions=90):
         current_seq[-1] = future_pred_residual
 
     return future_residuals
+
+
+selected_date = '2025-01-15'
+
+# Load the dataset
+df = pd.read_csv(dataset_dir)
+df['date'] = pd.to_datetime(df['date'], format='%d/%m/%Y')
+df = df.rename(columns={'date': 'ds', 'gold_lkr': 'y'})
+
+forecast_df = forecast_up_to_date(selected_date)
+
+forecast_df.to_csv(result_dir)

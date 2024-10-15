@@ -45,7 +45,7 @@ function ProphetXgboostPlot(startDate) {
   const plotData = [
     {
       x: graphdata.map(data => data.Date),
-      y: graphdata.map(data => data.Final_Prediction),
+      y: graphdata.map(data => data.yhat_manipulation_smooth),
       type: 'scatter',
       mode: 'lines',
       name: 'Forecast',
@@ -88,7 +88,7 @@ function ProphetXgboostPlot(startDate) {
         ) : (
           <>
           {/* <h1 className='mt-5 mb-3'>Rs <span style={{ fontSize: '70px', fontWeight: 'bold',color: '#224abe' }}>205000</span> ({lastdata.ds})</h1> */}
-            <h1 className='mt-5 mb-3'>Rs <span style={{ fontSize: '70px', fontWeight: 'bold',color: '#224abe' }}>{parseFloat(lastdata.Final_Prediction).toFixed(2)}</span> ({lastdata.Date})</h1>
+            <h1 className='mt-5 mb-3'>Rs <span style={{ fontSize: '70px', fontWeight: 'bold',color: '#224abe' }}>{parseFloat(lastdata.yhat_manipulation_smooth).toFixed(2)}</span> ({lastdata.Date})</h1>
             {/* <p>Upper Bound - Rs <span style={{ fontSize: '20px', fontWeight: 'bold',color: '#224abe' }}>{parseFloat(lastdata.yhat_upper_manipulation_smooth).toFixed(2)}</span> </p>
             <p>Lower Bound - Rs  <span style={{ fontSize: '20px', fontWeight: 'bold',color: '#224abe' }}>{parseFloat(lastdata.yhat_lower_manipulation_smooth).toFixed(2)}</span></p> */}
 
@@ -111,7 +111,7 @@ function ProphetXgboostPlot(startDate) {
               layout={ {width: 1000, height: 600, title: 'Gold Price Forecast'} }
             />
             {/* {graphdata2} */}
-            <ForecastTableXgBoost data={graphdata.slice(-40)} />
+            <ForecastTableXgBoost data={graphdata.slice(-90)} />
           </>
         )}
       </div>
