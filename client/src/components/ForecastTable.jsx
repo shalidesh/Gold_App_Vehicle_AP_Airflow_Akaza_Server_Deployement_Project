@@ -34,8 +34,8 @@ function ForecastTable({ data}) {
                         <tr>
                             <th scope="col">Date</th>
                             <th scope="col">Forecasted Price(Rs)</th>
-                            <th scope="col">Upper Bound(Rs)</th>
-                            <th scope="col">Lower Bound(Rs)</th>                    
+                            {/* <th scope="col">Upper Bound(Rs)</th>
+                            <th scope="col">Lower Bound(Rs)</th>                     */}
                         </tr>
                     </thead>
                     <tbody>
@@ -43,8 +43,8 @@ function ForecastTable({ data}) {
                             <tr key={index}>
                                 <th scope="row">{row.ds ? row.ds : row.date}</th>
                                 <td>{parseFloat(row.yhat_manipulation_smooth).toFixed(2)}</td>
-                                <td>{parseFloat(row.yhat_upper_manipulation_smooth).toFixed(2)}</td>
-                                <td>{parseFloat(row.yhat_lower_manipulation_smooth).toFixed(2)}</td>
+                                {/* <td>{parseFloat(row.yhat_upper_manipulation_smooth).toFixed(2)}</td>
+                                <td>{parseFloat(row.yhat_lower_manipulation_smooth).toFixed(2)}</td> */}
                             </tr>
                         ))}
                     </tbody>

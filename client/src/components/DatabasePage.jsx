@@ -18,6 +18,12 @@ function DatabasePage() {
       <div className='container ml-5'>
 
             <div className="row">
+              <div className="alert alert-danger mt-5" role="alert">
+                      Model is Updated Upto 2024-10-11 !
+                  </div>
+            </div>
+
+            <div className="row">
               <div className="col-4">
                 <h5>Select the Forecast Start Date</h5>
               </div>

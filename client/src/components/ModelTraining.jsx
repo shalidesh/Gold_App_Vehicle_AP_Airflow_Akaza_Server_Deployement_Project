@@ -45,7 +45,7 @@ function ModelTraining() {
     <div className='container ml-5 ' style={{paddingLeft:'220px',paddingRight:'220px',paddingTop:'150px',paddingBottom:'220px'}}>
 
         <div class="alert alert-primary" role="alert">
-                Model is Updated Upto 2024-9-26 !
+                Model is Updated Upto 2024-10-11 !
         </div>
 
         

@@ -43,22 +43,22 @@ function ForecastPlotDate(startDate) {
       name: 'Forecast',
       line: {color: 'blue'},
     },
-    {
-      x: graphdata.map(data => data.ds),
-      y: graphdata.map(data => data.yhat_lower_manipulation_smooth),
-      type: 'scatter',
-      mode: 'lines',
-      name: 'Lower Bound',
-      line: {color: 'red',dash: 'dot'},
-    },
-    {
-      x: graphdata.map(data => data.ds),
-      y: graphdata.map(data => data.yhat_upper_manipulation_smooth),
-      type: 'scatter',
-      mode: 'lines',
-      name: 'Upper Bound',
-      line: {color: 'green',dash: 'dot'},
-    }
+    // {
+    //   x: graphdata.map(data => data.ds),
+    //   y: graphdata.map(data => data.yhat_lower_manipulation_smooth),
+    //   type: 'scatter',
+    //   mode: 'lines',
+    //   name: 'Lower Bound',
+    //   line: {color: 'red',dash: 'dot'},
+    // },
+    // {
+    //   x: graphdata.map(data => data.ds),
+    //   y: graphdata.map(data => data.yhat_upper_manipulation_smooth),
+    //   type: 'scatter',
+    //   mode: 'lines',
+    //   name: 'Upper Bound',
+    //   line: {color: 'green',dash: 'dot'},
+    // }
   ];
 
   return (
@@ -77,8 +77,8 @@ function ForecastPlotDate(startDate) {
             />
             <p><b>Date</b> - Forecast Price Captured Date</p>
             <p><b>Forecasted Price(Rs)</b> - Captured exact price on Selected Date</p>
-            <p><b>Upper Bound(Rs)</b> - Captured Upper bound Price on Selected Date</p>
-            <p><b>Lower Bound(Rs)</b>  - Captured Lower bound Price on Selected Date</p>
+            {/* <p><b>Upper Bound(Rs)</b> - Captured Upper bound Price on Selected Date</p>
+            <p><b>Lower Bound(Rs)</b>  - Captured Lower bound Price on Selected Date</p> */}
             <ForecastTable data={graphdata.slice(-90)} />
           </>
         )}

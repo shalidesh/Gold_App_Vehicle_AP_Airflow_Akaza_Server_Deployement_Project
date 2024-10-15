@@ -38,7 +38,6 @@ mongo = PyMongo(app)
 train_df=pd.read_csv(train_df_path)
 gold_df=pd.read_csv(gold_df_path)
 
-
 # Load model
 with open('models/version_03/model_prophet.json', 'r') as fin:
     model = model_from_json(json.load(fin)) 
@@ -56,12 +55,10 @@ with open('models/version_03/model_regressor3.json', 'r') as fin:
 with open('models/version_03/model_regressor4.json', 'r') as fin:
     model_regressor4 = model_from_json(json.load(fin))
 
-
 # Ensure the upload folder exists
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
-
 
 
 @app.route('/gold_price', methods=['GET'])
@@ -168,6 +165,7 @@ def database():
     database_url = gold_df.loc[gold_df['date'] == formatted_date, 'database_url'].values[0]
     file_path = os.path.join(*database_url.split('/'))
     df_dataset=pd.read_csv(file_path)
+    df_dataset=df_dataset[['ds','yhat_manipulation_smooth']]
     return jsonify(df_dataset.to_dict(orient='records'))
 
 @app.route('/comparison', methods=['POST'])
@@ -179,7 +177,7 @@ def comparison():
     print(formatted_date)
 
     folder_path = 'daily_reports'
-    result_df = pd.DataFrame(columns=['date', 'yhat_manipulation_smooth','yhat_lower_manipulation_smooth','yhat_upper_manipulation_smooth'])
+    result_df = pd.DataFrame(columns=['date', 'yhat_manipulation_smooth'])
 
     for filename in os.listdir(folder_path):
         if filename.endswith('.csv'):
@@ -191,7 +189,7 @@ def comparison():
             print("----------")
             if not filtered_df.empty:
                 filtered_df['date'] = filename.replace('.csv', '')
-                result_df = pd.concat([result_df, filtered_df[['date', 'yhat_manipulation_smooth','yhat_lower_manipulation_smooth','yhat_upper_manipulation_smooth']]], ignore_index=True)
+                result_df = pd.concat([result_df, filtered_df[['date', 'yhat_manipulation_smooth']]], ignore_index=True)
                 result_df['date'] = pd.to_datetime(result_df['date'])
                 result_df = result_df.sort_values(by='date')
                 result_df = result_df.astype(str)
