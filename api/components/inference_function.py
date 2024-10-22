@@ -12,8 +12,8 @@ from datetime import datetime
 import logging
 
 # Create a directory to save the model files
-model_dir = os.path.join("models", "version_06")
-dataset_dir = os.path.join("data_tables", "df_interpolated_2024_10_11.csv")
+model_dir = os.path.join("artifacts")
+dataset_dir = os.path.join("data_tables", "df_interpolated_2024_10_21.csv")
 
 # Load the saved Prophet model
 prophet_model = joblib.load(os.path.join(model_dir, "prophet_model.pkl"))
@@ -82,7 +82,7 @@ def forecast_up_to_date(selected_date):
         'Prophet_Prediction': prophet_future_forecast['yhat'],
         'XGBoost_Residuals': future_residuals_pred,
         'Hybrid_Prediction': future_predictions,
-        'yhat_manipulation_smooth': (final_predictions+4000).astype(int)
+        'yhat_manipulation_smooth': (final_predictions+8000).astype(int)
     })
 
 

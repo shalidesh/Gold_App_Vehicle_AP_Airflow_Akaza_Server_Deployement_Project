@@ -1,0 +1,28 @@
+[2024-10-21T04:29:37.932+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training scheduled__2024-10-16T00:00:00+00:00 [queued]>
+[2024-10-21T04:29:37.951+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training scheduled__2024-10-16T00:00:00+00:00 [queued]>
+[2024-10-21T04:29:37.953+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-10-21T04:29:38.542+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): model_training> on 2024-10-16 00:00:00+00:00
+[2024-10-21T04:29:38.562+0000] {standard_task_runner.py:60} INFO - Started process 824 to run task
+[2024-10-21T04:29:38.567+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_training_Pipeline', 'model_training', 'scheduled__2024-10-16T00:00:00+00:00', '--job-id', '95', '--raw', '--subdir', 'DAGS_FOLDER/gold_training_pipeline.py', '--cfg-path', '/tmp/tmpsbme80wd']
+[2024-10-21T04:29:38.572+0000] {standard_task_runner.py:88} INFO - Job 95: Subtask model_training
+[2024-10-21T04:29:38.674+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_training_Pipeline.model_training scheduled__2024-10-16T00:00:00+00:00 [running]> on host e58a92ba783e
+[2024-10-21T04:29:38.852+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_training_Pipeline' AIRFLOW_CTX_TASK_ID='model_training' AIRFLOW_CTX_EXECUTION_DATE='2024-10-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-16T00:00:00+00:00'
+[2024-10-21T04:29:39.074+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpdg204yuh/skgkhxgs.json
+[2024-10-21T04:29:39.434+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpdg204yuh/cng4h_2r.json
+[2024-10-21T04:29:39.441+0000] {model.py:2042} DEBUG - idx 0
+[2024-10-21T04:29:39.442+0000] {model.py:2043} DEBUG - running CmdStan, num_threads: None
+[2024-10-21T04:29:39.444+0000] {model.py:2055} DEBUG - CmdStan args: ['/home/***/.local/lib/python3.8/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=60878', 'data', 'file=/tmp/tmpdg204yuh/skgkhxgs.json', 'init=/tmp/tmpdg204yuh/cng4h_2r.json', 'output', 'file=/tmp/tmpdg204yuh/prophet_modelybdv1izy/prophet_model-20241021042939.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+[2024-10-21T04:29:39.445+0000] {logging_mixin.py:188} WARNING - 04:29:39 - cmdstanpy - INFO - Chain [1] start processing
+[2024-10-21T04:29:39.445+0000] {model.py:2058} INFO - Chain [1] start processing
+[2024-10-21T04:29:47.602+0000] {logging_mixin.py:188} WARNING - 04:29:47 - cmdstanpy - INFO - Chain [1] done processing
+[2024-10-21T04:29:47.601+0000] {model.py:2115} INFO - Chain [1] done processing
+[2024-10-21T04:29:52.196+0000] {logging_mixin.py:188} INFO - Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[2024-10-21T04:34:12.479+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-10-21T04:34:12.642+0000] {process_utils.py:131} INFO - Sending 15 to group 824. PIDs of all processes in the group: [824]
+[2024-10-21T04:34:12.676+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 824
+[2024-10-21T04:34:15.295+0000] {taskinstance.py:2483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-10-21T04:34:15.488+0000] {logging_mixin.py:188} INFO - [CV] END learning_rate=0.001, max_depth=10, min_child_weight=1, n_estimators=500; total time= 4.4min
+[2024-10-21T04:35:12.683+0000] {process_utils.py:149} WARNING - process psutil.Process(pid=824, name='airflow task ru', status='sleeping', started='04:29:38') did not respond to SIGTERM. Trying SIGKILL
+[2024-10-21T04:35:12.688+0000] {process_utils.py:86} INFO - Sending the signal 9 to group 824
+[2024-10-21T04:35:12.906+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=824, name='airflow task ru', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='04:29:38') (824) terminated with exit code -9
+[2024-10-21T04:35:12.909+0000] {standard_task_runner.py:175} ERROR - Job 95 was killed before it finished (likely due to running out of memory)

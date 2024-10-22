@@ -1,0 +1,87 @@
+[2024-10-21T11:14:24.813+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Vehicle_Data_scrape_Pipeline.scrape_vehicle_info_from_link manual__2024-10-21T11:14:23.987373+00:00 [queued]>
+[2024-10-21T11:14:24.819+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Vehicle_Data_scrape_Pipeline.scrape_vehicle_info_from_link manual__2024-10-21T11:14:23.987373+00:00 [queued]>
+[2024-10-21T11:14:24.820+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-10-21T11:14:24.829+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): scrape_vehicle_info_from_link> on 2024-10-21 11:14:23.987373+00:00
+[2024-10-21T11:14:24.833+0000] {standard_task_runner.py:60} INFO - Started process 37787 to run task
+[2024-10-21T11:14:24.835+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Vehicle_Data_scrape_Pipeline', 'scrape_vehicle_info_from_link', 'manual__2024-10-21T11:14:23.987373+00:00', '--job-id', '136', '--raw', '--subdir', 'DAGS_FOLDER/vehicle_data_scraping_pipeline.py', '--cfg-path', '/tmp/tmp1ha1lgv7']
+[2024-10-21T11:14:24.840+0000] {standard_task_runner.py:88} INFO - Job 136: Subtask scrape_vehicle_info_from_link
+[2024-10-21T11:14:24.971+0000] {task_command.py:423} INFO - Running <TaskInstance: Vehicle_Data_scrape_Pipeline.scrape_vehicle_info_from_link manual__2024-10-21T11:14:23.987373+00:00 [running]> on host 988c1a0779ad
+[2024-10-21T11:14:25.016+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Vehicle_Data_scrape_Pipeline' AIRFLOW_CTX_TASK_ID='scrape_vehicle_info_from_link' AIRFLOW_CTX_EXECUTION_DATE='2024-10-21T11:14:23.987373+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-21T11:14:23.987373+00:00'
+[2024-10-21T11:14:25.023+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/68 [00:00<?, ?it/s]
+[2024-10-21T11:14:28.750+0000] {logging_mixin.py:188} WARNING -   1%|1         | 1/68 [00:03<04:09,  3.73s/it]
+[2024-10-21T11:14:33.585+0000] {logging_mixin.py:188} WARNING -   3%|2         | 2/68 [00:08<04:48,  4.38s/it]
+[2024-10-21T11:14:37.506+0000] {logging_mixin.py:188} WARNING -   4%|4         | 3/68 [00:12<04:31,  4.17s/it]
+[2024-10-21T11:14:41.532+0000] {logging_mixin.py:188} WARNING -   6%|5         | 4/68 [00:16<04:23,  4.11s/it]
+[2024-10-21T11:14:45.092+0000] {logging_mixin.py:188} WARNING -   7%|7         | 5/68 [00:20<04:06,  3.91s/it]
+[2024-10-21T11:14:48.929+0000] {logging_mixin.py:188} WARNING -   9%|8         | 6/68 [00:23<04:01,  3.89s/it]
+[2024-10-21T11:14:52.696+0000] {logging_mixin.py:188} WARNING -  10%|#         | 7/68 [00:27<03:54,  3.85s/it]
+[2024-10-21T11:14:59.009+0000] {logging_mixin.py:188} WARNING -  12%|#1        | 8/68 [00:33<04:37,  4.63s/it]
+[2024-10-21T11:15:03.409+0000] {logging_mixin.py:188} WARNING -  13%|#3        | 9/68 [00:38<04:29,  4.56s/it]
+[2024-10-21T11:15:07.678+0000] {logging_mixin.py:188} WARNING -  15%|#4        | 10/68 [00:42<04:19,  4.47s/it]
+[2024-10-21T11:15:14.355+0000] {logging_mixin.py:188} WARNING -  16%|#6        | 11/68 [00:49<04:53,  5.15s/it]
+[2024-10-21T11:15:18.361+0000] {logging_mixin.py:188} WARNING -  18%|#7        | 12/68 [00:53<04:28,  4.80s/it]
+[2024-10-21T11:15:22.007+0000] {logging_mixin.py:188} WARNING -  19%|#9        | 13/68 [00:56<04:04,  4.45s/it]
+[2024-10-21T11:15:25.925+0000] {logging_mixin.py:188} WARNING -  21%|##        | 14/68 [01:00<03:51,  4.29s/it]
+[2024-10-21T11:15:29.672+0000] {logging_mixin.py:188} WARNING -  22%|##2       | 15/68 [01:04<03:38,  4.13s/it]
+[2024-10-21T11:15:34.382+0000] {logging_mixin.py:188} WARNING -  24%|##3       | 16/68 [01:09<03:43,  4.30s/it]
+[2024-10-21T11:15:37.586+0000] {logging_mixin.py:188} WARNING -  25%|##5       | 17/68 [01:12<03:22,  3.97s/it]
+[2024-10-21T11:15:40.871+0000] {logging_mixin.py:188} WARNING -  26%|##6       | 18/68 [01:15<03:08,  3.77s/it]
+[2024-10-21T11:15:44.207+0000] {logging_mixin.py:188} WARNING -  28%|##7       | 19/68 [01:19<02:58,  3.64s/it]
+[2024-10-21T11:15:47.671+0000] {logging_mixin.py:188} WARNING -  29%|##9       | 20/68 [01:22<02:52,  3.58s/it]
+[2024-10-21T11:15:52.405+0000] {logging_mixin.py:188} WARNING -  31%|###       | 21/68 [01:27<03:04,  3.93s/it]
+[2024-10-21T11:15:58.547+0000] {logging_mixin.py:188} WARNING -  32%|###2      | 22/68 [01:33<03:31,  4.59s/it]
+[2024-10-21T11:16:03.587+0000] {logging_mixin.py:188} WARNING -  34%|###3      | 23/68 [01:38<03:32,  4.73s/it]
+[2024-10-21T11:16:08.566+0000] {logging_mixin.py:188} WARNING -  35%|###5      | 24/68 [01:43<03:31,  4.80s/it]
+[2024-10-21T11:16:15.329+0000] {logging_mixin.py:188} WARNING -  37%|###6      | 25/68 [01:50<03:51,  5.39s/it]
+[2024-10-21T11:16:21.969+0000] {logging_mixin.py:188} WARNING -  38%|###8      | 26/68 [01:56<04:02,  5.77s/it]
+[2024-10-21T11:16:27.938+0000] {logging_mixin.py:188} WARNING -  40%|###9      | 27/68 [02:02<03:58,  5.83s/it]
+[2024-10-21T11:16:33.147+0000] {logging_mixin.py:188} WARNING -  41%|####1     | 28/68 [02:08<03:45,  5.64s/it]
+[2024-10-21T11:16:37.530+0000] {logging_mixin.py:188} WARNING -  43%|####2     | 29/68 [02:12<03:25,  5.26s/it]
+[2024-10-21T11:16:42.647+0000] {logging_mixin.py:188} WARNING -  44%|####4     | 30/68 [02:17<03:18,  5.22s/it]
+[2024-10-21T11:17:18.957+0000] {logging_mixin.py:188} WARNING -  46%|####5     | 31/68 [02:53<08:58, 14.55s/it]
+[2024-10-21T11:17:24.355+0000] {logging_mixin.py:188} WARNING -  47%|####7     | 32/68 [02:59<07:04, 11.80s/it]
+[2024-10-21T11:17:29.717+0000] {logging_mixin.py:188} WARNING -  49%|####8     | 33/68 [03:04<05:45,  9.87s/it]
+[2024-10-21T11:17:34.327+0000] {logging_mixin.py:188} WARNING -  50%|#####     | 34/68 [03:09<04:41,  8.29s/it]
+[2024-10-21T11:17:38.912+0000] {logging_mixin.py:188} WARNING -  51%|#####1    | 35/68 [03:13<03:56,  7.18s/it]
+[2024-10-21T11:17:43.860+0000] {logging_mixin.py:188} WARNING -  53%|#####2    | 36/68 [03:18<03:28,  6.51s/it]
+[2024-10-21T11:17:49.714+0000] {logging_mixin.py:188} WARNING -  54%|#####4    | 37/68 [03:24<03:15,  6.31s/it]
+[2024-10-21T11:17:56.051+0000] {logging_mixin.py:188} WARNING -  56%|#####5    | 38/68 [03:31<03:09,  6.32s/it]
+[2024-10-21T11:18:05.140+0000] {logging_mixin.py:188} WARNING -  57%|#####7    | 39/68 [03:40<03:27,  7.15s/it]
+[2024-10-21T11:18:10.211+0000] {logging_mixin.py:188} WARNING -  59%|#####8    | 40/68 [03:45<03:02,  6.53s/it]
+[2024-10-21T11:18:15.599+0000] {logging_mixin.py:188} WARNING -  60%|######    | 41/68 [03:50<02:47,  6.19s/it]
+[2024-10-21T11:18:19.008+0000] {logging_mixin.py:188} WARNING -  62%|######1   | 42/68 [03:53<02:19,  5.35s/it]
+[2024-10-21T11:18:26.171+0000] {logging_mixin.py:188} WARNING -  63%|######3   | 43/68 [04:01<02:27,  5.90s/it]
+[2024-10-21T11:18:31.709+0000] {logging_mixin.py:188} WARNING -  65%|######4   | 44/68 [04:06<02:18,  5.79s/it]
+[2024-10-21T11:18:36.993+0000] {logging_mixin.py:188} WARNING -  66%|######6   | 45/68 [04:11<02:09,  5.64s/it]
+[2024-10-21T11:18:42.322+0000] {logging_mixin.py:188} WARNING -  68%|######7   | 46/68 [04:17<02:01,  5.54s/it]
+[2024-10-21T11:18:46.858+0000] {logging_mixin.py:188} WARNING -  69%|######9   | 47/68 [04:21<01:50,  5.24s/it]
+[2024-10-21T11:18:51.676+0000] {logging_mixin.py:188} WARNING -  71%|#######   | 48/68 [04:26<01:42,  5.11s/it]
+[2024-10-21T11:18:57.106+0000] {logging_mixin.py:188} WARNING -  72%|#######2  | 49/68 [04:32<01:38,  5.21s/it]
+[2024-10-21T11:19:03.536+0000] {logging_mixin.py:188} WARNING -  74%|#######3  | 50/68 [04:38<01:40,  5.58s/it]
+[2024-10-21T11:19:15.470+0000] {logging_mixin.py:188} WARNING -  75%|#######5  | 51/68 [04:50<02:07,  7.48s/it]
+[2024-10-21T11:19:23.683+0000] {logging_mixin.py:188} WARNING -  76%|#######6  | 52/68 [04:58<02:03,  7.70s/it]
+[2024-10-21T11:19:30.094+0000] {logging_mixin.py:188} WARNING -  78%|#######7  | 53/68 [05:05<01:49,  7.31s/it]
+[2024-10-21T11:19:36.309+0000] {logging_mixin.py:188} WARNING -  79%|#######9  | 54/68 [05:11<01:37,  6.98s/it]
+[2024-10-21T11:19:44.915+0000] {logging_mixin.py:188} WARNING -  81%|########  | 55/68 [05:19<01:37,  7.47s/it]
+[2024-10-21T11:19:51.040+0000] {logging_mixin.py:188} WARNING -  82%|########2 | 56/68 [05:26<01:24,  7.07s/it]
+[2024-10-21T11:19:59.220+0000] {logging_mixin.py:188} WARNING -  84%|########3 | 57/68 [05:34<01:21,  7.40s/it]
+[2024-10-21T11:20:03.177+0000] {logging_mixin.py:188} WARNING -  85%|########5 | 58/68 [05:38<01:03,  6.37s/it]
+[2024-10-21T11:20:07.243+0000] {logging_mixin.py:188} WARNING -  87%|########6 | 59/68 [05:42<00:51,  5.68s/it]
+[2024-10-21T11:20:14.512+0000] {logging_mixin.py:188} WARNING -  88%|########8 | 60/68 [05:49<00:49,  6.16s/it]
+[2024-10-21T11:20:20.307+0000] {logging_mixin.py:188} WARNING -  90%|########9 | 61/68 [05:55<00:42,  6.05s/it]
+[2024-10-21T11:20:27.627+0000] {logging_mixin.py:188} WARNING -  91%|#########1| 62/68 [06:02<00:38,  6.43s/it]
+[2024-10-21T11:20:32.141+0000] {logging_mixin.py:188} WARNING -  93%|#########2| 63/68 [06:07<00:29,  5.85s/it]
+[2024-10-21T11:20:37.402+0000] {logging_mixin.py:188} WARNING -  94%|#########4| 64/68 [06:12<00:22,  5.68s/it]
+[2024-10-21T11:20:41.774+0000] {logging_mixin.py:188} WARNING -  96%|#########5| 65/68 [06:16<00:15,  5.29s/it]
+[2024-10-21T11:20:49.040+0000] {logging_mixin.py:188} WARNING -  97%|#########7| 66/68 [06:24<00:11,  5.88s/it]
+[2024-10-21T11:20:52.562+0000] {logging_mixin.py:188} WARNING -  99%|#########8| 67/68 [06:27<00:05,  5.17s/it]
+[2024-10-21T11:21:00.777+0000] {logging_mixin.py:188} WARNING - 100%|##########| 68/68 [06:35<00:00,  6.09s/it]
+[2024-10-21T11:21:00.778+0000] {logging_mixin.py:188} WARNING - 100%|##########| 68/68 [06:35<00:00,  5.82s/it]
+[2024-10-21T11:21:00.803+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-10-21T11:21:00.809+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Vehicle_Data_scrape_Pipeline, task_id=scrape_vehicle_info_from_link, execution_date=20241021T111423, start_date=20241021T111424, end_date=20241021T112100
+[2024-10-21T11:21:00.813+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/context.py:207 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2024-10-21T11:21:00.818+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-10-21T11:21:00.818+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-10-21T11:21:02.859+0000] {email.py:281} INFO - Sent an alert email to ['deshanariyarathna@gmail.com']
+[2024-10-21T11:21:05.597+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-10-21T11:21:05.613+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

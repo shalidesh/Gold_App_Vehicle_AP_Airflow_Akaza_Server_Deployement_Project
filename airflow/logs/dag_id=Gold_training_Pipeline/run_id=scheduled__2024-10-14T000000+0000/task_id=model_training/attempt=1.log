@@ -1,0 +1,54 @@
+[2024-10-15T08:59:39.380+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training scheduled__2024-10-14T00:00:00+00:00 [queued]>
+[2024-10-15T08:59:39.442+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training scheduled__2024-10-14T00:00:00+00:00 [queued]>
+[2024-10-15T08:59:39.443+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-10-15T08:59:39.591+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): model_training> on 2024-10-14 00:00:00+00:00
+[2024-10-15T08:59:39.621+0000] {standard_task_runner.py:60} INFO - Started process 630 to run task
+[2024-10-15T08:59:39.638+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_training_Pipeline', 'model_training', 'scheduled__2024-10-14T00:00:00+00:00', '--job-id', '57', '--raw', '--subdir', 'DAGS_FOLDER/gold_training_pipeline.py', '--cfg-path', '/tmp/tmp1hvku464']
+[2024-10-15T08:59:39.641+0000] {standard_task_runner.py:88} INFO - Job 57: Subtask model_training
+[2024-10-15T08:59:39.703+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_training_Pipeline.model_training scheduled__2024-10-14T00:00:00+00:00 [running]> on host a0c7e0b03ffa
+[2024-10-15T08:59:39.867+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_training_Pipeline' AIRFLOW_CTX_TASK_ID='model_training' AIRFLOW_CTX_EXECUTION_DATE='2024-10-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-14T00:00:00+00:00'
+[2024-10-15T08:59:40.008+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmp0lc4n5zk/lqwbas8y.json
+[2024-10-15T08:59:40.313+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmp0lc4n5zk/i398g27x.json
+[2024-10-15T08:59:40.325+0000] {model.py:2042} DEBUG - idx 0
+[2024-10-15T08:59:40.326+0000] {model.py:2043} DEBUG - running CmdStan, num_threads: None
+[2024-10-15T08:59:40.326+0000] {model.py:2055} DEBUG - CmdStan args: ['/home/***/.local/lib/python3.8/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=11928', 'data', 'file=/tmp/tmp0lc4n5zk/lqwbas8y.json', 'init=/tmp/tmp0lc4n5zk/i398g27x.json', 'output', 'file=/tmp/tmp0lc4n5zk/prophet_modelxjn1q3dx/prophet_model-20241015085940.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+[2024-10-15T08:59:40.327+0000] {logging_mixin.py:188} WARNING - 08:59:40 - cmdstanpy - INFO - Chain [1] start processing
+[2024-10-15T08:59:40.327+0000] {model.py:2058} INFO - Chain [1] start processing
+[2024-10-15T08:59:43.398+0000] {logging_mixin.py:188} WARNING - 08:59:43 - cmdstanpy - INFO - Chain [1] done processing
+[2024-10-15T08:59:43.398+0000] {model.py:2115} INFO - Chain [1] done processing
+[2024-10-15T08:59:44.588+0000] {logging_mixin.py:188} INFO - Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[2024-10-15T09:31:28.779+0000] {logging_mixin.py:188} INFO - [CV] END learning_rate=0.001, max_depth=10, min_child_weight=1, n_estimators=500; total time=31.7min
+[2024-10-15T10:03:53.434+0000] {logging_mixin.py:188} INFO - [CV] END learning_rate=0.001, max_depth=10, min_child_weight=1, n_estimators=500; total time=32.4min
+[2024-10-15T10:33:53.535+0000] {local_task_job_runner.py:121} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-10-15T10:33:53.968+0000] {process_utils.py:131} INFO - Sending 15 to group 630. PIDs of all processes in the group: [630]
+[2024-10-15T10:33:53.984+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 630
+[2024-10-15T10:33:56.472+0000] {taskinstance.py:2483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-10-15T10:33:56.627+0000] {logging_mixin.py:188} INFO - [CV] END learning_rate=0.001, max_depth=10, min_child_weight=1, n_estimators=500; total time=30.1min
+[2024-10-15T10:33:57.262+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/sklearn/model_selection/_validation.py:425 FitFailedWarning:
+1 fits failed out of a total of 3.
+The score on these train-test partitions for these parameters will be set to nan.
+If these failures are not expected, you can try to debug them by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "/home/***/.local/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 729, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/home/***/.local/lib/python3.8/site-packages/xgboost/core.py", line 726, in inner_f
+    return func(**kwargs)
+  File "/home/***/.local/lib/python3.8/site-packages/xgboost/sklearn.py", line 1108, in fit
+    self._Booster = train(
+  File "/home/***/.local/lib/python3.8/site-packages/xgboost/core.py", line 726, in inner_f
+    return func(**kwargs)
+  File "/home/***/.local/lib/python3.8/site-packages/xgboost/training.py", line 181, in train
+    bst.update(dtrain, iteration=i, fobj=obj)
+  File "/home/***/.local/lib/python3.8/site-packages/xgboost/core.py", line 2101, in update
+    _LIB.XGBoosterUpdateOneIter(
+  File "/home/***/.local/lib/python3.8/site-packages/***/models/taskinstance.py", line 2485, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+***.exceptions.AirflowException: Task received SIGTERM signal
+[2024-10-15T10:33:57.376+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/sklearn/model_selection/_search.py:979 UserWarning: One or more of the test scores are non-finite: [nan]
+[2024-10-15T10:33:58.953+0000] {local_task_job_runner.py:121} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-10-15T10:33:58.954+0000] {process_utils.py:131} INFO - Sending 15 to group 630. PIDs of all processes in the group: [630]
+[2024-10-15T10:33:58.955+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 630

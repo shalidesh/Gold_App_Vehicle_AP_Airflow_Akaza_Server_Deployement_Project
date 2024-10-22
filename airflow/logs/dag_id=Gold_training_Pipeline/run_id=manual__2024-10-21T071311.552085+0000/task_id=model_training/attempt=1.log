@@ -1,0 +1,33 @@
+[2024-10-21T07:13:26.243+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-21T07:13:11.552085+00:00 [queued]>
+[2024-10-21T07:13:26.252+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-21T07:13:11.552085+00:00 [queued]>
+[2024-10-21T07:13:26.252+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-10-21T07:13:26.358+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): model_training> on 2024-10-21 07:13:11.552085+00:00
+[2024-10-21T07:13:26.364+0000] {standard_task_runner.py:60} INFO - Started process 2538 to run task
+[2024-10-21T07:13:26.366+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_training_Pipeline', 'model_training', 'manual__2024-10-21T07:13:11.552085+00:00', '--job-id', '114', '--raw', '--subdir', 'DAGS_FOLDER/gold_training_pipeline.py', '--cfg-path', '/tmp/tmpibsd0grj']
+[2024-10-21T07:13:26.367+0000] {standard_task_runner.py:88} INFO - Job 114: Subtask model_training
+[2024-10-21T07:13:26.402+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-21T07:13:11.552085+00:00 [running]> on host 988c1a0779ad
+[2024-10-21T07:13:26.451+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_training_Pipeline' AIRFLOW_CTX_TASK_ID='model_training' AIRFLOW_CTX_EXECUTION_DATE='2024-10-21T07:13:11.552085+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-21T07:13:11.552085+00:00'
+[2024-10-21T07:13:26.523+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpxm_elp_x/oas_7m0h.json
+[2024-10-21T07:13:26.703+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpxm_elp_x/r_odh9d2.json
+[2024-10-21T07:13:26.709+0000] {model.py:2042} DEBUG - idx 0
+[2024-10-21T07:13:26.709+0000] {model.py:2043} DEBUG - running CmdStan, num_threads: None
+[2024-10-21T07:13:26.711+0000] {model.py:2055} DEBUG - CmdStan args: ['/home/***/.local/lib/python3.8/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=78107', 'data', 'file=/tmp/tmpxm_elp_x/oas_7m0h.json', 'init=/tmp/tmpxm_elp_x/r_odh9d2.json', 'output', 'file=/tmp/tmpxm_elp_x/prophet_modelsqmg0w9z/prophet_model-20241021071326.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+[2024-10-21T07:13:26.712+0000] {logging_mixin.py:188} WARNING - 07:13:26 - cmdstanpy - INFO - Chain [1] start processing
+[2024-10-21T07:13:26.712+0000] {model.py:2058} INFO - Chain [1] start processing
+[2024-10-21T07:13:28.163+0000] {logging_mixin.py:188} WARNING - 07:13:28 - cmdstanpy - INFO - Chain [1] done processing
+[2024-10-21T07:13:28.163+0000] {model.py:2115} INFO - Chain [1] done processing
+[2024-10-21T07:13:28.656+0000] {logging_mixin.py:188} INFO - Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[2024-10-21T07:13:53.262+0000] {logging_mixin.py:188} INFO - [CV] END learning_rate=0.001, max_depth=10, min_child_weight=1, n_estimators=500; total time=  24.6s
+[2024-10-21T07:14:14.371+0000] {logging_mixin.py:188} INFO - [CV] END learning_rate=0.001, max_depth=10, min_child_weight=1, n_estimators=500; total time=  21.1s
+[2024-10-21T07:14:39.447+0000] {logging_mixin.py:188} INFO - [CV] END learning_rate=0.001, max_depth=10, min_child_weight=1, n_estimators=500; total time=  25.1s
+[2024-10-21T07:14:59.188+0000] {logging_mixin.py:188} INFO - Best parameters from GridSearchCV: {'learning_rate': 0.001, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 500}
+[2024-10-21T07:15:25.599+0000] {logging_mixin.py:188} INFO - Root Mean Squared Error (RMSE) of the hybrid model: 9227.219354505083
+[2024-10-21T07:15:25.704+0000] {logging_mixin.py:188} INFO - All necessary files for prediction have been saved in the 'model_files' directory.
+[2024-10-21T07:15:25.709+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-10-21T07:15:25.721+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Gold_training_Pipeline, task_id=model_training, execution_date=20241021T071311, start_date=20241021T071326, end_date=20241021T071525
+[2024-10-21T07:15:25.726+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/context.py:207 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2024-10-21T07:15:25.732+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-10-21T07:15:25.733+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-10-21T07:15:28.634+0000] {email.py:281} INFO - Sent an alert email to ['deshanariyarathna@gmail.com']
+[2024-10-21T07:15:30.661+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-10-21T07:15:30.675+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

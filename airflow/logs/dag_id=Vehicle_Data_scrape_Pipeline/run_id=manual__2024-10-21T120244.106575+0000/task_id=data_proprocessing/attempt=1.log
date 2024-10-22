@@ -1,0 +1,33 @@
+[2024-10-21T15:11:10.234+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Vehicle_Data_scrape_Pipeline.data_proprocessing manual__2024-10-21T12:02:44.106575+00:00 [queued]>
+[2024-10-21T15:11:10.258+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Vehicle_Data_scrape_Pipeline.data_proprocessing manual__2024-10-21T12:02:44.106575+00:00 [queued]>
+[2024-10-21T15:11:10.260+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-10-21T15:11:10.303+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): data_proprocessing> on 2024-10-21 12:02:44.106575+00:00
+[2024-10-21T15:11:10.313+0000] {standard_task_runner.py:60} INFO - Started process 73451 to run task
+[2024-10-21T15:11:10.320+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Vehicle_Data_scrape_Pipeline', 'data_proprocessing', 'manual__2024-10-21T12:02:44.106575+00:00', '--job-id', '157', '--raw', '--subdir', 'DAGS_FOLDER/vehicle_data_scraping_pipeline.py', '--cfg-path', '/tmp/tmpmw6rkmsc']
+[2024-10-21T15:11:10.324+0000] {standard_task_runner.py:88} INFO - Job 157: Subtask data_proprocessing
+[2024-10-21T15:11:10.710+0000] {task_command.py:423} INFO - Running <TaskInstance: Vehicle_Data_scrape_Pipeline.data_proprocessing manual__2024-10-21T12:02:44.106575+00:00 [running]> on host 988c1a0779ad
+[2024-10-21T15:11:10.932+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Vehicle_Data_scrape_Pipeline' AIRFLOW_CTX_TASK_ID='data_proprocessing' AIRFLOW_CTX_EXECUTION_DATE='2024-10-21T12:02:44.106575+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-21T12:02:44.106575+00:00'
+[2024-10-21T15:11:11.054+0000] {logging_mixin.py:188} INFO -     brand posted_date       model  ... fuel_type engine_capacity vehicle_price
+0  Toyota      21 Oct       Passo  ...    Petrol            1000       4950000
+1  Toyota      21 Oct        Axio  ...    Petrol            1500       8590000
+2  Toyota      21 Oct        Vios  ...    Petrol            1500       6490000
+3  Toyota      21 Oct      Allion  ...    Petrol            1500       9490000
+4  Toyota      21 Oct  FJ Cruiser  ...    Petrol            4000      34000000
+
+[5 rows x 8 columns]
+[2024-10-21T15:11:11.093+0000] {logging_mixin.py:188} INFO -     brand posted_date       model  ... fuel_type engine_capacity vehicle_price
+0  TOYOTA      21 OCT       PASSO  ...    PETROL            1000       4950000
+1  TOYOTA      21 OCT        AXIO  ...    PETROL            1500       8590000
+2  TOYOTA      21 OCT        VIOS  ...    PETROL            1500       6490000
+3  TOYOTA      21 OCT      ALLION  ...    PETROL            1500       9490000
+4  TOYOTA      21 OCT  FJ CRUISER  ...    PETROL            4000      34000000
+
+[5 rows x 8 columns]
+[2024-10-21T15:11:12.222+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-10-21T15:11:12.242+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Vehicle_Data_scrape_Pipeline, task_id=data_proprocessing, execution_date=20241021T120244, start_date=20241021T151110, end_date=20241021T151112
+[2024-10-21T15:11:12.258+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/context.py:207 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2024-10-21T15:11:12.273+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-10-21T15:11:12.277+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-10-21T15:11:14.257+0000] {email.py:281} INFO - Sent an alert email to ['deshanariyarathna@gmail.com']
+[2024-10-21T15:11:16.121+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-10-21T15:11:16.156+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

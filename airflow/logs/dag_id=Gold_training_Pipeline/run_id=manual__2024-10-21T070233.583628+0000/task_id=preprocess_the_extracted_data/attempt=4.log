@@ -1,0 +1,38 @@
+[2024-10-21T07:03:02.465+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_training_Pipeline.preprocess_the_extracted_data manual__2024-10-21T07:02:33.583628+00:00 [queued]>
+[2024-10-21T07:03:02.473+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_training_Pipeline.preprocess_the_extracted_data manual__2024-10-21T07:02:33.583628+00:00 [queued]>
+[2024-10-21T07:03:02.474+0000] {taskinstance.py:2193} INFO - Starting attempt 4 of 4
+[2024-10-21T07:03:02.578+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): preprocess_the_extracted_data> on 2024-10-21 07:02:33.583628+00:00
+[2024-10-21T07:03:02.589+0000] {standard_task_runner.py:60} INFO - Started process 639 to run task
+[2024-10-21T07:03:02.591+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_training_Pipeline', 'preprocess_the_extracted_data', 'manual__2024-10-21T07:02:33.583628+00:00', '--job-id', '105', '--raw', '--subdir', 'DAGS_FOLDER/gold_training_pipeline.py', '--cfg-path', '/tmp/tmpnwfc8sfh']
+[2024-10-21T07:03:02.593+0000] {standard_task_runner.py:88} INFO - Job 105: Subtask preprocess_the_extracted_data
+[2024-10-21T07:03:02.627+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_training_Pipeline.preprocess_the_extracted_data manual__2024-10-21T07:02:33.583628+00:00 [running]> on host 988c1a0779ad
+[2024-10-21T07:03:02.678+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_training_Pipeline' AIRFLOW_CTX_TASK_ID='preprocess_the_extracted_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-21T07:02:33.583628+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-21T07:02:33.583628+00:00'
+[2024-10-21T07:03:02.734+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/gold/model_training/data_preprocessing.py", line 29, in preprocess_data
+    populate_table(data_table, df)
+  File "/opt/airflow/dags/components/utils/database_table_creation.py", line 51, in populate_table
+    cur.executemany(query, data_tuples)
+psycopg2.errors.SyntaxError: syntax error at or near ":"
+LINE 1: INSERT INTO preprocesed_gold_data_tables (Unnamed: 0, date, ...
+                                                         ^
+
+[2024-10-21T07:03:02.758+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=Gold_training_Pipeline, task_id=preprocess_the_extracted_data, execution_date=20241021T070233, start_date=20241021T070302, end_date=20241021T070302
+[2024-10-21T07:03:02.762+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/context.py:207 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2024-10-21T07:03:02.768+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-10-21T07:03:02.769+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-10-21T07:03:04.562+0000] {email.py:281} INFO - Sent an alert email to ['deshanariyarathna@gmail.com']
+[2024-10-21T07:03:06.489+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 105 for task preprocess_the_extracted_data (syntax error at or near ":"
+LINE 1: INSERT INTO preprocesed_gold_data_tables (Unnamed: 0, date, ...
+                                                         ^
+; 639)
+[2024-10-21T07:03:06.500+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-10-21T07:03:06.515+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

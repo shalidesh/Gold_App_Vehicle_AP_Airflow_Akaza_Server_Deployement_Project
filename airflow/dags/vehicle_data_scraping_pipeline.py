@@ -13,7 +13,7 @@ from components.vehicle.data_scraping_components.model_creation_unique import mo
 default_args = {
     'owner': 'sdeshan',
     'depends_on_past': False,
-    'start_date': datetime(2024, 10, 14),
+    'start_date': datetime(2024, 10, 22),
     'schedule_interval' : 'None',
     'email_on_failure': True,
     'email_on_success': True,

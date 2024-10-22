@@ -12,9 +12,9 @@ import logging
 from datetime import datetime
 
 
-model_dir = os.path.join("models", "version_06")
-dataset_dir = os.path.join("data_tables", "df_interpolated_2024_10_11.csv")
-result_dir = os.path.join("daily_reports", "prediction_2024-10-15.csv")
+model_dir = os.path.join("artifacts")
+dataset_dir = os.path.join("data_tables", "df_interpolated_2024_10_21.csv")
+result_dir = os.path.join("daily_reports", "prediction_2024-10-21.csv")
 
 prophet_model = joblib.load(os.path.join(model_dir, "prophet_model.pkl"))
 xgb_model = xgb.XGBRegressor(random_state=42)  # Ensure consistency by fixing random state
