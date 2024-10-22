@@ -58,20 +58,20 @@ preprocess_data = PythonOperator(
 )
 
 
-unique_model_creation = PythonOperator(
-    task_id='unique_model_creation',
-    python_callable=model_creation_unique,
-    op_kwargs={'source_table': 'ikman_post_data_preprocced','data_table': 'unique_model'}, 
-    on_success_callback = success_email,
-    on_failure_callback = failure_email,
-    provide_context = True,
-    dag=dag,
-)
+# unique_model_creation = PythonOperator(
+#     task_id='unique_model_creation',
+#     python_callable=model_creation_unique,
+#     op_kwargs={'source_table': 'ikman_post_data_preprocced','data_table': 'unique_model'}, 
+#     on_success_callback = success_email,
+#     on_failure_callback = failure_email,
+#     provide_context = True,
+#     dag=dag,
+# )
 
 #Set the order of tasks
 scrape_vehicle_info_from_link.set_upstream(scrape_post_links)
 preprocess_data.set_upstream(scrape_vehicle_info_from_link)
-unique_model_creation.set_upstream(preprocess_data)
+# unique_model_creation.set_upstream(preprocess_data)
 
 
 

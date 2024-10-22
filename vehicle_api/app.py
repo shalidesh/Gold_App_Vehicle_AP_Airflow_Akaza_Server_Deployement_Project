@@ -72,15 +72,15 @@ def predict_datapoint():
 
             request_data = request.get_json(force=True) 
 
-            if checkInputs(request_data):
+            model=request_data.get('model').upper().strip() 
+            manufacture = request_data.get('manufacture').upper().strip() 
+            fuel=request_data.get('fuel').upper().strip() 
+            transmission=request_data.get('transmission').upper().strip() 
+            engine_capacity=request_data.get('engine_capacity').upper().strip() 
+            yom=request_data.get('yom').strip() 
 
-                model=request_data.get('model').upper().strip() 
-                manufacture = request_data.get('manufacture').upper().strip() 
-                fuel=request_data.get('fuel').upper().strip() 
-                transmission=request_data.get('transmission').upper().strip() 
-                engine_capacity=request_data.get('engine_capacity').upper().strip() 
-                yom=request_data.get('yom').strip() 
-
+            if checkInputs(model,manufacture,fuel,transmission,engine_capacity,yom):
+                
                 fuel=changeFuelType(fuel)     
                 engine_capacity= changeCapacity(engine_capacity) 
 

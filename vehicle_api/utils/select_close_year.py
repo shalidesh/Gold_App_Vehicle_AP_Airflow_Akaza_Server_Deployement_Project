@@ -85,7 +85,7 @@ def estimate_price(df,model_path, cdb_model, fuel, transmission, year,engine_cap
 
     if cdb_model in list_models:
         grouped_df = df[(df['model'] == cdb_model) &
-                        (df['transmision'] == transmission)]
+                        (df['transmission'] == transmission)]
         
         if grouped_df.empty:
             grouped_df = df[(df['model'] == cdb_model) &
@@ -109,7 +109,7 @@ def estimate_price(df,model_path, cdb_model, fuel, transmission, year,engine_cap
         else:
         
             grouped_df = df[(df['model'] == cdb_model) &
-                        (df['transmision'] == transmission) &
+                        (df['transmission'] == transmission) &
                         (df['fuel_type']==fuel)]
         
             if grouped_df.empty:
@@ -121,7 +121,7 @@ def estimate_price(df,model_path, cdb_model, fuel, transmission, year,engine_cap
                     return estimated_price
                 else:
                     grouped_df = df[(df['model'] == cdb_model) &
-                            (df['transmision'] == transmission) &
+                            (df['transmission'] == transmission) &
                             (df['fuel_type'].isin(['PETROL', 'DIESEL']))]
                     
                     estimated_price=select_year(grouped_df,year)

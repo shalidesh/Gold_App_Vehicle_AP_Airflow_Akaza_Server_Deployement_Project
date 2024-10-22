@@ -58,4 +58,4 @@ def data_preprocces(source_table,data_table):
                 "Vehicle_Price VARCHAR(255)"
             ])
     populate_table(data_table, df)
-    upload_table_vehicle(data_table)
+    # upload_table_vehicle(data_table)

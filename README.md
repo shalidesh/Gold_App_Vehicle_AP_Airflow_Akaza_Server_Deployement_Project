@@ -55,3 +55,5 @@ chmod 777 /var/lib/postgresql/vehicle/ikman_post_data_preprocced.csv
 - gold news scrape pipeline ✅
 - vehicle data scrape pipeline ✅
 - vehicle model training pipeline ✅
+
+- intergrate MLflow for monitoring ❌

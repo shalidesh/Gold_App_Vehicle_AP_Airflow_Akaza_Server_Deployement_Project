@@ -72,4 +72,4 @@ def scrape_links():
     check_table("ikman_vehicle_post_links")
     create_table("ikman_vehicle_post_links", ["Link VARCHAR(255)"])
     populate_table("ikman_vehicle_post_links", links_df)
-    upload_table_vehicle('ikman_vehicle_post_links')
+    # upload_table_vehicle('ikman_vehicle_post_links')
