@@ -1048,3 +1048,52 @@
 [2024-10-22T05:17:23.240+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:17:23.240+0000] {dag.py:3047} INFO - Sync 1 DAGs
 [2024-10-22T05:17:23.252+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:17:23.252+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline to 2024-10-22 00:00:00+00:00, run_after=2024-10-23 00:00:00+00:00
 [2024-10-22T05:17:23.263+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 1.214 seconds
+[2024-10-22T05:17:53.769+0000] {processor.py:161} INFO - Started process (PID=2827) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:17:53.770+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-22T05:17:53.771+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:17:53.771+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:17:54.966+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:17:55.124+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:17:55.124+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-22T05:17:55.136+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:17:55.136+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline to 2024-10-22 00:00:00+00:00, run_after=2024-10-23 00:00:00+00:00
+[2024-10-22T05:17:55.151+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 1.384 seconds
+[2024-10-22T05:18:25.379+0000] {processor.py:161} INFO - Started process (PID=2901) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:18:25.380+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-22T05:18:25.380+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:18:25.380+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:18:26.366+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:18:26.408+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:18:26.407+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-22T05:18:26.420+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:18:26.420+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline to 2024-10-22 00:00:00+00:00, run_after=2024-10-23 00:00:00+00:00
+[2024-10-22T05:18:26.433+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 1.057 seconds
+[2024-10-22T05:18:56.631+0000] {processor.py:161} INFO - Started process (PID=2976) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:18:56.632+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-22T05:18:56.633+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:18:56.633+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:18:57.677+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:18:57.720+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:18:57.719+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-22T05:18:57.732+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:18:57.732+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline to 2024-10-22 00:00:00+00:00, run_after=2024-10-23 00:00:00+00:00
+[2024-10-22T05:18:57.744+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 1.115 seconds
+[2024-10-22T05:19:28.405+0000] {processor.py:161} INFO - Started process (PID=3050) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:19:28.406+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-22T05:19:28.406+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:19:28.406+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:19:29.342+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:19:29.393+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:19:29.393+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-22T05:19:29.405+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:19:29.405+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline to 2024-10-22 00:00:00+00:00, run_after=2024-10-23 00:00:00+00:00
+[2024-10-22T05:19:29.420+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 1.017 seconds
+[2024-10-22T05:19:59.649+0000] {processor.py:161} INFO - Started process (PID=3124) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:19:59.650+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-22T05:19:59.651+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:19:59.651+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:20:00.694+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:20:00.761+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:20:00.761+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-22T05:20:00.773+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:20:00.773+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline to 2024-10-22 00:00:00+00:00, run_after=2024-10-23 00:00:00+00:00
+[2024-10-22T05:20:00.786+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 1.140 seconds
+[2024-10-22T05:20:31.057+0000] {processor.py:161} INFO - Started process (PID=3198) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:20:31.058+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-22T05:20:31.060+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:20:31.059+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:20:32.077+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:20:32.119+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:20:32.119+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-22T05:20:32.136+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:20:32.135+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline to 2024-10-22 00:00:00+00:00, run_after=2024-10-23 00:00:00+00:00
+[2024-10-22T05:20:32.150+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 1.095 seconds
+[2024-10-22T05:21:02.190+0000] {processor.py:161} INFO - Started process (PID=3272) to work on /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:21:02.191+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/gold_training_pipeline.py for tasks to queue
+[2024-10-22T05:21:02.192+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:21:02.192+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:21:03.211+0000] {processor.py:840} INFO - DAG(s) 'Gold_training_Pipeline' retrieved from /opt/airflow/dags/gold_training_pipeline.py
+[2024-10-22T05:21:03.276+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:21:03.275+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-10-22T05:21:03.289+0000] {logging_mixin.py:188} INFO - [2024-10-22T05:21:03.289+0000] {dag.py:3834} INFO - Setting next_dagrun for Gold_training_Pipeline to 2024-10-22 00:00:00+00:00, run_after=2024-10-23 00:00:00+00:00
+[2024-10-22T05:21:03.308+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/gold_training_pipeline.py took 1.120 seconds
