@@ -1,0 +1,260 @@
+[2024-10-21T10:10:09.858+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Vehicle_Data_scrape_Pipeline.scrape_post_links manual__2024-10-21T10:07:37.029866+00:00 [queued]>
+[2024-10-21T10:10:09.864+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Vehicle_Data_scrape_Pipeline.scrape_post_links manual__2024-10-21T10:07:37.029866+00:00 [queued]>
+[2024-10-21T10:10:09.864+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 4
+[2024-10-21T10:10:09.873+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): scrape_post_links> on 2024-10-21 10:07:37.029866+00:00
+[2024-10-21T10:10:09.877+0000] {standard_task_runner.py:60} INFO - Started process 28560 to run task
+[2024-10-21T10:10:09.879+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Vehicle_Data_scrape_Pipeline', 'scrape_post_links', 'manual__2024-10-21T10:07:37.029866+00:00', '--job-id', '123', '--raw', '--subdir', 'DAGS_FOLDER/vehicle_data_scraping_pipeline.py', '--cfg-path', '/tmp/tmpc8s2zzpz']
+[2024-10-21T10:10:09.880+0000] {standard_task_runner.py:88} INFO - Job 123: Subtask scrape_post_links
+[2024-10-21T10:10:09.993+0000] {task_command.py:423} INFO - Running <TaskInstance: Vehicle_Data_scrape_Pipeline.scrape_post_links manual__2024-10-21T10:07:37.029866+00:00 [running]> on host 988c1a0779ad
+[2024-10-21T10:10:10.036+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Vehicle_Data_scrape_Pipeline' AIRFLOW_CTX_TASK_ID='scrape_post_links' AIRFLOW_CTX_EXECUTION_DATE='2024-10-21T10:07:37.029866+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-21T10:07:37.029866+00:00'
+[2024-10-21T10:10:13.439+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/6 [00:00<?, ?it/s]
+[2024-10-21T10:10:13.440+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:13.441+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-voleex-2013-for-sale-colombo-15
+[2024-10-21T10:10:13.442+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:13.443+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:13.443+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-lc10-l-2018-for-sale-ampara-1
+[2024-10-21T10:10:13.444+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:13.445+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:13.446+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-emgrand-2016-b-new-for-sale-colombo
+[2024-10-21T10:10:13.446+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:13.447+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:13.447+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-baic-x-25-2018-for-sale-colombo-1
+[2024-10-21T10:10:13.448+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:13.449+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:13.450+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-cross-2017-for-sale-gampaha-59
+[2024-10-21T10:10:13.450+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:13.451+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:13.452+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-tivoli-2017-for-sale-gampaha
+[2024-10-21T10:10:13.453+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:13.453+0000] {logging_mixin.py:188} WARNING - 100%|##########| 6/6 [00:00<00:00, 465.83it/s]
+[2024-10-21T10:10:20.059+0000] {logging_mixin.py:188} INFO - page is no content-----------------
+[2024-10-21T10:10:23.163+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/13 [00:00<?, ?it/s]
+[2024-10-21T10:10:23.163+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.164+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-rexton-2017-for-sale-puttalam-4
+[2024-10-21T10:10:23.165+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.165+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.165+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-stavic-270-xdi-2011-for-sale-colombo-1
+[2024-10-21T10:10:23.165+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.166+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.166+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-korondo-2012-for-sale-colombo-1
+[2024-10-21T10:10:23.167+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.167+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.167+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-tivoli-xlv-2017-for-sale-colombo
+[2024-10-21T10:10:23.168+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.168+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.168+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-rexton-diesel-2008-for-sale-colombo-1
+[2024-10-21T10:10:23.169+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.169+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.169+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-kyron-2008-for-sale-puttalam-15
+[2024-10-21T10:10:23.169+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.170+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.170+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-rexton-2008-for-sale-galle
+[2024-10-21T10:10:23.170+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.170+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.171+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-rexton-w-2015-7seats-2015-for-sale-gampaha
+[2024-10-21T10:10:23.171+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.171+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.171+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-korondo-2014-for-sale-colombo-5
+[2024-10-21T10:10:23.172+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.172+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.172+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-havel-h5-2012-for-sale-gampaha
+[2024-10-21T10:10:23.172+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.173+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.173+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-kyron-2009-for-sale-kalutara-12
+[2024-10-21T10:10:23.173+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.174+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.174+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-kyron-2008-for-sale-colombo-1109
+[2024-10-21T10:10:23.174+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.174+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.175+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-stavic-suv-2010-for-sale-gampaha-1
+[2024-10-21T10:10:23.175+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:23.175+0000] {logging_mixin.py:188} WARNING - 100%|##########| 13/13 [00:00<00:00, 1103.27it/s]
+[2024-10-21T10:10:26.790+0000] {logging_mixin.py:188} INFO - page is no content-----------------
+[2024-10-21T10:10:29.719+0000] {logging_mixin.py:188} INFO - page is no content-----------------
+[2024-10-21T10:10:32.957+0000] {logging_mixin.py:188} INFO - page is no content-----------------
+[2024-10-21T10:10:37.098+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/24 [00:00<?, ?it/s]
+[2024-10-21T10:10:37.099+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.099+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-mx-7-manual-2013-for-sale-gampaha-1
+[2024-10-21T10:10:37.100+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.100+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.101+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-997-2015-for-sale-gampaha-4
+[2024-10-21T10:10:37.101+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.102+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.102+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-trend-2011-for-sale-gampaha
+[2024-10-21T10:10:37.103+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.103+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.104+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-q-13-2011-for-sale-nuwara-eliya
+[2024-10-21T10:10:37.104+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.105+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.105+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-cross-13-cc-2013-for-sale-kalutara
+[2024-10-21T10:10:37.105+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.106+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.106+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-lc-10-2015-for-sale-gampaha-43
+[2024-10-21T10:10:37.106+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.107+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.107+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-lc-10-2015-for-sale-gampaha-42
+[2024-10-21T10:10:37.108+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.108+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.108+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-trend-2009-for-sale-ampara
+[2024-10-21T10:10:37.109+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.109+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.109+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-lc-10-2014-for-sale-gampaha
+[2024-10-21T10:10:37.110+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.110+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.110+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-geely-panda-2015-for-sale-galle
+[2024-10-21T10:10:37.111+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.111+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.112+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-gelly-2015-for-sale-colombo
+[2024-10-21T10:10:37.112+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.113+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.113+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-2013-for-sale-colombo-653
+[2024-10-21T10:10:37.114+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.114+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.114+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-cross-used-2016-for-sale-ratnapura
+[2024-10-21T10:10:37.115+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.115+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.116+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-cross-full-option-kt-2012-for-sale-colombo
+[2024-10-21T10:10:37.116+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.117+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.117+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-cross-2014-for-sale-galle
+[2024-10-21T10:10:37.117+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.118+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.118+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-cross-2018-for-sale-colombo-25
+[2024-10-21T10:10:37.119+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.120+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.120+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-mx-7-graley-2012-for-sale-galle
+[2024-10-21T10:10:37.121+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.121+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.121+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-lc10-f-option-cae-2015-for-sale-colombo
+[2024-10-21T10:10:37.122+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.124+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.125+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-2015-for-sale-colombo-1290
+[2024-10-21T10:10:37.125+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.126+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.126+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-mx-7-2014-for-sale-gampaha-12
+[2024-10-21T10:10:37.127+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.127+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.128+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-2015-for-sale-ampara-3
+[2024-10-21T10:10:37.128+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.129+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.129+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-cross-2015-for-sale-colombo-169
+[2024-10-21T10:10:37.129+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.130+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.130+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-mx-7-2014-for-sale-badulla-1
+[2024-10-21T10:10:37.130+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.131+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.132+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-2015-for-sale-colombo-1288
+[2024-10-21T10:10:37.132+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:37.133+0000] {logging_mixin.py:188} WARNING - 100%|##########| 24/24 [00:00<00:00, 706.95it/s]
+[2024-10-21T10:10:41.456+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/21 [00:00<?, ?it/s]
+[2024-10-21T10:10:41.457+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.457+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-cross-kt-2012-for-sale-colombo
+[2024-10-21T10:10:41.458+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.458+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.459+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-glory-07-seater-2018-for-sale-vavuniya
+[2024-10-21T10:10:41.459+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.459+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.459+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-2012-for-sale-ratnapura-2
+[2024-10-21T10:10:41.460+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.460+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.460+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-cross-2012-for-sale-kandy
+[2024-10-21T10:10:41.461+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.461+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.461+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-2015-for-sale-colombo-1287
+[2024-10-21T10:10:41.461+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.462+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.462+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-cross-2016-for-sale-colombo-173
+[2024-10-21T10:10:41.462+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.462+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.463+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-2015-for-sale-gampaha-770
+[2024-10-21T10:10:41.463+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.463+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.463+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-lc10-fulloption-2016-for-sale-gampaha
+[2024-10-21T10:10:41.464+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.464+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.464+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-cross-2014-for-sale-gampaha-176
+[2024-10-21T10:10:41.464+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.464+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.465+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-cross-2015-for-sale-colombo-168
+[2024-10-21T10:10:41.465+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.465+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.465+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-full-option-2014-for-sale-puttalam
+[2024-10-21T10:10:41.465+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.466+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.466+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-lc-2014-for-sale-colombo-2
+[2024-10-21T10:10:41.466+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.466+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.466+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-mx-7-2012-for-sale-jaffna-2
+[2024-10-21T10:10:41.467+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.467+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.467+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-998-2014-for-sale-gampaha-5
+[2024-10-21T10:10:41.467+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.468+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.468+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-lc-10-2017-for-sale-monaragala
+[2024-10-21T10:10:41.468+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.468+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.469+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-trend-2011-for-sale-vavuniya
+[2024-10-21T10:10:41.469+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.469+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.469+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-2012-for-sale-galle-84
+[2024-10-21T10:10:41.469+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.470+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.470+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-2017-for-sale-gampaha-21
+[2024-10-21T10:10:41.470+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.470+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.470+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-997-2014-for-sale-gampaha-1
+[2024-10-21T10:10:41.471+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.471+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.471+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-panda-lc10-f-option-kw-2013-for-sale-colombo
+[2024-10-21T10:10:41.471+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.472+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.472+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-mx-7-2015-for-sale-gampaha-2
+[2024-10-21T10:10:41.472+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:41.473+0000] {logging_mixin.py:188} WARNING - 100%|##########| 21/21 [00:00<00:00, 1320.55it/s]
+[2024-10-21T10:10:46.190+0000] {logging_mixin.py:188} INFO - page is no content-----------------
+[2024-10-21T10:10:49.833+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2024-10-21T10:10:49.834+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:49.834+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-kyron-full-options-2008-for-sale-colombo-2
+[2024-10-21T10:10:49.835+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:10:49.835+0000] {logging_mixin.py:188} WARNING - 100%|##########| 1/1 [00:00<00:00, 811.12it/s]
+[2024-10-21T10:10:53.320+0000] {logging_mixin.py:188} INFO - page is no content-----------------
+[2024-10-21T10:10:57.100+0000] {logging_mixin.py:188} INFO - page is no content-----------------
+[2024-10-21T10:11:00.205+0000] {logging_mixin.py:188} INFO - page is no content-----------------
+[2024-10-21T10:11:03.730+0000] {logging_mixin.py:188} INFO - page is no content-----------------
+[2024-10-21T10:11:12.553+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/3 [00:00<?, ?it/s]
+[2024-10-21T10:11:12.554+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:11:12.554+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-rexton-270-xdi-2008-for-sale-gampaha
+[2024-10-21T10:11:12.555+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:11:12.555+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:11:12.556+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-rexton-2015-for-sale-colombo-84
+[2024-10-21T10:11:12.556+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:11:12.557+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:11:12.557+0000] {logging_mixin.py:188} INFO - https://ikman.lk/en/ad/micro-rexton-2009-for-sale-kurunegala
+[2024-10-21T10:11:12.557+0000] {logging_mixin.py:188} INFO - -------------------------------------------
+[2024-10-21T10:11:12.558+0000] {logging_mixin.py:188} WARNING - 100%|##########| 3/3 [00:00<00:00, 757.78it/s]
+[2024-10-21T10:11:27.699+0000] {logging_mixin.py:188} INFO - page is no content-----------------
+[2024-10-21T10:11:42.100+0000] {logging_mixin.py:188} INFO - page is no content-----------------
+[2024-10-21T10:11:51.393+0000] {logging_mixin.py:188} INFO - page is no content-----------------
+[2024-10-21T10:11:51.420+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/components/vehicle/data_scraping_components/post_links_extraction.py", line 75, in scrape_links
+    upload_table_vehicle('ikman_vehicle_post_links')
+  File "/opt/airflow/dags/components/utils/database_table_creation.py", line 35, in upload_table_vehicle
+    cur.execute(f"""
+psycopg2.errors.InsufficientPrivilege: could not open file "/var/lib/postgresql/vehicle/ikman_vehicle_post_links.csv" for writing: Permission denied
+HINT:  COPY TO instructs the PostgreSQL server process to write a file. You may want a client-side facility such as psql's \copy.
+
+[2024-10-21T10:11:51.440+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Vehicle_Data_scrape_Pipeline, task_id=scrape_post_links, execution_date=20241021T100737, start_date=20241021T101009, end_date=20241021T101151
+[2024-10-21T10:11:51.455+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 123 for task scrape_post_links (could not open file "/var/lib/postgresql/vehicle/ikman_vehicle_post_links.csv" for writing: Permission denied
+HINT:  COPY TO instructs the PostgreSQL server process to write a file. You may want a client-side facility such as psql's \copy.
+; 28560)
+[2024-10-21T10:11:51.501+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-10-21T10:11:51.515+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

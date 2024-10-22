@@ -12,7 +12,7 @@ import os
 from airflow.utils.email import send_email
 from airflow.hooks.base_hook import BaseHook
 
-email_artifacts=os.path.join("dags","components","gold","model_training","training_data","df_interpolated.csv")
+email_artifacts=os.path.join("dags","components","gold","model_training","training_data","df_interpolated_2024_10_21.csv")
 
 
 def mail_sending(source_table, **kwargs):

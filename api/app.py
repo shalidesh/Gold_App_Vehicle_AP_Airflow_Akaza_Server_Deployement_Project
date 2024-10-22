@@ -312,19 +312,19 @@ def upload_file():
         print(df.info())
         df=df.astype(str)
 
-        # check_table("preprocesed_gold_data_tables")
-        # create_table("preprocesed_gold_data_tables", 
-        #             ["date VARCHAR(255)",
-        #             "gold_lkr VARCHAR(255)",
-        #             "gold_price_usd VARCHAR(255)",
-        #             "silver_price VARCHAR(255)",
-        #             "sp_500_index  VARCHAR(255)",
-        #             "nyse_com_index VARCHAR(255)",
-        #             "usd_selling_exrate VARCHAR(255)",
-        #             "gold_futures VARCHAR(255)",
-        #             "effr VARCHAR(255)"
-        #         ]), 
-        # populate_table("preprocesed_gold_data_tables", df)
+        check_table("preprocesed_gold_data_tables")
+        create_table("preprocesed_gold_data_tables", 
+                    ["date VARCHAR(255)",
+                    "gold_lkr VARCHAR(255)",
+                    "gold_price_usd VARCHAR(255)",
+                    "silver_price VARCHAR(255)",
+                    "sp_500_index  VARCHAR(255)",
+                    "nyse_com_index VARCHAR(255)",
+                    "usd_selling_exrate VARCHAR(255)",
+                    "gold_futures VARCHAR(255)",
+                    "effr VARCHAR(255)"
+                ]), 
+        populate_table("preprocesed_gold_data_tables", df)
 
         return jsonify({'message': 'File successfully uploaded'}), 200
     else:

@@ -13,7 +13,7 @@ from components.gold.post_training.sending_mails import mail_sending
 default_args = {
     'owner': 'sdeshan',
     'depends_on_past': False,
-    'start_date': datetime(2024, 10, 14),
+    'start_date': datetime(2024, 10, 22),
     'schedule_interval' : 'None',
     'email_on_failure': True,
     'email_on_success': True,
@@ -68,19 +68,19 @@ model_training = PythonOperator(
 #     dag=dag,
 # )
 
-# send_mails = PythonOperator(
-#     task_id='send_mails',
-#     python_callable=mail_sending,
-#     op_kwargs={'source_table': 'weekly_report'}, 
-#     on_success_callback = success_email,
-#     on_failure_callback = failure_email,
-#     provide_context = True,
-#     dag=dag,
-# )
+send_mails = PythonOperator(
+    task_id='send_mails',
+    python_callable=mail_sending,
+    op_kwargs={'source_table': 'weekly_report'}, 
+    on_success_callback = success_email,
+    on_failure_callback = failure_email,
+    provide_context = True,
+    dag=dag,
+)
 
 
 # Set the order of tasks
 data_preprocess.set_upstream(data_scraping)
 model_training.set_upstream(data_preprocess)
 # weekly_report_generate.set_upstream(model_training)
-# send_mails.set_upstream(weekly_report_generate)
+send_mails.set_upstream(model_training)

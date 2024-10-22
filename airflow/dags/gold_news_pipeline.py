@@ -8,7 +8,7 @@ from components.gold.news_scraping.post_data_extraction import scrape_gold_news_
 default_args = {
     'owner': 'sdeshan',
     'depends_on_past': False,
-    'start_date': datetime(2024, 10, 14),
+    'start_date': datetime(2024, 10, 22),
     'schedule_interval' : 'None',
     'email_on_failure': True,
     'email_on_success': True,
@@ -20,7 +20,7 @@ default_args = {
 dag = DAG(
     dag_id="Gold_News_pipeline",
     default_args=default_args,
-    schedule_interval='0 0 * * *'
+    schedule_interval='@daily'
 )
 
 

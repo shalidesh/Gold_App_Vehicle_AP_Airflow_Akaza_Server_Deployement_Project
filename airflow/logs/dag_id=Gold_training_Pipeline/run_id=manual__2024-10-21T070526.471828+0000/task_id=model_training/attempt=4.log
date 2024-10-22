@@ -1,0 +1,28 @@
+[2024-10-21T07:10:15.488+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-21T07:05:26.471828+00:00 [queued]>
+[2024-10-21T07:10:15.495+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-21T07:05:26.471828+00:00 [queued]>
+[2024-10-21T07:10:15.495+0000] {taskinstance.py:2193} INFO - Starting attempt 4 of 4
+[2024-10-21T07:10:15.581+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): model_training> on 2024-10-21 07:05:26.471828+00:00
+[2024-10-21T07:10:15.587+0000] {standard_task_runner.py:60} INFO - Started process 1944 to run task
+[2024-10-21T07:10:15.589+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Gold_training_Pipeline', 'model_training', 'manual__2024-10-21T07:05:26.471828+00:00', '--job-id', '111', '--raw', '--subdir', 'DAGS_FOLDER/gold_training_pipeline.py', '--cfg-path', '/tmp/tmpfffh2lzu']
+[2024-10-21T07:10:15.591+0000] {standard_task_runner.py:88} INFO - Job 111: Subtask model_training
+[2024-10-21T07:10:15.621+0000] {task_command.py:423} INFO - Running <TaskInstance: Gold_training_Pipeline.model_training manual__2024-10-21T07:05:26.471828+00:00 [running]> on host 988c1a0779ad
+[2024-10-21T07:10:15.666+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Gold_training_Pipeline' AIRFLOW_CTX_TASK_ID='model_training' AIRFLOW_CTX_EXECUTION_DATE='2024-10-21T07:05:26.471828+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-21T07:05:26.471828+00:00'
+[2024-10-21T07:10:15.732+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpmcam09nw/c8w6ahfm.json
+[2024-10-21T07:10:15.915+0000] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpmcam09nw/2090hjzq.json
+[2024-10-21T07:10:15.917+0000] {model.py:2042} DEBUG - idx 0
+[2024-10-21T07:10:15.918+0000] {model.py:2043} DEBUG - running CmdStan, num_threads: None
+[2024-10-21T07:10:15.919+0000] {model.py:2055} DEBUG - CmdStan args: ['/home/***/.local/lib/python3.8/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=38443', 'data', 'file=/tmp/tmpmcam09nw/c8w6ahfm.json', 'init=/tmp/tmpmcam09nw/2090hjzq.json', 'output', 'file=/tmp/tmpmcam09nw/prophet_modeleyv2cd2t/prophet_model-20241021071015.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+[2024-10-21T07:10:15.920+0000] {logging_mixin.py:188} WARNING - 07:10:15 - cmdstanpy - INFO - Chain [1] start processing
+[2024-10-21T07:10:15.920+0000] {model.py:2058} INFO - Chain [1] start processing
+[2024-10-21T07:10:17.421+0000] {logging_mixin.py:188} WARNING - 07:10:17 - cmdstanpy - INFO - Chain [1] done processing
+[2024-10-21T07:10:17.421+0000] {model.py:2115} INFO - Chain [1] done processing
+[2024-10-21T07:10:17.868+0000] {logging_mixin.py:188} INFO - Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[2024-10-21T07:10:28.913+0000] {logging_mixin.py:188} INFO - [CV] END learning_rate=0.001, max_depth=10, min_child_weight=1, n_estimators=500; total time=  11.0s
+[2024-10-21T07:10:37.613+0000] {logging_mixin.py:188} INFO - [CV] END learning_rate=0.001, max_depth=10, min_child_weight=1, n_estimators=500; total time=   8.7s
+[2024-10-21T07:10:58.163+0000] {logging_mixin.py:188} INFO - [CV] END learning_rate=0.001, max_depth=10, min_child_weight=1, n_estimators=500; total time=  20.5s
+[2024-10-21T07:11:09.908+0000] {logging_mixin.py:188} INFO - Best parameters from GridSearchCV: {'learning_rate': 0.001, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 500}
+[2024-10-21T07:11:31.288+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-10-21T07:11:31.290+0000] {process_utils.py:131} INFO - Sending 15 to group 1944. PIDs of all processes in the group: [1944]
+[2024-10-21T07:11:31.291+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 1944
+[2024-10-21T07:11:31.361+0000] {taskinstance.py:2483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-10-21T07:11:31.423+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=1944, status='terminated', exitcode=0, started='07:10:15') (1944) terminated with exit code 0

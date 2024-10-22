@@ -38,7 +38,9 @@ x-airflow-common:
 
 services:
   postgres:
-    image: postgres:13
+    build:
+        context: ./postgres
+        dockerfile: Dockerfile
     environment:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
@@ -53,6 +55,9 @@ services:
       retries: 5
       start_period: 5s
     restart: always
+    user: root
+    entrypoint: ["/bin/bash", "/docker-entrypoint-initdb.d/init.sh"]
+    
 
   airflow-webserver:
     <<: *airflow-common
@@ -178,50 +183,50 @@ services:
         - -c
         - airflow
 
-  # backend:
-  #   build: ./api
-  #   restart: unless-stopped
-  #   ports:
-  #     - "5000:5000"
-  #   volumes:
-  #     - postgres_gold_data:/backend/airflow_scrape_database
-  #     - gold_api_artifacts:/backend/artifacts
-  #     - gold_api_daily_reports:/backend/daily_reports
+  backend:
+    build: ./api
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    volumes:
+      - postgres_gold_data:/backend/airflow_scrape_database
+      - gold_api_artifacts:/backend/artifacts
+      - gold_api_daily_reports:/backend/daily_reports
 
-  # vehicle_api:
-  #   build: ./vehicle_api
-  #   restart: unless-stopped
-  #   ports:
-  #     - "8443:8443"
-  #   environment:
-  #     - SECRET_KEY='thisismynewversionscreatversion'
-  #     - USER='cdb'
-  #     - PASSWORD='cdb123456'
-  #   volumes:
-  #     - postgres_api_data:/app/databases/airflow_scrape_databases
-  #     - vehicle_api_artifacts:/app/artifacts
+  vehicle_api:
+    build: ./vehicle_api
+    restart: unless-stopped
+    ports:
+      - "8443:8443"
+    environment:
+      - SECRET_KEY='thisismynewversionscreatversion'
+      - USER='cdb'
+      - PASSWORD='cdb123456'
+    volumes:
+      - postgres_api_data:/app/databases/airflow_scrape_databases
+      - vehicle_api_artifacts:/app/artifacts
 
-  # my-react-app:
-  #   build:
-  #     context: ./client
-  #     dockerfile: Dockerfile
-  #   ports:
-  #     - "8081:80"
-  #   depends_on:
-  #     - backend
-  #     - vehicle_api
-  #   volumes:
-  #     - ./client/ngnix.conf:/etc/nginx/conf.d/default.conf
+  my-react-app:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "8081:80"
+    depends_on:
+      - backend
+      - vehicle_api
+    volumes:
+      - ./client/ngnix.conf:/etc/nginx/conf.d/default.conf
 
-  # nginx:
-  #   image: nginx:latest
-  #   volumes:
-  #     - ./nginx.conf:/etc/nginx/nginx.conf:ro
-  #   restart: unless-stopped
-  #   depends_on:
-  #     - my-react-app
-  #   ports:
-  #     - "80:80"
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    restart: unless-stopped
+    depends_on:
+      - my-react-app
+    ports:
+      - "80:80"
 
 volumes:
   postgres-db-volume:

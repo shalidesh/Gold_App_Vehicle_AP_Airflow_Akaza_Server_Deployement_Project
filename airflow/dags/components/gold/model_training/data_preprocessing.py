@@ -7,7 +7,7 @@ import pandas as pd
 from tqdm import tqdm 
 from components.utils.database_table_creation import create_table,check_table,populate_table,upload_table_gold
 
-dataset_path=os.path.join("dags","components","gold","model_training","training_data","df_interpolated.csv")
+dataset_path=os.path.join("dags","components","gold","model_training","training_data","df_interpolated_2024_10_21.csv")
 
 def preprocess_data(source_table,data_table):
 
