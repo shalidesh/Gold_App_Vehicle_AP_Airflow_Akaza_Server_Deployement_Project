@@ -6,14 +6,27 @@ import ForecastPlot from "./ForecastPlot";
 
 function DatabasePage() {
 
+    // Function to get the most recent Monday
+    const getLastMonday = () => {
+      const today = new Date();
+      const dayOfWeek = today.getDay();
+      const lastMonday = new Date(today);
+      lastMonday.setDate(today.getDate() - ((dayOfWeek + 6) % 7));
+      return lastMonday;
+    };
 
-    const [startDate, setStartDate] = useState(new Date());
+
+    const [startDate, setStartDate] = useState(getLastMonday());
+
+    // Function to check if the date is a Tuesday
+    const isTuesday = (date) => {
+      return date.getDay() === 1; // 0 = Sunday, 1 = Monday, 2 = Tuesday, etc.
+    };
 
     // Define the minimum and maximum selectable dates
     const minDate = new Date('2024-09-09');
     const maxDate = new Date();
     
-
     return (
       <div className='container ml-5'>
 
@@ -37,6 +50,7 @@ function DatabasePage() {
                       onChange={date => setStartDate(date)} 
                       minDate={minDate}
                       maxDate={maxDate}
+                      filterDate={isTuesday}
                       className='form-control'
                   />
 

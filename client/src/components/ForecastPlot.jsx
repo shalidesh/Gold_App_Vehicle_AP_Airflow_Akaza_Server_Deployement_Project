@@ -18,7 +18,7 @@ function ForecastPlot(startDate) {
       setSpin(true)
 
       try {
-        const response = await axios.post(`/database`,{
+        const response = await axios.post(`/api/database`,{
           "date":startDate.startDate
         });
         setGraphData(response.data); 

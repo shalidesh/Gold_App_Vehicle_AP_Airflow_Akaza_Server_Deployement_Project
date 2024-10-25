@@ -10,10 +10,8 @@ import matplotlib.pyplot as plt
 import joblib
 from datetime import datetime
 import logging
+from components.datasets_paths import model_dir,dataset_dir
 
-# Create a directory to save the model files
-model_dir = os.path.join("artifacts")
-dataset_dir = os.path.join("data_tables", "df_interpolated_2024_10_21.csv")
 
 # Load the saved Prophet model
 prophet_model = joblib.load(os.path.join(model_dir, "prophet_model.pkl"))

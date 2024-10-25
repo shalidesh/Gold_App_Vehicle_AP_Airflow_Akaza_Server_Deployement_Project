@@ -1,10 +1,6 @@
-from constants.input_data import Transmission_list,fuel_list,upload_dataset_column_list
+from constants.input_data import Transmission_list,fuel_list
 from constants.dataframes import nissan_mapp,suzuki_mapp,toyota_mapp,honda_mapp,micro_mapp,mitsubishi_mapp
 import re
-import re
-import random
-import math
-import datetime
 import pickle
 import pandas as pd
 
@@ -116,12 +112,4 @@ def checkInputs(model,manufacture,fuel,transmission,engine_capacity,yom):
     else:
         return False
 
-
-def DatasetValidation(df:pd.DataFrame):
-    missing_columns = [col for col in upload_dataset_column_list if col not in df.columns]
-
-    if missing_columns:
-        return False
-    else:
-        return True
  

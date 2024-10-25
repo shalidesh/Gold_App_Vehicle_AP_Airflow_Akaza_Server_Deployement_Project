@@ -20,12 +20,11 @@ from components.utils.utils import load_object,evaluate_models,save_object
 from components.utils.configs import host, database, port, user, password
 
 
-preprocessor_path=os.path.join('artifacts',"vehicle","preprocessor.pkl")
-
-
 def train_model(source_table1,train_model_name):
 
+    general_preprocessor_path=os.path.join('artifacts',"vehicle","preprocessor.pkl")
     trained_model_file_path=os.path.join("artifacts","vehicle",f"{train_model_name}_model.pkl")
+    preprocessor_file_path=os.path.join("artifacts","vehicle",f"{train_model_name}_preprocessor.pkl")
 
     with psycopg2.connect(host=host, port=port, database=database, user=user, password=password) as conn:
         with conn.cursor() as cur:
@@ -40,7 +39,7 @@ def train_model(source_table1,train_model_name):
             # train_set,test_set=train_test_split(train_df,test_size=0.1,random_state=42)
             train_set,test_set=train_df,train_df
 
-            preprocessor=load_object(file_path=preprocessor_path)
+            preprocessor=load_object(file_path=general_preprocessor_path)
       
             train_set['vehicle_price']=train_set['vehicle_price'].astype(int)
             train_set['engine_capacity']=train_set['engine_capacity'].astype(int)
@@ -161,6 +160,12 @@ def train_model(source_table1,train_model_name):
                 file_path=trained_model_file_path,
                 obj=best_model
             )
+
+            save_object(
+                file_path=preprocessor_file_path,
+                obj=preprocessor
+            )
+
 
             predicted=best_model.predict(X_test)
 

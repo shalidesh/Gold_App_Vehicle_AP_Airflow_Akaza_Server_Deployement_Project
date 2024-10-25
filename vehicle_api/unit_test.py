@@ -5,7 +5,7 @@ class TestPredictAPI(unittest.TestCase):
     def setUp(self):
         self.url = 'http://localhost:8443/predict'
         self.headers = {
-            'Authorization': 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4ifQ.JnAST4Q2VCLqy-raqX6pyiaNL_f9GiZKpDBn2-a2P9k',
+            'Authorization': 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiY2RiIn0.eoFqvVDm-3Oq_7KybJP8sMxI5RyGXAybuuYXP8sKojg',
             'Content-Type': 'application/json'
         }
 

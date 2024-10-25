@@ -3,6 +3,11 @@
  https://vivekjadhavr.medium.com/how-to-easily-install-apache-airflow-on-windows-6f041c9c80d2
 
 
+ ## Project Architecture
+
+ ![System Architecture Diagram](./img/airflow_gold_vehicle_api.jpg)
+
+
 # setup instructions
 
 ## 1.0 run docker compose file 
@@ -55,5 +60,4 @@ chmod 777 /var/lib/postgresql/vehicle/ikman_post_data_preprocced.csv
 - gold news scrape pipeline ✅
 - vehicle data scrape pipeline ✅
 - vehicle model training pipeline ✅
-
 - intergrate MLflow for monitoring ❌

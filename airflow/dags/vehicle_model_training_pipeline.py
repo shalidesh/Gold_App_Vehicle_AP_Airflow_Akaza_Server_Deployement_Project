@@ -10,7 +10,7 @@ from components.vehicle.model_training_components.model_training import train_mo
 default_args = {
     'owner': 'sdeshan',
     'depends_on_past': False,
-    'start_date': datetime(2024, 10, 22),
+    'start_date': datetime(2024, 10, 23),
     'schedule_interval' : 'None',
     'email_on_failure': True,
     'email_on_success': True,

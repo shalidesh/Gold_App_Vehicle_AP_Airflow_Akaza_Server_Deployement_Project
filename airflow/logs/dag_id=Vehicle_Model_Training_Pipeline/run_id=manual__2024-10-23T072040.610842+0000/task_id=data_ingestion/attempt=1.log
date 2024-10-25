@@ -1,0 +1,17 @@
+[2024-10-23T07:20:42.467+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Vehicle_Model_Training_Pipeline.data_ingestion manual__2024-10-23T07:20:40.610842+00:00 [queued]>
+[2024-10-23T07:20:42.474+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Vehicle_Model_Training_Pipeline.data_ingestion manual__2024-10-23T07:20:40.610842+00:00 [queued]>
+[2024-10-23T07:20:42.475+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-10-23T07:20:42.486+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): data_ingestion> on 2024-10-23 07:20:40.610842+00:00
+[2024-10-23T07:20:42.491+0000] {standard_task_runner.py:60} INFO - Started process 2632 to run task
+[2024-10-23T07:20:42.494+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Vehicle_Model_Training_Pipeline', 'data_ingestion', 'manual__2024-10-23T07:20:40.610842+00:00', '--job-id', '171', '--raw', '--subdir', 'DAGS_FOLDER/vehicle_model_training_pipeline.py', '--cfg-path', '/tmp/tmpgdl42cu7']
+[2024-10-23T07:20:42.496+0000] {standard_task_runner.py:88} INFO - Job 171: Subtask data_ingestion
+[2024-10-23T07:20:42.544+0000] {task_command.py:423} INFO - Running <TaskInstance: Vehicle_Model_Training_Pipeline.data_ingestion manual__2024-10-23T07:20:40.610842+00:00 [running]> on host e8094f9ab2d0
+[2024-10-23T07:20:42.607+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sdeshan' AIRFLOW_CTX_DAG_ID='Vehicle_Model_Training_Pipeline' AIRFLOW_CTX_TASK_ID='data_ingestion' AIRFLOW_CTX_EXECUTION_DATE='2024-10-23T07:20:40.610842+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-23T07:20:40.610842+00:00'
+[2024-10-23T07:20:43.064+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-10-23T07:20:43.071+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Vehicle_Model_Training_Pipeline, task_id=data_ingestion, execution_date=20241023T072040, start_date=20241023T072042, end_date=20241023T072043
+[2024-10-23T07:20:43.076+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/context.py:207 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2024-10-23T07:20:43.082+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-10-23T07:20:43.083+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-10-23T07:20:45.788+0000] {email.py:281} INFO - Sent an alert email to ['deshanariyarathna@gmail.com']
+[2024-10-23T07:20:48.567+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-10-23T07:20:48.584+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

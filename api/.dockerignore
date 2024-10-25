@@ -1,1 +1,4 @@
-api_env
+gold_env
+daily_reports_past
+bulk_predict_version_01.py
+bulk_predict_version_02.py

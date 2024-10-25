@@ -2,65 +2,48 @@
 import pandas as pd
 from utils.input_data_validation import load_object
 import os
-import datetime
 import logging
 
 #predicting class
 class PredictPipeline:
-    def __init__(self,modelpath:str):
+    def __init__(self,modelpath:str,preprocess_path:str):
         self.model_location=modelpath
-        
+        self.preprocessor_path=preprocess_path
+       
+    def predict(self,features):
 
-    def predict(self, features):
+        print(features.info())
         try:
-            model_path = os.path.join(self.model_location, "model.pkl")
-            model = None
-            try:
-                model = load_object(file_path=model_path)
-                logging.info("Successfully loaded the model")
-            except Exception as e:
-                logging.info(f"Error loading the model: {e}")               
-                return [0] 
-            if model is None:
-                logging.info("Model is None after loading")
-                return [0]  
+            
+            print("Before Loading")
+            model=load_object(file_path=self.model_location)
+            preprocessor=load_object(file_path=self.preprocessor_path)
+            print("After Loading")
 
-            prediction = model.predict(features)
-            logging.info(f"prediction {prediction}")
-            return prediction
-
+            data_scaled=preprocessor.transform(features)
+            preds=model.predict(data_scaled)
+            return preds
+        
         except FileNotFoundError:
             logging.error("Model or preprocessor file not found.")
             return [0] 
         except Exception as e:
             logging.error(f"An error occurred during prediction: {str(e)}")
             return [0]
-
-
+        
 class CustomDataAutoFinance:
     def __init__(self,
         yom: str,
         model:str,
-        milage: str,
         engine_capacity:str,
         fuel:str,
         transmission: str
         ):
 
-        self.mileage = milage
-
         self.yom = yom
-
-        self.curr_year=datetime.datetime.now().year
-
-        self.age=self.curr_year - int(self.yom) if int(self.yom) else 0
-
         self.model = model
-
         self.engine_capacity = engine_capacity
-
         self.fuel=fuel
-
         self.transmission=transmission
 
 
@@ -68,12 +51,11 @@ class CustomDataAutoFinance:
         try:
 
             custom_data_input_dict = {
-                "Age": [self.age],
-                "Mileage": [int(self.mileage)],
-                "Engine Capacity": [self.engine_capacity],
-                "Model": [self.model],
-                "Fuel Type": [self.fuel],
-                "Transmission": [self.transmission]        
+                "year_of_manufacture": [self.yom],
+                "engine_capacity": [self.engine_capacity],
+                "model": [self.model],
+                "fuel_type": [self.fuel],
+                "transmission": [self.transmission]        
             }
 
             return pd.DataFrame(custom_data_input_dict)
@@ -82,4 +64,3 @@ class CustomDataAutoFinance:
         except Exception as e:
             logging.error(f"An error occurred creating dataframe: {str(e)}")
             return None
-

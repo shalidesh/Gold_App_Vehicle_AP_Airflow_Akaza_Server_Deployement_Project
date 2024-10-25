@@ -14,7 +14,7 @@ function ProphetCharts() {
       <div className='container ml-5'>
         <div className="row">
            <div className="alert alert-danger mt-5" role="alert">
-                Model is Updated Upto 2024-10-11 !
+                Model is Updated Upto 2024-09-27 !
             </div>
             <div className="col-4">
             <DatePicker 
