@@ -150,7 +150,7 @@ def scarpe_and_save(source_table,data_table):
                 "Vehicle_Price VARCHAR(255)"
             ])                     
             populate_table(data_table, car_df)
-            upload_table_vehicle(data_table)
+            # upload_table_vehicle(data_table)
         
     
     

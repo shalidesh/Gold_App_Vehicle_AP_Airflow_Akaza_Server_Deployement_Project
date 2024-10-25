@@ -203,7 +203,7 @@ services:
       - USER='cdb'
       - PASSWORD='cdb123456'
     volumes:
-      - postgres_api_data:/app/databases/airflow_scrape_databases
+      - postgres_api_data:/app/databases/dynamic_db/airflow_scrape_databases
       - vehicle_api_artifacts:/app/artifacts
 
   my-react-app:

@@ -20,7 +20,7 @@ function ProphetPlot(startDate) {
       setSpin(true)
 
       try {
-        const response = await axios.post(`/forecast_prophet`,{
+        const response = await axios.post(`/api/forecast_prophet`,{
           "date":startDate.startDate
         });
 
@@ -44,7 +44,7 @@ function ProphetPlot(startDate) {
     setIsChecked(checked);
 
     try {
-        const response = await axios.post('/real-data', {
+        const response = await axios.post('/api/real-data', {
             isChecked: checked
         });
         console.log('Response from backend:', response.data);

@@ -1,0 +1,300 @@
+[2024-10-25T10:30:22.606+0000] {processor.py:161} INFO - Started process (PID=280) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:30:22.607+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:30:22.608+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:30:22.607+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:30:22.916+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:30:22.927+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.323 seconds
+[2024-10-25T10:30:54.137+0000] {processor.py:161} INFO - Started process (PID=442) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:30:54.138+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:30:54.140+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:30:54.139+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:30:54.473+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:30:54.483+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.348 seconds
+[2024-10-25T10:31:26.173+0000] {processor.py:161} INFO - Started process (PID=538) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:31:26.175+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:31:26.176+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:31:26.176+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:31:26.502+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:31:26.511+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.340 seconds
+[2024-10-25T10:31:59.219+0000] {processor.py:161} INFO - Started process (PID=690) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:31:59.221+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:31:59.229+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:31:59.227+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:31:59.999+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:32:00.011+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.796 seconds
+[2024-10-25T10:32:31.256+0000] {processor.py:161} INFO - Started process (PID=802) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:32:31.258+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:32:31.259+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:32:31.259+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:32:32.239+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:32:32.253+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.000 seconds
+[2024-10-25T10:33:02.673+0000] {processor.py:161} INFO - Started process (PID=871) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:33:02.674+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:33:02.675+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:33:02.675+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:33:03.297+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:33:03.306+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.636 seconds
+[2024-10-25T10:33:35.115+0000] {processor.py:161} INFO - Started process (PID=945) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:33:35.121+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:33:35.122+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:33:35.122+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:33:36.107+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:33:36.120+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.007 seconds
+[2024-10-25T10:34:06.910+0000] {processor.py:161} INFO - Started process (PID=1019) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:34:06.916+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:34:06.917+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:34:06.916+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:34:07.694+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:34:07.715+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.807 seconds
+[2024-10-25T10:34:38.249+0000] {processor.py:161} INFO - Started process (PID=1074) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:34:38.251+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:34:38.252+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:34:38.251+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:34:39.363+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:34:39.372+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.126 seconds
+[2024-10-25T10:35:09.702+0000] {processor.py:161} INFO - Started process (PID=1142) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:35:09.703+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:35:09.703+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:35:09.703+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:35:10.475+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:35:10.488+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.790 seconds
+[2024-10-25T10:35:41.527+0000] {processor.py:161} INFO - Started process (PID=1216) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:35:41.528+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:35:41.529+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:35:41.528+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:35:42.221+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:35:42.234+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.710 seconds
+[2024-10-25T10:36:12.878+0000] {processor.py:161} INFO - Started process (PID=1290) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:36:12.883+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:36:12.884+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:36:12.884+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:36:13.725+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:36:13.740+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.867 seconds
+[2024-10-25T10:36:44.233+0000] {processor.py:161} INFO - Started process (PID=1371) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:36:44.234+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:36:44.235+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:36:44.235+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:36:45.024+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:36:45.032+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.802 seconds
+[2024-10-25T10:37:15.567+0000] {processor.py:161} INFO - Started process (PID=1444) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:37:15.568+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:37:15.569+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:37:15.569+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:37:16.556+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:37:16.564+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.999 seconds
+[2024-10-25T10:37:47.332+0000] {processor.py:161} INFO - Started process (PID=1518) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:37:47.334+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:37:47.334+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:37:47.334+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:37:48.135+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:37:48.149+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.819 seconds
+[2024-10-25T10:38:18.863+0000] {processor.py:161} INFO - Started process (PID=1591) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:38:18.863+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:38:18.865+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:38:18.864+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:38:19.740+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:38:19.759+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.899 seconds
+[2024-10-25T10:38:50.041+0000] {processor.py:161} INFO - Started process (PID=1665) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:38:50.046+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:38:50.047+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:38:50.046+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:38:50.919+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:38:50.932+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.895 seconds
+[2024-10-25T10:39:21.372+0000] {processor.py:161} INFO - Started process (PID=1738) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:39:21.373+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:39:21.374+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:39:21.373+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:39:22.372+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:39:22.382+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.013 seconds
+[2024-10-25T10:39:53.018+0000] {processor.py:161} INFO - Started process (PID=1814) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:39:53.020+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:39:53.021+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:39:53.021+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:39:54.341+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:39:54.355+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.341 seconds
+[2024-10-25T10:40:24.740+0000] {processor.py:161} INFO - Started process (PID=1885) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:40:24.741+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:40:24.742+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:40:24.742+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:40:25.871+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:40:25.881+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.149 seconds
+[2024-10-25T10:40:56.476+0000] {processor.py:161} INFO - Started process (PID=1959) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:40:56.477+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:40:56.477+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:40:56.477+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:40:57.216+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:40:57.225+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.753 seconds
+[2024-10-25T10:41:27.634+0000] {processor.py:161} INFO - Started process (PID=2033) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:41:27.635+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:41:27.636+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:41:27.636+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:41:28.322+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:41:28.331+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.699 seconds
+[2024-10-25T10:41:59.172+0000] {processor.py:161} INFO - Started process (PID=2105) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:41:59.173+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:41:59.174+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:41:59.174+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:42:00.276+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:42:00.288+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.119 seconds
+[2024-10-25T10:42:30.410+0000] {processor.py:161} INFO - Started process (PID=2178) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:42:30.422+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:42:30.423+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:42:30.423+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:42:31.297+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:42:31.309+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.902 seconds
+[2024-10-25T10:43:01.611+0000] {processor.py:161} INFO - Started process (PID=2251) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:43:01.612+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:43:01.613+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:43:01.613+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:43:02.413+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:43:02.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.814 seconds
+[2024-10-25T10:43:32.837+0000] {processor.py:161} INFO - Started process (PID=2324) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:43:32.838+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:43:32.839+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:43:32.839+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:43:33.559+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:43:33.571+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.738 seconds
+[2024-10-25T10:44:04.344+0000] {processor.py:161} INFO - Started process (PID=2397) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:44:04.345+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:44:04.346+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:44:04.346+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:44:05.228+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:44:05.237+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.895 seconds
+[2024-10-25T10:44:36.118+0000] {processor.py:161} INFO - Started process (PID=2470) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:44:36.119+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:44:36.126+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:44:36.126+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:44:37.130+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:44:37.138+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.023 seconds
+[2024-10-25T10:45:08.331+0000] {processor.py:161} INFO - Started process (PID=2547) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:45:08.332+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:45:08.334+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:45:08.333+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:45:09.067+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:45:09.079+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.751 seconds
+[2024-10-25T10:45:40.798+0000] {processor.py:161} INFO - Started process (PID=2621) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:45:40.803+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:45:40.805+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:45:40.805+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:45:41.514+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:45:41.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.727 seconds
+[2024-10-25T10:46:12.353+0000] {processor.py:161} INFO - Started process (PID=2676) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:46:12.357+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:46:12.358+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:46:12.357+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:46:13.269+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:46:13.280+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.931 seconds
+[2024-10-25T10:46:43.933+0000] {processor.py:161} INFO - Started process (PID=2749) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:46:43.934+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:46:43.938+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:46:43.936+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:46:44.928+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:46:44.935+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.005 seconds
+[2024-10-25T10:47:15.481+0000] {processor.py:161} INFO - Started process (PID=2823) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:47:15.484+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T10:47:15.486+0000] {logging_mixin.py:188} INFO - [2024-10-25T10:47:15.486+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:47:16.384+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T10:47:16.393+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.915 seconds
+[2024-10-25T11:24:15.556+0000] {processor.py:161} INFO - Started process (PID=280) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:24:15.560+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:24:15.562+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:24:15.561+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:24:16.369+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:24:16.430+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.876 seconds
+[2024-10-25T11:24:47.952+0000] {processor.py:161} INFO - Started process (PID=493) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:24:47.954+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:24:47.955+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:24:47.955+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:24:48.628+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:24:48.639+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.690 seconds
+[2024-10-25T11:25:20.012+0000] {processor.py:161} INFO - Started process (PID=563) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:25:20.030+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:25:20.031+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:25:20.031+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:25:20.796+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:25:20.809+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.800 seconds
+[2024-10-25T11:25:51.811+0000] {processor.py:161} INFO - Started process (PID=634) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:25:51.812+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:25:51.813+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:25:51.812+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:25:52.878+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:25:52.890+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.082 seconds
+[2024-10-25T11:26:23.411+0000] {processor.py:161} INFO - Started process (PID=688) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:26:23.414+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:26:23.418+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:26:23.417+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:26:24.368+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:26:24.396+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.989 seconds
+[2024-10-25T11:26:54.698+0000] {processor.py:161} INFO - Started process (PID=756) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:26:54.699+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:26:54.700+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:26:54.700+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:26:55.471+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:26:55.480+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.783 seconds
+[2024-10-25T11:27:25.958+0000] {processor.py:161} INFO - Started process (PID=826) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:27:25.959+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:27:25.962+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:27:25.962+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:27:26.812+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:27:26.824+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.869 seconds
+[2024-10-25T11:27:57.138+0000] {processor.py:161} INFO - Started process (PID=899) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:27:57.139+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:27:57.142+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:27:57.140+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:27:57.993+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:27:58.006+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.873 seconds
+[2024-10-25T11:28:28.179+0000] {processor.py:161} INFO - Started process (PID=972) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:28:28.180+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:28:28.181+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:28:28.181+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:28:29.135+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:28:29.147+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.970 seconds
+[2024-10-25T11:28:59.409+0000] {processor.py:161} INFO - Started process (PID=1044) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:28:59.414+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:28:59.414+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:28:59.414+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:29:00.406+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:29:00.416+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.011 seconds
+[2024-10-25T11:29:30.938+0000] {processor.py:161} INFO - Started process (PID=1116) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:29:30.939+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:29:30.940+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:29:30.940+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:29:32.524+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:29:32.541+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.607 seconds
+[2024-10-25T11:36:01.672+0000] {processor.py:161} INFO - Started process (PID=322) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:36:01.674+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:36:01.675+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:36:01.674+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:36:01.993+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:36:02.003+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.333 seconds
+[2024-10-25T11:36:36.644+0000] {processor.py:161} INFO - Started process (PID=519) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:36:36.645+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:36:36.646+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:36:36.646+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:36:37.670+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:36:37.689+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.050 seconds
+[2024-10-25T11:37:08.965+0000] {processor.py:161} INFO - Started process (PID=575) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:37:08.971+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:37:08.972+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:37:08.972+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:37:09.965+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:37:09.975+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.012 seconds
+[2024-10-25T11:37:40.451+0000] {processor.py:161} INFO - Started process (PID=647) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:37:40.452+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:37:40.453+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:37:40.453+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:37:41.514+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:37:41.535+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.087 seconds
+[2024-10-25T11:38:12.056+0000] {processor.py:161} INFO - Started process (PID=716) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:38:12.064+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:38:12.068+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:38:12.068+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:38:13.321+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:38:13.331+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.279 seconds
+[2024-10-25T11:38:43.766+0000] {processor.py:161} INFO - Started process (PID=789) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:38:43.766+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:38:43.768+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:38:43.767+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:38:44.460+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:38:44.468+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.705 seconds
+[2024-10-25T11:39:15.858+0000] {processor.py:161} INFO - Started process (PID=864) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:39:15.859+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:39:15.860+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:39:15.859+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:39:16.728+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:39:16.737+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.882 seconds
+[2024-10-25T11:39:49.131+0000] {processor.py:161} INFO - Started process (PID=939) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:39:49.132+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:39:49.133+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:39:49.133+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:39:50.054+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:39:50.074+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.948 seconds
+[2024-10-25T11:40:20.675+0000] {processor.py:161} INFO - Started process (PID=1012) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:40:20.678+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:40:20.679+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:40:20.678+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:40:21.493+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:40:21.504+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.832 seconds
+[2024-10-25T11:40:51.809+0000] {processor.py:161} INFO - Started process (PID=1065) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:40:51.813+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:40:51.815+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:40:51.814+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:40:52.479+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:40:52.490+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.686 seconds
+[2024-10-25T11:41:22.649+0000] {processor.py:161} INFO - Started process (PID=1134) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:41:22.650+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:41:22.655+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:41:22.655+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:41:23.291+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:41:23.308+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.663 seconds
+[2024-10-25T11:41:53.793+0000] {processor.py:161} INFO - Started process (PID=1206) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:41:53.794+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:41:53.795+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:41:53.795+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:41:54.479+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:41:54.512+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.722 seconds
+[2024-10-25T11:42:24.824+0000] {processor.py:161} INFO - Started process (PID=1277) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:42:24.830+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:42:24.832+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:42:24.831+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:42:25.733+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:42:25.747+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.927 seconds
+[2024-10-25T11:42:56.848+0000] {processor.py:161} INFO - Started process (PID=1353) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:42:56.852+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:42:56.854+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:42:56.853+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:42:57.795+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:42:57.884+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.040 seconds
+[2024-10-25T11:43:28.124+0000] {processor.py:161} INFO - Started process (PID=1425) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:43:28.125+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:43:28.130+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:43:28.129+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:43:29.250+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:43:29.259+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 1.137 seconds
+[2024-10-25T11:44:00.059+0000] {processor.py:161} INFO - Started process (PID=1502) to work on /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:44:00.062+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/components/gold/post_training/sending_mails.py for tasks to queue
+[2024-10-25T11:44:00.068+0000] {logging_mixin.py:188} INFO - [2024-10-25T11:44:00.068+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:44:00.836+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/components/gold/post_training/sending_mails.py
+[2024-10-25T11:44:00.853+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/components/gold/post_training/sending_mails.py took 0.797 seconds

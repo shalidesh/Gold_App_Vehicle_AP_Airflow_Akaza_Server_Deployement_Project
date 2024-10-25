@@ -17,7 +17,7 @@ function Dashboard() {
         // Fetch the gold price every 5 minute
         const interval = setInterval(async () => {  // Declare the function as async
             try {
-                const response = await axios.get('/gold_price');
+                const response = await axios.get('/api/gold_price');
                 console.log(response.data);
                 setPrice(response.data);          
             } catch (error) {

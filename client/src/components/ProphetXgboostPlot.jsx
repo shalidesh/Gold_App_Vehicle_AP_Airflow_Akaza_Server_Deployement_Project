@@ -21,7 +21,7 @@ function ProphetXgboostPlot(startDate) {
       setSpin(true)
 
       try {
-        const response = await axios.post(`/forecast_prophet1`,{
+        const response = await axios.post(`/api/forecast_prophet1`,{
           "date":startDate.startDate
         });
 

@@ -30,7 +30,7 @@ from components.datasets_paths import train_df_path,gold_df_path,news_df_path
 
 app = Flask(__name__)
 # app.config["MONGO_URI"] = "mongodb://mongo:27017/gold_data"
-app.config["MONGO_URI"] = "mongodb://localhost:27017/gold_data"
+app.config["MONGO_URI"] = "mongodb://host.docker.internal:27017/gold_data"
 CORS(app)
 
 mongo = PyMongo(app)
@@ -61,7 +61,7 @@ if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
 
-@app.route('/gold_price', methods=['GET'])
+@app.route('/api/gold_price', methods=['GET'])
 def get_gold_price():
     # headers = {
     #             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
@@ -95,7 +95,7 @@ def get_gold_price():
     return jsonify(price_list)
 
 
-@app.route('/auth/register', methods=['POST'])
+@app.route('/api/auth/register', methods=['POST'])
 def register():
     _json = request.json
     _username = _json['username']
@@ -115,7 +115,7 @@ def register():
         return not_found()
     
 
-@app.route('/auth/login', methods=['POST'])
+@app.route('/api/auth/login', methods=['POST'])
 def login():
     _json = request.json
     _username = _json['username']
@@ -148,14 +148,14 @@ def get_first_four_sentences(text):
     return ' '.join(sentences[:2])
 
 
-@app.route('/user/news', methods=['GET'])
+@app.route('/api/user/news', methods=['GET'])
 def news():
     df=pd.read_csv(news_df_path)
     df = df.where(pd.notnull(df), None) 
     return jsonify(df.to_dict(orient='records'))
 
 
-@app.route('/database', methods=['POST'])
+@app.route('/api/database', methods=['POST'])
 def database():
     data = request.get_json()
     date_string = data['date'].replace("Z", "")
@@ -163,12 +163,12 @@ def database():
     formatted_date = request_date.strftime('%Y-%m-%d')
     print(formatted_date)
     database_url = gold_df.loc[gold_df['date'] == formatted_date, 'database_url'].values[0]
-    file_path = os.path.join(*database_url.split('/'))
+    file_path = os.path.join(*database_url.split('/api/'))
     df_dataset=pd.read_csv(file_path)
     df_dataset=df_dataset[['ds','yhat_manipulation_smooth']]
     return jsonify(df_dataset.to_dict(orient='records'))
 
-@app.route('/comparison', methods=['POST'])
+@app.route('/api/comparison', methods=['POST'])
 def comparison():
     data = request.get_json()
     date_string = data['date'].replace("Z", "")
@@ -197,7 +197,7 @@ def comparison():
     return result_df.to_json(orient='records')
 
 
-@app.route('/gold_price_history', methods=['GET'])
+@app.route('/api/gold_price_history', methods=['GET'])
 def gold_price_history():
     gold_ticker = 'GC=F'
 
@@ -218,7 +218,7 @@ def gold_price_history():
     return gold_data_list
 
 
-@app.route('/real-data', methods=['POST'])
+@app.route('/api/real-data', methods=['POST'])
 def real_data():
     print("togle start")
     train = train_df.replace({np.nan: 0})
@@ -233,7 +233,7 @@ def ounce_lkr(x):
     return rounded_price
 
 
-@app.route('/forecast_prophet', methods=['POST'])
+@app.route('/api/forecast_prophet', methods=['POST'])
 def gold_price_Predict():
     data = request.get_json()
     print(data)
@@ -285,7 +285,7 @@ def gold_price_Predict():
     return jsonify(response_dataframe.to_dict(orient='records'))
 
 
-@app.route('/forecast_prophet1', methods=['POST'])
+@app.route('/api/forecast_prophet1', methods=['POST'])
 def gold_price_Predict1():
     data = request.get_json()
     date_only = data['date'].split("T")[0]
@@ -296,7 +296,7 @@ def gold_price_Predict1():
     return jsonify(forecast_df.to_dict(orient='records'))
 
 
-@app.route('/upload', methods=['POST'])
+@app.route('/api/upload', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
         return jsonify({'message': 'No file part'}), 400
